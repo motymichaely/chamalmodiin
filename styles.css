@@ -1,0 +1,290 @@
+/* Custom styles for Chamal Modiin website */
+
+/* Hebrew font optimization */
+@import url('https://fonts.googleapis.com/css2?family=Heebo:wght@300;400;500;600;700;800;900&display=swap');
+
+/* Custom properties */
+:root {
+    --primary-blue: #2563eb;
+    --primary-blue-dark: #1d4ed8;
+    --accent-green: #059669;
+    --accent-purple: #7c3aed;
+    --text-dark: #1f2937;
+    --text-light: #6b7280;
+    --bg-light: #f9fafb;
+}
+
+/* Base styles */
+body {
+    font-family: 'Heebo', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+    line-height: 1.6;
+}
+
+/* RTL specific adjustments */
+[dir="rtl"] .space-x-reverse > :not([hidden]) ~ :not([hidden]) {
+    --tw-space-x-reverse: 1;
+}
+
+/* Custom animations */
+@keyframes fadeInUp {
+    from {
+        opacity: 0;
+        transform: translateY(30px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@keyframes slideInRight {
+    from {
+        opacity: 0;
+        transform: translateX(30px);
+    }
+    to {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+
+/* Animation classes */
+.animate-fade-in-up {
+    animation: fadeInUp 0.6s ease-out;
+}
+
+.animate-slide-in-right {
+    animation: slideInRight 0.6s ease-out;
+}
+
+/* Custom button styles */
+.btn-primary {
+    @apply bg-blue-600 text-white px-6 py-3 rounded-lg font-semibold hover:bg-blue-700 transition-all duration-200 transform hover:scale-105;
+}
+
+.btn-secondary {
+    @apply border-2 border-blue-600 text-blue-600 px-6 py-3 rounded-lg font-semibold hover:bg-blue-600 hover:text-white transition-all duration-200;
+}
+
+.btn-outline {
+    @apply border-2 border-white text-white px-6 py-3 rounded-lg font-semibold hover:bg-white hover:text-blue-600 transition-all duration-200;
+}
+
+/* Card hover effects */
+.card-hover {
+    @apply transition-all duration-300 transform hover:scale-105 hover:shadow-lg;
+}
+
+/* Gradient backgrounds */
+.gradient-blue {
+    background: linear-gradient(135deg, #2563eb 0%, #1d4ed8 100%);
+}
+
+.gradient-hero {
+    background: linear-gradient(135deg, #2563eb 0%, #1d4ed8 50%, #1e40af 100%);
+}
+
+/* Hero section styles */
+.hero-background {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    z-index: -2;
+}
+
+.hero-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(135deg, rgba(37, 99, 235, 0.9) 0%, rgba(29, 78, 216, 0.9) 50%, rgba(30, 64, 175, 0.9) 100%);
+    z-index: -1;
+}
+
+.hero-content {
+    position: relative;
+    z-index: 1;
+}
+
+/* Gallery styles */
+.gallery-item {
+    @apply group relative overflow-hidden rounded-lg shadow-lg cursor-pointer;
+}
+
+.gallery-item img {
+    @apply w-full h-64 object-cover transition-transform duration-300;
+}
+
+.gallery-item:hover img {
+    @apply scale-105;
+}
+
+.gallery-overlay {
+    @apply absolute inset-0 bg-black bg-opacity-0 group-hover:bg-opacity-30 transition-all duration-300;
+}
+
+.gallery-caption {
+    @apply absolute bottom-0 left-0 right-0 p-4 text-white transform translate-y-full group-hover:translate-y-0 transition-transform duration-300;
+}
+
+.gallery-caption h3 {
+    @apply text-lg font-semibold;
+}
+
+.gallery-caption p {
+    @apply text-sm opacity-90;
+}
+
+/* Gallery sections animation */
+#additionalGallery, #moreGallery, #evenMoreGallery {
+    transition: opacity 0.3s ease;
+}
+
+#loadMoreGallery {
+    transition: all 0.3s ease;
+}
+
+#loadMoreGallery:disabled {
+    opacity: 0.6;
+    cursor: not-allowed;
+}
+
+/* Custom section spacing */
+.section-padding {
+    @apply py-16 md:py-24;
+}
+
+/* Image placeholder styles */
+.image-placeholder {
+    @apply bg-gray-300 rounded-lg flex items-center justify-center text-gray-500;
+    min-height: 200px;
+}
+
+.image-placeholder.circular {
+    @apply rounded-full;
+}
+
+/* Custom navigation styles */
+.nav-link {
+    @apply text-gray-500 hover:text-blue-600 px-3 py-2 rounded-md text-sm font-medium transition-colors duration-200;
+}
+
+.nav-link.active {
+    @apply text-blue-600;
+}
+
+/* Custom form styles */
+.form-input {
+    @apply w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-transparent transition-all duration-200;
+}
+
+.form-button {
+    @apply w-full bg-blue-600 text-white py-3 rounded-lg font-semibold hover:bg-blue-700 transition-colors duration-200;
+}
+
+/* Custom icon styles */
+.icon-large {
+    @apply w-12 h-12;
+}
+
+.icon-medium {
+    @apply w-8 h-8;
+}
+
+.icon-small {
+    @apply w-6 h-6;
+}
+
+/* Custom text styles */
+.text-hero {
+    @apply text-4xl md:text-6xl font-bold;
+}
+
+.text-section-title {
+    @apply text-3xl font-bold;
+}
+
+.text-card-title {
+    @apply text-xl font-semibold;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+    .text-hero {
+        @apply text-3xl;
+    }
+    
+    .section-padding {
+        @apply py-12;
+    }
+}
+
+/* Custom scrollbar */
+::-webkit-scrollbar {
+    width: 8px;
+}
+
+::-webkit-scrollbar-track {
+    background: #f1f5f9;
+}
+
+::-webkit-scrollbar-thumb {
+    background: #cbd5e1;
+    border-radius: 4px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background: #94a3b8;
+}
+
+/* Loading animation */
+.loading-spinner {
+    @apply animate-spin rounded-full h-8 w-8 border-b-2 border-blue-600;
+}
+
+/* Custom focus styles for accessibility */
+.focus-visible:focus {
+    @apply outline-none ring-2 ring-blue-500 ring-offset-2;
+}
+
+/* Custom selection color */
+::selection {
+    background-color: #dbeafe;
+    color: #1e40af;
+}
+
+/* Print styles */
+@media print {
+    .no-print {
+        display: none !important;
+    }
+    
+    body {
+        background: white !important;
+        color: black !important;
+    }
+}
+
+/* High contrast mode support */
+@media (prefers-contrast: high) {
+    .btn-primary {
+        @apply bg-black text-white border-2 border-black;
+    }
+    
+    .btn-secondary {
+        @apply bg-white text-black border-2 border-black;
+    }
+}
+
+/* Reduced motion support */
+@media (prefers-reduced-motion: reduce) {
+    * {
+        animation-duration: 0.01ms !important;
+        animation-iteration-count: 1 !important;
+        transition-duration: 0.01ms !important;
+    }
+}

@@ -1,0 +1,602 @@
+<!DOCTYPE html>
+<html lang="he" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>חמ״ל מודיעין - תמיכה בלוחמי צה״ל</title>
+    <meta name="description" content="חמ״ל מודיעין - מתנדבים ממודיעין ויישובי גזר התומכים בלוחמי צה״ל בשטח">
+    <meta name="keywords" content="חמ״ל מודיעין, מתנדבים, צה״ל, מודיעין, גזר, תמיכה בלוחמים, תרומה">
+    <meta name="author" content="חמ״ל מודיעין">
+    <meta name="robots" content="index, follow">
+    
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://chamalmodiin.org/">
+    <meta property="og:title" content="חמ״ל מודיעין - תמיכה בלוחמי צה״ל">
+    <meta property="og:description" content="מתנדבים ממודיעין ויישובי גזר התומכים בלוחמי צה״ל בשטח">
+    <meta property="og:image" content="https://chamalmodiin.org/og-image.jpg">
+    
+    <!-- Twitter -->
+    <meta property="twitter:card" content="summary_large_image">
+    <meta property="twitter:url" content="https://chamalmodiin.org/">
+    <meta property="twitter:title" content="חמ״ל מודיעין - תמיכה בלוחמי צה״ל">
+    <meta property="twitter:description" content="מתנדבים ממודיעין ויישובי גזר התומכים בלוחמי צה״ל בשטח">
+    <meta property="twitter:image" content="https://chamalmodiin.org/og-image.jpg">
+    
+    <!-- Additional meta tags -->
+    <meta name="theme-color" content="#2563eb">
+    <meta name="msapplication-TileColor" content="#2563eb">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="default">
+    <meta name="apple-mobile-web-app-title" content="חמ״ל מודיעין">
+    
+    <!-- Preconnect to external domains -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="preconnect" href="https://cdn.jsdelivr.net">
+    <link rel="preconnect" href="https://cdn.tailwindcss.com">
+    
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindplus/elements@1" type="module"></script>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="icon" type="image/x-icon" href="/favicon.ico">
+</head>
+<body class="bg-gray-50 text-gray-900">
+    <!-- Navigation -->
+    <nav class="bg-white shadow-sm border-b border-gray-200 sticky top-0 z-50">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex justify-between items-center h-16">
+                <div class="flex items-center">
+                    <div class="flex-shrink-0">
+                      <a href="" class="text-gray-900 hover:text-blue-600 px-3 py-2 rounded-md text-sm font-medium">
+                        <h1 class="text-xl font-bold text-blue-600">חמ״ל מודיעין</h1>
+                      </a>
+                    </div>
+                </div>
+                <div class="hidden md:block">
+                    <div class="ml-10 flex items-baseline space-x-4 space-x-reverse">
+                        <a href="#about" class="text-gray-500 hover:text-blue-600 px-3 py-2 rounded-md text-sm font-medium">אודות</a>
+                        <a href="#activities" class="text-gray-500 hover:text-blue-600 px-3 py-2 rounded-md text-sm font-medium">פעילות</a>
+                        <a href="#gallery" class="text-gray-500 hover:text-blue-600 px-3 py-2 rounded-md text-sm font-medium">גלריה</a>
+                        <a href="#donate" class="text-gray-500 hover:text-blue-600 px-3 py-2 rounded-md text-sm font-medium">תמיכה בלוחמים</a>
+                    </div>
+                </div>
+                <div class="md:hidden">
+                    <el-dropdown class="relative inline-block text-left">
+                        <button class="inline-flex w-full justify-center gap-x-1.5 rounded-md bg-white px-3 py-2 text-sm font-semibold text-gray-900 shadow-xs ring-1 ring-gray-300 ring-inset hover:bg-gray-50">
+                            תפריט
+                            <svg viewBox="0 0 20 20" fill="currentColor" aria-hidden="true" class="-mr-1 size-5 text-gray-400">
+                                <path d="M5.22 8.22a.75.75 0 0 1 1.06 0L10 11.94l3.72-3.72a.75.75 0 1 1 1.06 1.06l-4.25 4.25a.75.75 0 0 1-1.06 0L5.22 9.28a.75.75 0 0 1 0-1.06Z" clip-rule="evenodd" fill-rule="evenodd" />
+                            </svg>
+                        </button>
+                        <el-menu anchor="bottom end" popover class="w-56 origin-top-right rounded-md bg-white shadow-lg ring-1 ring-black/5 transition transition-discrete [--anchor-gap:--spacing(2)] focus:outline-hidden data-closed:scale-95 data-closed:transform data-closed:opacity-0 data-enter:duration-100 data-enter:ease-out data-leave:duration-75 data-leave:ease-in">
+                            <div class="py-1">
+                                <a href="#home" class="block px-4 py-2 text-sm text-gray-700 focus:bg-gray-100 focus:text-gray-900 focus:outline-hidden">בית</a>
+                                <a href="#about" class="block px-4 py-2 text-sm text-gray-700 focus:bg-gray-100 focus:text-gray-900 focus:outline-hidden">אודות</a>
+                                <a href="#activities" class="block px-4 py-2 text-sm text-gray-700 focus:bg-gray-100 focus:text-gray-900 focus:outline-hidden">פעילות</a>
+                                <a href="#gallery" class="block px-4 py-2 text-sm text-gray-700 focus:bg-gray-100 focus:text-gray-900 focus:outline-hidden">גלריה</a>
+                                <a href="#donate" class="block px-4 py-2 text-sm text-gray-700 focus:bg-gray-100 focus:text-gray-900 focus:outline-hidden">תרומה</a>
+                            </div>
+                        </el-menu>
+                    </el-dropdown>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero-section relative text-white overflow-hidden">
+        <!-- Hero Background Image -->
+        <img src="hero-background.jpg" alt="חמ״ל מודיעין - תמיכה בכוחות הביטחון" class="hero-background" onerror="this.style.display='none'">
+        <div class="hero-overlay"></div>
+        <div class="absolute inset-0 bg-black/20"></div>
+        <div class="hero-content relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-24">
+            <div class="text-center">
+                <h1 class="text-4xl md:text-6xl font-bold mb-6">
+                    חמ״ל מודיעין
+                </h1>
+                <p class="text-xl md:text-2xl mb-8 max-w-3xl mx-auto">
+                  מתנדבים ממודיעין ויישובי גזר לעמידה לצד כוחות הביטחון וההצלה, כיתות הכוננות
+                </p>
+                <div class="flex flex-col sm:flex-row gap-4 justify-center">
+                    <a href="#donate" class="border-2 border-white bg-white text-blue-600 px-8 py-3 rounded-lg font-semibold hover:bg-gray-100 transition-colors">
+                        תמיכה בלוחמים
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="py-16 bg-white">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            </div>
+            
+            <div class="grid md:grid-cols-2 gap-12 items-center">
+                <div>
+                    <blockquote class="text-xl italic text-gray-700 mb-6 border-r-4 border-blue-600 pr-6">
+                        "לראשונה בחיי הרגשתי סיפור רב ועוצמתי מתוצאה שאינה מתורגמת לכסף, מתוצאה שאינה נמדדת ברווחים. לראשונה בחיי התמכרתי לאתגרים חדשים, רבים מספור, שבסופם מטרה אחת בלבד - הצלת חיי אדם". ערן אפרת
+                    </blockquote>
+                    <p class="text-gray-600 mb-4">
+                        <strong>המשימה שלנו:</strong> הבטיח לחיילינו, לכיתות הכוננות, לכוחות ההצלה, ולכל כוחות הביטחון את המשאבים הדרושים כדי לבצע את תפקידם החיוני ללא דיחוי.
+                    </p>
+                    <p class="text-gray-600 mb-4">
+                        מאז הקמת החמ״ל, המתנדבים עושים לילות כימים ברכישה והעברת ציוד טקטי, תרמי וציוד חיוני נוסף ליחידות לוחמות בעזה, בגבול הצפון ובאזורים נוספים לפי הצורך.
+                    </p>
+                    <p class="text-gray-600 mb-4">
+                        אחד מההישגים הניכרים שלנו במהלך המלחמה הוא רכישה וייבוא של ציוד צבאי חיוני מהארץ ומארה"ב, באישור רשמי של משרד הביטחון וגורמי המכס. ציוד זה הכרחי וחיוני לבטיחות וייעילות כוחות הביטחון בשטח. <strong>ציוד אשר הציל חיים.</strong>
+                    </p>
+                    <p class="text-gray-600">
+                        כעת אני מתמקדים בהרמת  ערבי על האש ודוכני שווארמה ליחידות סדירות ומילואים בכל גזרות הלחימה לריענון הכוחות והרמת המורל. אנחנו משתפים פעולה עם חמל״ים רבים ברחבי הארץ ומתמקדים בסיוע לרכישת מזון וציוד היגיינה שיכול לסייע ולו במעט לחיילים להפחית לחצים, להתרענן ולהרגע בין המשימות השונות והמאתגרות.
+                    </p>
+                    
+                </div>
+                <div class="bg-gray-200 rounded-lg p-8 text-center">
+                  <img src="public/images/IMG_2840.jpg" alt="שיתוף פעולה" class="w-full h-64 object-cover transition-transform duration-300 group-hover:scale-105" loading="lazy">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Activities Section -->
+    <section id="activities" class="py-16 bg-gray-50">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+                             md:grid-cols-3 gap-8">
+                <div class="bg-white rounded-lg shadow-sm p-6">
+                    <div class="w-12 h-12 bg-blue-100 rounded-lg flex items-center justify-center mb-4">
+                        <svg class="w-6 h-6 text-blue-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M20 7l-8-4-8 4m16 0l-8 4m8-4v10l-8 4m0-10L4 7m8 4v10M4 7v10l8 4"></path>
+                        </svg>
+                    </div>
+                    <h3 class="text-xl font-semibold text-gray-900 mb-2">רכישה וייבוא של ציוד טקטי</h3>
+                    <p class="text-gray-600">רוכשים ומייבאים ציוד צבאי חיוני מהארץ ומארה"ב באישור רשמי של משרד הביטחון וגורמי המכס. ציוד אשר מציל חיים</p>
+                </div>
+                
+                <div class="bg-white rounded-lg shadow-sm p-6">
+                    <div class="w-12 h-12 bg-green-100 rounded-lg flex items-center justify-center mb-4">
+                        <svg class="w-6 h-6 text-green-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 6.253v13m0-13C10.832 5.477 9.246 5 7.5 5S4.168 5.477 3 6.253v13C4.168 18.477 5.754 18 7.5 18s3.332.477 4.5 1.253m0-13C13.168 5.477 14.754 5 16.5 5c1.746 0 3.332.477 4.5 1.253v13C19.832 18.477 18.246 18 16.5 18c-1.746 0-3.332.477-4.5 1.253"></path>
+                        </svg>
+                    </div>
+                    <h3 class="text-xl font-semibold text-gray-900 mb-2">אירועי על האש</h3>
+                    <p class="text-gray-600">מרימים ערבי על האש ודוכני שווארמה ליחידות סדירות ומילואים, כיתות כוננות וכוחות הצלה בכל גזרות הלחימה</p>
+                </div>
+                
+                <div class="bg-white rounded-lg shadow-sm p-6">
+                    <div class="w-12 h-12 bg-purple-100 rounded-lg flex items-center justify-center mb-4">
+                        <svg class="w-6 h-6 text-purple-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 20h5v-2a3 3 0 00-5.356-1.857M17 20H7m10 0v-2c0-.656-.126-1.283-.356-1.857M7 20H2v-2a3 3 0 015.356-1.857M7 20v-2c0-.656.126-1.283.356-1.857m0 0a5.002 5.002 0 019.288 0M15 7a3 3 0 11-6 0 3 3 0 016 0zm6 3a2 2 0 11-4 0 2 2 0 014 0zM7 10a2 2 0 11-4 0 2 2 0 014 0z"></path>
+                        </svg>
+                    </div>
+                    <h3 class="text-xl font-semibold text-gray-900 mb-2">שיתופי פעולה</h3>
+                    <p class="text-gray-600">משתפים פעולה עם חמל״ים רבים ברחבי הארץ ומסייעים במערך היסעים ושינוע לכוחות הביטחון השונים היסעים לכוחות הביטחון השונים</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Donate Section -->
+    <section id="donate" class="py-16 bg-blue-600 text-white">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-12">
+                <h2 class="text-3xl font-bold mb-4">תמיכה בלוחמים</h2>
+                <p class="text-xl mb-8 max-w-3xl mx-auto">
+                    בימים מאתגרים אלה, כשסוף סוף עם ישראל ולוחמיו היקרים עומדים בלי פחד ובלי מורא אל מול הרוע הטהור, 
+                    אנחנו בחמ״ל מודיעין ממשיכים בגיוס תרומות לסיוע בכלל האתגרים העומדים בפני חיילינו, כיתות הכוננות, כוחות ההצלה וכל כוחות הביטחון.
+                </p>
+            </div>
+            
+            <div class="grid md:grid-cols-2 gap-12 items-center">
+                <div>
+                    <h3 class="text-2xl font-semibold mb-4">במה אנחנו מתמקדים:</h3>
+                    <ul class="space-y-3 text-lg">
+                        <li class="flex items-start">
+                            <span class="text-blue-200 mr-3">•</span>
+                            <span>רכישה וייבוא ציוד צבאי חיוני מהארץ ומארה"ב באישור רשמי של משרד הביטחון וגורמי המכס</span>
+                        </li>
+                        <li class="flex items-start">
+                            <span class="text-blue-200 mr-3">•</span>
+                            <span>הרמת ערבי על האש ודוכני אוכל לריענון והרמת המורל לכוחות הביטחון בכל גזרות הלחימה</span>
+                        </li>
+                        <li class="flex items-start">
+                            <span class="text-blue-200 mr-3">•</span>
+                            <span>רכישת ציוד היגיינה וציוד חיוני נוסף לחיילינו, כיתות הכוננות וכוחות ההצלה</span>
+                        </li>
+                        <li class="flex items-start">
+                            <span class="text-blue-200 mr-3">•</span>
+                            <span>שיתוף פעולה עם חמל״ים רבים ברחבי הארץ וסיוע במערך היסעים ושינוע לכוחות הביטחון</span>
+                        </li>
+                    </ul>
+                </div>
+                
+                <div class="bg-white rounded-lg p-8 text-gray-900">
+                    <h3 class="text-2xl font-semibold mb-4 text-center">תרומה</h3>
+                    
+                    <!-- Achievement Banner -->
+                    <div class="bg-gradient-to-r from-blue-50 to-green-50 border-l-4 border-blue-500 p-4 mb-6 rounded-lg">
+                        <div class="flex items-center">
+                            <div class="flex-shrink-0">
+                                <svg class="h-8 w-8 text-blue-500" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z" />
+                                </svg>
+                            </div>
+                            <div class="mr-3">
+                                <p class="text-lg font-semibold text-blue-900">
+                                    עד כה גוייסו יותר מ-1.5 מיליון ₪
+                                </p>
+                                <p class="text-sm text-blue-700">
+                                  תודות לכם, הצלחנו לרומם את רוח הלוחמים ולרכוש עבורם ציוד חיוני ומציל חיים!
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <p class="text-gray-600 mb-6 text-center">
+                        כל תרומה, קטנה כגדולה, תסייע לנו להמשיך לשמח את הלוחמים ולהביע את הערכתנו.
+                    </p>
+                    <div class="space-y-4">
+                        <a href="https://links.payboxapp.com/QKOo0OXNOUb" target="_blank" rel="noopener noreferrer" class="flex items-center justify-center w-full text-white py-3 rounded-lg font-semibold transition-colors" style="background-color: #26a9f0;" onmouseover="this.style.backgroundColor='#1e8bc3'" onmouseout="this.style.backgroundColor='#26a9f0'">
+                            <img src="public/images/logos/paybox-logo.png" alt="PayBox Logo" class="w-6 h-6 ml-2 rounded">
+                            <span>תרומה דרך פייבוקס</span>
+                        </a>
+                        <a href="https://wa.me/972544973945?text=תרומה לחמ״ל מודיעין דרך עמותה" class="flex items-center justify-center w-full text-white py-3 rounded-lg font-semibold transition-colors" style="background-color: #24d366;" onmouseover="this.style.backgroundColor='#1da851'" onmouseout="this.style.backgroundColor='#24d366'">
+                          <img src="public/images/logos/whatsapp-logo.png" alt="WhatsApp Logo" class="w-6 h-6 ml-2 rounded">
+                          <span>צור קשר לתרומה דרך עמותה</span>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Gallery Section -->
+    <section id="gallery" class="py-16 bg-gray-50">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+                <!-- Gallery Item 1 -->
+                <div class="group relative overflow-hidden rounded-lg shadow-lg">
+                    <img src="public/images/IMG_3276.jpg" alt="פעילות מתנדבים" class="w-full h-64 object-cover transition-transform duration-300 group-hover:scale-105" loading="lazy">
+                    <div class="absolute inset-0 bg-black bg-opacity-0 group-hover:bg-opacity-30 transition-all duration-300"></div>
+                    <div class="absolute bottom-0 left-0 right-0 p-4 text-white transform translate-y-full group-hover:translate-y-0 transition-transform duration-300">
+                        
+                    </div>
+                </div>
+                
+                <!-- Gallery Item 2 -->
+                <div class="group relative overflow-hidden rounded-lg shadow-lg">
+                    <img src="public/images/IMG_3289.jpg" alt="ציוד צבאי" class="w-full h-64 object-cover transition-transform duration-300 group-hover:scale-105" loading="lazy">
+                    <div class="absolute inset-0 bg-black bg-opacity-0 group-hover:bg-opacity-30 transition-all duration-300"></div>
+                    <div class="absolute bottom-0 left-0 right-0 p-4 text-white transform translate-y-full group-hover:translate-y-0 transition-transform duration-300">
+                        
+                    </div>
+                </div>
+                
+                <!-- Gallery Item 3 -->
+                <div class="group relative overflow-hidden rounded-lg shadow-lg">
+                    <img src="public/images/IMG_3889.jpg" alt="אירועי תמיכה" class="w-full h-64 object-cover transition-transform duration-300 group-hover:scale-105" loading="lazy">
+                    <div class="absolute inset-0 bg-black bg-opacity-0 group-hover:bg-opacity-30 transition-all duration-300"></div>
+                    <div class="absolute bottom-0 left-0 right-0 p-4 text-white transform translate-y-full group-hover:translate-y-0 transition-transform duration-300">
+                        
+                    </div>
+                </div>
+                
+                <!-- Gallery Item 4 -->
+                <div class="group relative overflow-hidden rounded-lg shadow-lg">
+                    <img src="public/images/IMG_3899.jpg" alt="לוגיסטיקה" class="w-full h-64 object-cover transition-transform duration-300 group-hover:scale-105" loading="lazy">
+                    <div class="absolute inset-0 bg-black bg-opacity-0 group-hover:bg-opacity-30 transition-all duration-300"></div>
+                    <div class="absolute bottom-0 left-0 right-0 p-4 text-white transform translate-y-full group-hover:translate-y-0 transition-transform duration-300">
+                        
+                    </div>
+                </div>
+                
+                <!-- Gallery Item 5 -->
+                <div class="group relative overflow-hidden rounded-lg shadow-lg">
+                    <img src="public/images/IMG_2840.jpg" alt="שיתוף פעולה" class="w-full h-64 object-cover transition-transform duration-300 group-hover:scale-105" loading="lazy">
+                    <div class="absolute inset-0 bg-black bg-opacity-0 group-hover:bg-opacity-30 transition-all duration-300"></div>
+                    <div class="absolute bottom-0 left-0 right-0 p-4 text-white transform translate-y-full group-hover:translate-y-0 transition-transform duration-300">
+                        
+                    </div>
+                </div>
+                
+                <!-- Gallery Item 6 -->
+                <div class="group relative overflow-hidden rounded-lg shadow-lg">
+                    <img src="public/images/IMG_5221.jpg" alt="תמיכה בקהילה" class="w-full h-64 object-cover transition-transform duration-300 group-hover:scale-105" loading="lazy">
+                    <div class="absolute inset-0 bg-black bg-opacity-0 group-hover:bg-opacity-30 transition-all duration-300"></div>
+                    <div class="absolute bottom-0 left-0 right-0 p-4 text-white transform translate-y-full group-hover:translate-y-0 transition-transform duration-300">
+                        
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Additional Gallery Items (Hidden Initially) -->
+            <div id="additionalGallery" class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 mt-6" style="display: none;">
+                <!-- Gallery Item 7 -->
+                <div class="group relative overflow-hidden rounded-lg shadow-lg">
+                    <img src="public/images/IMG_8107.jpg" alt="פעילות נוספת" class="w-full h-64 object-cover transition-transform duration-300 group-hover:scale-105" loading="lazy">
+                    <div class="absolute inset-0 bg-black bg-opacity-0 group-hover:bg-opacity-30 transition-all duration-300"></div>
+                    <div class="absolute bottom-0 left-0 right-0 p-4 text-white transform translate-y-full group-hover:translate-y-0 transition-transform duration-300">
+                        
+                    </div>
+                </div>
+                
+                <!-- Gallery Item 8 -->
+                <div class="group relative overflow-hidden rounded-lg shadow-lg">
+                    <img src="public/images/IMG_8437 2.jpg" alt="ציוד מיוחד" class="w-full h-64 object-cover transition-transform duration-300 group-hover:scale-105" loading="lazy">
+                    <div class="absolute inset-0 bg-black bg-opacity-0 group-hover:bg-opacity-30 transition-all duration-300"></div>
+                    <div class="absolute bottom-0 left-0 right-0 p-4 text-white transform translate-y-full group-hover:translate-y-0 transition-transform duration-300">
+                        
+                    </div>
+                </div>
+                
+                <!-- Gallery Item 9 -->
+                <div class="group relative overflow-hidden rounded-lg shadow-lg">
+                    <img src="public/images/IMG_5379.jpg" alt="תמיכה נוספת" class="w-full h-64 object-cover transition-transform duration-300 group-hover:scale-105" loading="lazy">
+                    <div class="absolute inset-0 bg-black bg-opacity-0 group-hover:bg-opacity-30 transition-all duration-300"></div>
+                    <div class="absolute bottom-0 left-0 right-0 p-4 text-white transform translate-y-full group-hover:translate-y-0 transition-transform duration-300">
+                        
+                    </div>
+                </div>
+                
+                <!-- Gallery Item 10 -->
+                <div class="group relative overflow-hidden rounded-lg shadow-lg">
+                    <img src="public/images/IMG_4042.jpg" alt="תמיכה למתגייסים" class="w-full h-64 object-cover transition-transform duration-300 group-hover:scale-105" loading="lazy">
+                    <div class="absolute inset-0 bg-black bg-opacity-0 group-hover:bg-opacity-30 transition-all duration-300"></div>
+                    <div class="absolute bottom-0 left-0 right-0 p-4 text-white transform translate-y-full group-hover:translate-y-0 transition-transform duration-300">
+                        
+                    </div>
+                </div>
+                
+                <!-- Gallery Item 11 -->
+                <div class="group relative overflow-hidden rounded-lg shadow-lg">
+                    <img src="public/images/IMG_4476.jpg" alt="אוכל ושתייה" class="w-full h-64 object-cover transition-transform duration-300 group-hover:scale-105" loading="lazy">
+                    <div class="absolute inset-0 bg-black bg-opacity-0 group-hover:bg-opacity-30 transition-all duration-300"></div>
+                    <div class="absolute bottom-0 left-0 right-0 p-4 text-white transform translate-y-full group-hover:translate-y-0 transition-transform duration-300">
+                        
+                    </div>
+                </div>
+                
+                <!-- Gallery Item 12 -->
+                <div class="group relative overflow-hidden rounded-lg shadow-lg">
+                    <img src="public/images/IMG_4522.jpg" alt="הכנות לפעילות" class="w-full h-64 object-cover transition-transform duration-300 group-hover:scale-105" loading="lazy">
+                    <div class="absolute inset-0 bg-black bg-opacity-0 group-hover:bg-opacity-30 transition-all duration-300"></div>
+                    <div class="absolute bottom-0 left-0 right-0 p-4 text-white transform translate-y-full group-hover:translate-y-0 transition-transform duration-300">
+                        
+                    </div>
+                </div>
+                
+                <!-- Gallery Item 13 -->
+                <div class="group relative overflow-hidden rounded-lg shadow-lg">
+                    <img src="public/images/IMG_4541.jpg" alt="עבודת צוות" class="w-full h-64 object-cover transition-transform duration-300 group-hover:scale-105" loading="lazy">
+                    <div class="absolute inset-0 bg-black bg-opacity-0 group-hover:bg-opacity-30 transition-all duration-300"></div>
+                    <div class="absolute bottom-0 left-0 right-0 p-4 text-white transform translate-y-full group-hover:translate-y-0 transition-transform duration-300">
+                        
+                    </div>
+                </div>
+                
+                <!-- Gallery Item 14 -->
+                <div class="group relative overflow-hidden rounded-lg shadow-lg">
+                    <img src="public/images/IMG_4834.jpg" alt="איסוף תרומות" class="w-full h-64 object-cover transition-transform duration-300 group-hover:scale-105" loading="lazy">
+                    <div class="absolute inset-0 bg-black bg-opacity-0 group-hover:bg-opacity-30 transition-all duration-300"></div>
+                    <div class="absolute bottom-0 left-0 right-0 p-4 text-white transform translate-y-full group-hover:translate-y-0 transition-transform duration-300">
+                        
+                    </div>
+                </div>
+                
+                <!-- Gallery Item 15 -->
+                <div class="group relative overflow-hidden rounded-lg shadow-lg">
+                    <img src="public/images/IMG_4843.jpg" alt="ציוד רפואי" class="w-full h-64 object-cover transition-transform duration-300 group-hover:scale-105" loading="lazy">
+                    <div class="absolute inset-0 bg-black bg-opacity-0 group-hover:bg-opacity-30 transition-all duration-300"></div>
+                    <div class="absolute bottom-0 left-0 right-0 p-4 text-white transform translate-y-full group-hover:translate-y-0 transition-transform duration-300">
+                        
+                    </div>
+                </div>
+                
+                <!-- Gallery Item 16 -->
+                <div class="group relative overflow-hidden rounded-lg shadow-lg">
+                    <img src="public/images/IMG_4884.jpg" alt="אריזת חבילות" class="w-full h-64 object-cover transition-transform duration-300 group-hover:scale-105" loading="lazy">
+                    <div class="absolute inset-0 bg-black bg-opacity-0 group-hover:bg-opacity-30 transition-all duration-300"></div>
+                    <div class="absolute bottom-0 left-0 right-0 p-4 text-white transform translate-y-full group-hover:translate-y-0 transition-transform duration-300">
+                        
+                    </div>
+                </div>
+                
+                <!-- Gallery Item 17 -->
+                <div class="group relative overflow-hidden rounded-lg shadow-lg">
+                    <img src="public/images/IMG_4915.jpg" alt="הובלת ציוד" class="w-full h-64 object-cover transition-transform duration-300 group-hover:scale-105" loading="lazy">
+                    <div class="absolute inset-0 bg-black bg-opacity-0 group-hover:bg-opacity-30 transition-all duration-300"></div>
+                    <div class="absolute bottom-0 left-0 right-0 p-4 text-white transform translate-y-full group-hover:translate-y-0 transition-transform duration-300">
+                        
+                    </div>
+                </div>
+                
+                <!-- Gallery Item 18 -->
+                <div class="group relative overflow-hidden rounded-lg shadow-lg">
+                    <img src="public/images/IMG_4944.jpg" alt="ציוד טכנולוגי" class="w-full h-64 object-cover transition-transform duration-300 group-hover:scale-105" loading="lazy">
+                    <div class="absolute inset-0 bg-black bg-opacity-0 group-hover:bg-opacity-30 transition-all duration-300"></div>
+                    <div class="absolute bottom-0 left-0 right-0 p-4 text-white transform translate-y-full group-hover:translate-y-0 transition-transform duration-300">
+                        
+                    </div>
+                </div>
+            </div>
+            
+            <!-- More Gallery Items (Hidden Initially) -->
+            <div id="moreGallery" class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 mt-6" style="display: none;">
+                <!-- Gallery Batch 2 (Items 19-27) -->
+                <div class="group relative overflow-hidden rounded-lg shadow-lg">
+                    <img src="public/images/IMG_5131.jpg" alt="מתנדבים בפעולה" class="w-full h-64 object-cover transition-transform duration-300 group-hover:scale-105" loading="lazy">
+                    <div class="absolute inset-0 bg-black bg-opacity-0 group-hover:bg-opacity-30 transition-all duration-300"></div>
+                    <div class="absolute bottom-0 left-0 right-0 p-4 text-white transform translate-y-full group-hover:translate-y-0 transition-transform duration-300">
+                        
+                    </div>
+                </div>
+                
+                <div class="group relative overflow-hidden rounded-lg shadow-lg">
+                    <img src="public/images/IMG_5272.jpg" alt="ציוד מיגון" class="w-full h-64 object-cover transition-transform duration-300 group-hover:scale-105" loading="lazy">
+                    <div class="absolute inset-0 bg-black bg-opacity-0 group-hover:bg-opacity-30 transition-all duration-300"></div>
+                    <div class="absolute bottom-0 left-0 right-0 p-4 text-white transform translate-y-full group-hover:translate-y-0 transition-transform duration-300">
+                        
+                    </div>
+                </div>
+                
+                <div class="group relative overflow-hidden rounded-lg shadow-lg">
+                    <img src="public/images/IMG_5344.jpg" alt="שיתוף פעולה" class="w-full h-64 object-cover transition-transform duration-300 group-hover:scale-105" loading="lazy">
+                    <div class="absolute inset-0 bg-black bg-opacity-0 group-hover:bg-opacity-30 transition-all duration-300"></div>
+                    <div class="absolute bottom-0 left-0 right-0 p-4 text-white transform translate-y-full group-hover:translate-y-0 transition-transform duration-300">
+                        
+                    </div>
+                </div>
+                
+                <div class="group relative overflow-hidden rounded-lg shadow-lg">
+                    <img src="public/images/IMG_5352.jpg" alt="חלוקת ציוד" class="w-full h-64 object-cover transition-transform duration-300 group-hover:scale-105" loading="lazy">
+                    <div class="absolute inset-0 bg-black bg-opacity-0 group-hover:bg-opacity-30 transition-all duration-300"></div>
+                    <div class="absolute bottom-0 left-0 right-0 p-4 text-white transform translate-y-full group-hover:translate-y-0 transition-transform duration-300">
+                        
+                    </div>
+                </div>
+                
+                <div class="group relative overflow-hidden rounded-lg shadow-lg">
+                    <img src="public/images/IMG_5361.jpg" alt="פעילות קהילתית" class="w-full h-64 object-cover transition-transform duration-300 group-hover:scale-105" loading="lazy">
+                    <div class="absolute inset-0 bg-black bg-opacity-0 group-hover:bg-opacity-30 transition-all duration-300"></div>
+                    <div class="absolute bottom-0 left-0 right-0 p-4 text-white transform translate-y-full group-hover:translate-y-0 transition-transform duration-300">
+                        
+                    </div>
+                </div>
+                
+                <div class="group relative overflow-hidden rounded-lg shadow-lg">
+                    <img src="public/images/IMG_5378.jpg" alt="ציוד לילה" class="w-full h-64 object-cover transition-transform duration-300 group-hover:scale-105" loading="lazy">
+                    <div class="absolute inset-0 bg-black bg-opacity-0 group-hover:bg-opacity-30 transition-all duration-300"></div>
+                    <div class="absolute bottom-0 left-0 right-0 p-4 text-white transform translate-y-full group-hover:translate-y-0 transition-transform duration-300">
+                        
+                    </div>
+                </div>
+                
+                <div class="group relative overflow-hidden rounded-lg shadow-lg">
+                    <img src="public/images/IMG_5467.jpg" alt="הדרכה וארגון" class="w-full h-64 object-cover transition-transform duration-300 group-hover:scale-105" loading="lazy">
+                    <div class="absolute inset-0 bg-black bg-opacity-0 group-hover:bg-opacity-30 transition-all duration-300"></div>
+                    <div class="absolute bottom-0 left-0 right-0 p-4 text-white transform translate-y-full group-hover:translate-y-0 transition-transform duration-300">
+                        
+                    </div>
+                </div>
+                
+                <div class="group relative overflow-hidden rounded-lg shadow-lg">
+                    <img src="public/images/IMG_5739.jpg" alt="ציוד מיוחד" class="w-full h-64 object-cover transition-transform duration-300 group-hover:scale-105" loading="lazy">
+                    <div class="absolute inset-0 bg-black bg-opacity-0 group-hover:bg-opacity-30 transition-all duration-300"></div>
+                    <div class="absolute bottom-0 left-0 right-0 p-4 text-white transform translate-y-full group-hover:translate-y-0 transition-transform duration-300">
+                        
+                    </div>
+                </div>
+                
+                <div class="group relative overflow-hidden rounded-lg shadow-lg">
+                    <img src="public/images/IMG_5811.jpg" alt="מכשור רפואי" class="w-full h-64 object-cover transition-transform duration-300 group-hover:scale-105" loading="lazy">
+                    <div class="absolute inset-0 bg-black bg-opacity-0 group-hover:bg-opacity-30 transition-all duration-300"></div>
+                    <div class="absolute bottom-0 left-0 right-0 p-4 text-white transform translate-y-full group-hover:translate-y-0 transition-transform duration-300">
+                        
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Even More Gallery Items (Hidden Initially) -->
+            <div id="evenMoreGallery" class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 mt-6" style="display: none;">
+                <!-- Gallery Batch 3 (Items 28+) -->
+                <div class="group relative overflow-hidden rounded-lg shadow-lg">
+                    <img src="public/images/IMG_5907.jpg" alt="ציוד הובלה" class="w-full h-64 object-cover transition-transform duration-300 group-hover:scale-105" loading="lazy">
+                    <div class="absolute inset-0 bg-black bg-opacity-0 group-hover:bg-opacity-30 transition-all duration-300"></div>
+                    <div class="absolute bottom-0 left-0 right-0 p-4 text-white transform translate-y-full group-hover:translate-y-0 transition-transform duration-300">
+                        
+                    </div>
+                </div>
+                
+                <div class="group relative overflow-hidden rounded-lg shadow-lg">
+                    <img src="public/images/IMG_6528.jpg" alt="אמצעי לחימה" class="w-full h-64 object-cover transition-transform duration-300 group-hover:scale-105" loading="lazy">
+                    <div class="absolute inset-0 bg-black bg-opacity-0 group-hover:bg-opacity-30 transition-all duration-300"></div>
+                    <div class="absolute bottom-0 left-0 right-0 p-4 text-white transform translate-y-full group-hover:translate-y-0 transition-transform duration-300">
+                        
+                    </div>
+                </div>
+                
+                <div class="group relative overflow-hidden rounded-lg shadow-lg">
+                    <img src="public/images/IMG_6629.jpg" alt="הכנות מיוחדות" class="w-full h-64 object-cover transition-transform duration-300 group-hover:scale-105" loading="lazy">
+                    <div class="absolute inset-0 bg-black bg-opacity-0 group-hover:bg-opacity-30 transition-all duration-300"></div>
+                    <div class="absolute bottom-0 left-0 right-0 p-4 text-white transform translate-y-full group-hover:translate-y-0 transition-transform duration-300">
+                        
+                    </div>
+                </div>
+                
+                <div class="group relative overflow-hidden rounded-lg shadow-lg">
+                    <img src="public/images/IMG_6888.jpg" alt="ציוד חורף" class="w-full h-64 object-cover transition-transform duration-300 group-hover:scale-105" loading="lazy">
+                    <div class="absolute inset-0 bg-black bg-opacity-0 group-hover:bg-opacity-30 transition-all duration-300"></div>
+                    <div class="absolute bottom-0 left-0 right-0 p-4 text-white transform translate-y-full group-hover:translate-y-0 transition-transform duration-300">
+                        
+                    </div>
+                </div>
+                
+                <div class="group relative overflow-hidden rounded-lg shadow-lg">
+                    <img src="public/images/IMG_7327.jpg" alt="ציוד תקשורת" class="w-full h-64 object-cover transition-transform duration-300 group-hover:scale-105" loading="lazy">
+                    <div class="absolute inset-0 bg-black bg-opacity-0 group-hover:bg-opacity-30 transition-all duration-300"></div>
+                    <div class="absolute bottom-0 left-0 right-0 p-4 text-white transform translate-y-full group-hover:translate-y-0 transition-transform duration-300">
+                        
+                    </div>
+                </div>
+                
+                <div class="group relative overflow-hidden rounded-lg shadow-lg">
+                    <img src="public/images/IMG_1407.jpg" alt="פעילות נוספת" class="w-full h-64 object-cover transition-transform duration-300 group-hover:scale-105" loading="lazy">
+                    <div class="absolute inset-0 bg-black bg-opacity-0 group-hover:bg-opacity-30 transition-all duration-300"></div>
+                    <div class="absolute bottom-0 left-0 right-0 p-4 text-white transform translate-y-full group-hover:translate-y-0 transition-transform duration-300">
+                        
+                    </div>
+                </div>
+                
+                <div class="group relative overflow-hidden rounded-lg shadow-lg">
+                    <img src="public/images/IMG_2191.jpg" alt="איסוף וארגון" class="w-full h-64 object-cover transition-transform duration-300 group-hover:scale-105" loading="lazy">
+                    <div class="absolute inset-0 bg-black bg-opacity-0 group-hover:bg-opacity-30 transition-all duration-300"></div>
+                    <div class="absolute bottom-0 left-0 right-0 p-4 text-white transform translate-y-full group-hover:translate-y-0 transition-transform duration-300">
+                        
+                    </div>
+                </div>
+                
+                <div class="group relative overflow-hidden rounded-lg shadow-lg">
+                    <img src="public/images/IMG_3218.jpg" alt="תמיכה רחבה" class="w-full h-64 object-cover transition-transform duration-300 group-hover:scale-105" loading="lazy">
+                    <div class="absolute inset-0 bg-black bg-opacity-0 group-hover:bg-opacity-30 transition-all duration-300"></div>
+                    <div class="absolute bottom-0 left-0 right-0 p-4 text-white transform translate-y-full group-hover:translate-y-0 transition-transform duration-300">
+                        
+                    </div>
+                </div>
+                
+                <div class="group relative overflow-hidden rounded-lg shadow-lg">
+                    <img src="public/images/IMG_3266.jpg" alt="מחויבות מתמדת" class="w-full h-64 object-cover transition-transform duration-300 group-hover:scale-105" loading="lazy">
+                    <div class="absolute inset-0 bg-black bg-opacity-0 group-hover:bg-opacity-30 transition-all duration-300"></div>
+                    <div class="absolute bottom-0 left-0 right-0 p-4 text-white transform translate-y-full group-hover:translate-y-0 transition-transform duration-300">
+                        
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Load More Button -->
+            <div class="text-center mt-8">
+                <button id="loadMoreGallery" class="bg-blue-600 text-white px-6 py-3 rounded-lg font-semibold hover:bg-blue-700 transition-colors">
+                    טען תמונות נוספות
+                </button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-gray-900 text-white py-12">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center">
+                <h3 class="text-xl font-semibold mb-4">חמ״ל מודיעין</h3>
+                <p class="text-gray-400">
+                    מתנדבים ממודיעין ויישובי גזר התומכים בכוחות הביטחון בכל גזרות הלחימה
+                </p>
+            </div>
+            <div class="mt-8 pt-8 border-t border-gray-800 text-center">
+                <p class="text-gray-400">
+                    © 2025 חמ״ל מודיעין. כל הזכויות שמורות.
+                </p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
