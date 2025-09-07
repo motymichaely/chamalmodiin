@@ -17,34 +17,6 @@
     <meta name="rating" content="general">
     <link rel="canonical" href="https://chamalmodiin.org/">
     
-    <!-- JSON-LD Structured Data -->
-    <script type="application/ld+json">
-    {
-      "@context": "https://schema.org",
-      "@type": "Organization",
-      "name": "חמ״ל מודיעין",
-      "alternateName": "Chamal Modiin",
-      "url": "https://chamalmodiin.org",
-      "logo": "https://chamalmodiin.org/logo.png",
-      "description": "מתנדבים ממודיעין ויישובי גזר התומכים בלוחמי צה״ל בציוד טקטי וחיוני",
-      "foundingDate": "2023-10-08",
-      "areaServed": {
-        "@type": "Country",
-        "name": "Israel"
-      },
-      "knowsAbout": ["תמיכה בצה״ל", "ציוד טקטי", "מתנדבות", "כוחות ביטחון"],
-      "contactPoint": {
-        "@type": "ContactPoint",
-        "telephone": "+972-54-497-3945",
-        "contactType": "customer service",
-        "availableLanguage": "Hebrew"
-      },
-      "sameAs": [
-        "https://wa.me/972544973945"
-      ]
-    }
-    </script>
-    
     <!-- Open Graph / Facebook -->
     <meta property="og:type" content="website">
     <meta property="og:url" content="https://chamalmodiin.org/">
@@ -67,14 +39,10 @@
     <meta name="apple-mobile-web-app-title" content="חמ״ל מודיעין">
     
     <!-- Preconnect to external domains -->
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link rel="preconnect" href="https://cdn.jsdelivr.net">
-    <link rel="preconnect" href="https://cdn.tailwindcss.com">
-    
     <script src="https://cdn.jsdelivr.net/npm/@tailwindplus/elements@1" type="module"></script>
     <script src="https://cdn.tailwindcss.com"></script>
-    <link rel="stylesheet" href="styles.css">
+
+    <link rel="stylesheet" href="https://rsms.me/inter/inter.css" />
     <link rel="icon" type="image/x-icon" href="/favicon.ico">
 </head>
 <body class="bg-gray-50 text-gray-900">
@@ -121,11 +89,7 @@
     </nav>
 
     <!-- Hero Section -->
-    <section id="home" class="hero-section relative text-white overflow-hidden">
-        <!-- Hero Background Image -->
-        <img src="hero-background.jpg" alt="חמ״ל מודיעין - תמיכה בכוחות הביטחון" class="hero-background" onerror="this.style.display='none'">
-        <div class="hero-overlay"></div>
-        <div class="absolute inset-0 bg-black/20"></div>
+    <section id="home" class="hero-section relative text-white overflow-hidden bg-blue-600">
         <div class="hero-content relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-24">
             <div class="text-center">
                 <h1 class="text-4xl md:text-6xl font-bold mb-6">
@@ -135,8 +99,11 @@
                   מתנדבים ממודיעין ויישובי גזר לעמידה לצד כוחות הביטחון וההצלה, כיתות הכוננות
                 </p>
                 <div class="flex flex-col sm:flex-row gap-4 justify-center">
+                    <a href="#about" class="border-2 border-white bg-blue-600 text-white px-8 py-3 rounded-lg font-semibold hover:bg-blue-700 transition-colors">
+                        אודות החמ״ל
+                    </a>
                     <a href="#donate" class="border-2 border-white bg-white text-blue-600 px-8 py-3 rounded-lg font-semibold hover:bg-gray-100 transition-colors">
-                        תמיכה בלוחמים
+                        לתרומות
                     </a>
                 </div>
             </div>
@@ -174,121 +141,45 @@
     </section>
 
     <!-- Activities Section -->
-    <section id="activities" class="py-16 bg-gray-50">
+    <section id="activities" class="py-16 bg-blue-50">
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 md:grid-cols-3 gap-8">
           <h2 class="text-3xl font-bold mb-4">פעילות החמ״ל</h2>
           <div class="grid md:grid-cols-3 gap-8">
                 <div class="bg-white rounded-lg shadow-sm p-6">
-                    <div class="w-12 h-12 bg-blue-100 rounded-lg flex items-center justify-center mb-4">
-                        <svg class="w-6 h-6 text-blue-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M20 7l-8-4-8 4m16 0l-8 4m8-4v10l-8 4m0-10L4 7m8 4v10M4 7v10l8 4"></path>
-                        </svg>
+                    <div class="w-12 h-12 bg-green-100 rounded-lg flex items-center justify-center mb-4 text-2xl">
+                    🛟
                     </div>
                     <h3 class="text-xl font-semibold text-gray-900 mb-2">רכישה וייבוא של ציוד טקטי</h3>
-                    <p class="text-gray-600">רוכשים ומייבאים ציוד צבאי חיוני מהארץ ומארה"ב באישור רשמי של משרד הביטחון וגורמי המכס. ציוד אשר מציל חיים</p>
+                    <p class="text-gray-600">רוכשים ומייבאים ציוד צבאי חיוני מהארץ ומארה"ב באישור רשמי של משרד הביטחון וגורמי המכס. ציוד אשר מציל חיים.</p>
+                    <p class="mt-4 text-gray-600">בחצי השנה הראשונה למלחמה צוות החמ״ל התגייס בשיתופי פעולה חובקי עולם לייבוא של יותר מ-1,000 אפודים קרמיים, אלפי כפפות טקטיות, ואינספור מוצרי היגיינה וציוד מציל חיים.</p>
                 </div>
                 
                 <div class="bg-white rounded-lg shadow-sm p-6">
-                    <div class="w-12 h-12 bg-green-100 rounded-lg flex items-center justify-center mb-4">
-                        <svg class="w-6 h-6 text-green-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 6.253v13m0-13C10.832 5.477 9.246 5 7.5 5S4.168 5.477 3 6.253v13C4.168 18.477 5.754 18 7.5 18s3.332.477 4.5 1.253m0-13C13.168 5.477 14.754 5 16.5 5c1.746 0 3.332.477 4.5 1.253v13C19.832 18.477 18.246 18 16.5 18c-1.746 0-3.332.477-4.5 1.253"></path>
-                        </svg>
+                    <div class="w-12 h-12 bg-red-100 rounded-lg flex items-center justify-center mb-4 text-2xl">
+                     🔥
                     </div>
                     <h3 class="text-xl font-semibold text-gray-900 mb-2">אירועי על האש</h3>
-                    <p class="text-gray-600">מרימים ערבי על האש ודוכני שווארמה ליחידות סדירות ומילואים, כיתות כוננות וכוחות הצלה בכל גזרות הלחימה</p>
+                    <p class="text-gray-600">מרימים ערבי על האש ודוכני שווארמה ליחידות סדירות ומילואים, כיתות כוננות וכוחות הצלה בכל גזרות הלחימה.</p>
+                    <p class="mt-4 text-gray-600">עד כה צוות החמ״ל הרים יותר מ-200 ארועי על האש, דוכני מזון, ותרומות לעשרות אלפים מלוחמינו היקרים!</p>
                 </div>
                 
                 <div class="bg-white rounded-lg shadow-sm p-6">
-                    <div class="w-12 h-12 bg-purple-100 rounded-lg flex items-center justify-center mb-4">
-                        <svg class="w-6 h-6 text-purple-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 20h5v-2a3 3 0 00-5.356-1.857M17 20H7m10 0v-2c0-.656-.126-1.283-.356-1.857M7 20H2v-2a3 3 0 015.356-1.857M7 20v-2c0-.656.126-1.283.356-1.857m0 0a5.002 5.002 0 019.288 0M15 7a3 3 0 11-6 0 3 3 0 016 0zm6 3a2 2 0 11-4 0 2 2 0 014 0zM7 10a2 2 0 11-4 0 2 2 0 014 0z"></path>
-                        </svg>
+                    <div class="w-12 h-12 bg-yellow-100 rounded-lg flex items-center justify-center mb-4 text-2xl">
+                    🤝
                     </div>
                     <h3 class="text-xl font-semibold text-gray-900 mb-2">שיתופי פעולה</h3>
                     <p class="text-gray-600">משתפים פעולה עם חמל״ים רבים ברחבי הארץ ומסייעים במערך היסעים ושינוע לכוחות הביטחון השונים היסעים לכוחות הביטחון השונים</p>
+                    <p class="mt-4 text-gray-600">שיתופי הפעולה עם חמ״ל <a href="https://www.jshield.org/" target="_blank" class="text-blue-600">JShield</a> - נחושה וחיפה וחמ״ל מבשלות מודיעין מינף את יכולות החמ״ל והיריעה לסיוע במערכי שינוע, אריזה, התרמות כספים ועוד ועוד.</p>
                 </div>
             </div>
           </div>
         </div>
     </section>
 
-    <!-- Donate Section -->
-    <section id="donate" class="py-16 bg-blue-600 text-white">
-        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-            <div class="text-center mb-12">
-                <h2 class="text-3xl font-bold mb-4">תמיכה בלוחמים</h2>
-                <p class="text-xl mb-8 max-w-3xl mx-auto">
-                    בימים מאתגרים אלה, כשסוף סוף עם ישראל ולוחמיו היקרים עומדים בלי פחד ובלי מורא אל מול הרוע הטהור, 
-                    אנחנו בחמ״ל מודיעין ממשיכים בגיוס תרומות לסיוע בכלל האתגרים העומדים בפני חיילינו, כיתות הכוננות, כוחות ההצלה וכל כוחות הביטחון.
-                </p>
-            </div>
-            
-            <div class="grid md:grid-cols-2 gap-12 items-center">
-                <div>
-                    <h3 class="text-2xl font-semibold mb-4">במה אנחנו מתמקדים:</h3>
-                    <ul class="space-y-3 text-lg">
-                        <li class="flex items-start">
-                            <span class="text-blue-200 mr-3">•</span>
-                            <span>רכישה וייבוא ציוד צבאי חיוני מהארץ ומארה"ב באישור רשמי של משרד הביטחון וגורמי המכס</span>
-                        </li>
-                        <li class="flex items-start">
-                            <span class="text-blue-200 mr-3">•</span>
-                            <span>הרמת ערבי על האש ודוכני אוכל לריענון והרמת המורל לכוחות הביטחון בכל גזרות הלחימה</span>
-                        </li>
-                        <li class="flex items-start">
-                            <span class="text-blue-200 mr-3">•</span>
-                            <span>רכישת ציוד היגיינה וציוד חיוני נוסף לחיילינו, כיתות הכוננות וכוחות ההצלה</span>
-                        </li>
-                        <li class="flex items-start">
-                            <span class="text-blue-200 mr-3">•</span>
-                            <span>שיתוף פעולה עם חמל״ים רבים ברחבי הארץ וסיוע במערך היסעים ושינוע לכוחות הביטחון</span>
-                        </li>
-                    </ul>
-                </div>
-                
-                <div class="bg-white rounded-lg p-8 text-gray-900">
-                    <h3 class="text-2xl font-semibold mb-4 text-center">תרומה</h3>
-                    
-                    <!-- Achievement Banner -->
-                    <div class="bg-gradient-to-r from-blue-50 to-green-50 border-l-4 border-blue-500 p-4 mb-6 rounded-lg">
-                        <div class="flex items-center">
-                            <div class="flex-shrink-0">
-                                <svg class="h-8 w-8 text-blue-500" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z" />
-                                </svg>
-                            </div>
-                            <div class="mr-3">
-                                <p class="text-lg font-semibold text-blue-900">
-                                    עד כה גוייסו יותר מ-1.5 מיליון ₪
-                                </p>
-                                <p class="text-sm text-blue-700">
-                                  תודות לכם, הצלחנו לרומם את רוח הלוחמים ולרכוש עבורם ציוד חיוני ומציל חיים!
-                                </p>
-                            </div>
-                        </div>
-                    </div>
-                    
-                    <p class="text-gray-600 mb-6 text-center">
-                        כל תרומה, קטנה כגדולה, תסייע לנו להמשיך לשמח את הלוחמים ולהביע את הערכתנו.
-                    </p>
-                    <div class="space-y-4">
-                        <a href="https://links.payboxapp.com/QKOo0OXNOUb" target="_blank" rel="noopener noreferrer" class="flex items-center justify-center w-full text-white py-3 rounded-lg font-semibold transition-colors" style="background-color: #26a9f0;" onmouseover="this.style.backgroundColor='#1e8bc3'" onmouseout="this.style.backgroundColor='#26a9f0'">
-                            <img src="public/images/logos/paybox-logo.png" alt="PayBox Logo" class="w-6 h-6 ml-2 rounded">
-                            <span>תרומה דרך פייבוקס</span>
-                        </a>
-                        <a href="https://wa.me/972544973945?text=תרומה לחמ״ל מודיעין דרך עמותה" class="flex items-center justify-center w-full text-white py-3 rounded-lg font-semibold transition-colors" style="background-color: #24d366;" onmouseover="this.style.backgroundColor='#1da851'" onmouseout="this.style.backgroundColor='#24d366'">
-                          <img src="public/images/logos/whatsapp-logo.png" alt="WhatsApp Logo" class="w-6 h-6 ml-2 rounded">
-                          <span>צור קשר לתרומה דרך עמותה</span>
-                        </a>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-
     <!-- Gallery Section -->
     <section id="gallery" class="py-16 bg-gray-50">
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <h2 class="text-3xl font-bold mb-4">תמונות מהארועים השונים</h2>
             <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
                 <!-- Gallery Item 1 -->
                 <div class="group relative overflow-hidden rounded-lg shadow-lg">
@@ -343,10 +234,6 @@
                         
                     </div>
                 </div>
-            </div>
-            
-            <!-- Additional Gallery Items (Hidden Initially) -->
-            <div id="additionalGallery" class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 mt-6" style="display: none;">
                 <!-- Gallery Item 7 -->
                 <div class="group relative overflow-hidden rounded-lg shadow-lg">
                     <img src="public/images/IMG_8107.jpg" alt="פעילות נוספת" class="w-full h-64 object-cover transition-transform duration-300 group-hover:scale-105" loading="lazy">
@@ -454,10 +341,6 @@
                         
                     </div>
                 </div>
-            </div>
-            
-            <!-- More Gallery Items (Hidden Initially) -->
-            <div id="moreGallery" class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 mt-6" style="display: none;">
                 <!-- Gallery Batch 2 (Items 19-27) -->
                 <div class="group relative overflow-hidden rounded-lg shadow-lg">
                     <img src="public/images/IMG_5131.jpg" alt="מתנדבים בפעולה" class="w-full h-64 object-cover transition-transform duration-300 group-hover:scale-105" loading="lazy">
@@ -530,10 +413,6 @@
                         
                     </div>
                 </div>
-            </div>
-            
-            <!-- Even More Gallery Items (Hidden Initially) -->
-            <div id="evenMoreGallery" class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 mt-6" style="display: none;">
                 <!-- Gallery Batch 3 (Items 28+) -->
                 <div class="group relative overflow-hidden rounded-lg shadow-lg">
                     <img src="public/images/IMG_5907.jpg" alt="ציוד הובלה" class="w-full h-64 object-cover transition-transform duration-300 group-hover:scale-105" loading="lazy">
@@ -576,14 +455,6 @@
                 </div>
                 
                 <div class="group relative overflow-hidden rounded-lg shadow-lg">
-                    <img src="public/images/IMG_1407.jpg" alt="פעילות נוספת" class="w-full h-64 object-cover transition-transform duration-300 group-hover:scale-105" loading="lazy">
-                    <div class="absolute inset-0 bg-black bg-opacity-0 group-hover:bg-opacity-30 transition-all duration-300"></div>
-                    <div class="absolute bottom-0 left-0 right-0 p-4 text-white transform translate-y-full group-hover:translate-y-0 transition-transform duration-300">
-                        
-                    </div>
-                </div>
-                
-                <div class="group relative overflow-hidden rounded-lg shadow-lg">
                     <img src="public/images/IMG_2191.jpg" alt="איסוף וארגון" class="w-full h-64 object-cover transition-transform duration-300 group-hover:scale-105" loading="lazy">
                     <div class="absolute inset-0 bg-black bg-opacity-0 group-hover:bg-opacity-30 transition-all duration-300"></div>
                     <div class="absolute bottom-0 left-0 right-0 p-4 text-white transform translate-y-full group-hover:translate-y-0 transition-transform duration-300">
@@ -607,12 +478,80 @@
                     </div>
                 </div>
             </div>
+        </div>
+    </section>
+
+
+    <!-- Donate Section -->
+    <section id="donate" class="py-16 bg-blue-600 text-white">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-12">
+                <h2 class="text-3xl font-bold mb-4">תמיכה בלוחמים</h2>
+                <p class="text-xl mb-8 max-w-3xl mx-auto">
+                    בימים מאתגרים אלה, כשסוף סוף עם ישראל ולוחמיו היקרים עומדים בלי פחד ובלי מורא אל מול הרוע הטהור, 
+                    אנחנו בחמ״ל מודיעין ממשיכים בגיוס תרומות לסיוע בכלל האתגרים העומדים בפני חיילינו, כיתות הכוננות, כוחות ההצלה וכל כוחות הביטחון.
+                </p>
+            </div>
             
-            <!-- Load More Button -->
-            <div class="text-center mt-8">
-                <button id="loadMoreGallery" class="bg-blue-600 text-white px-6 py-3 rounded-lg font-semibold hover:bg-blue-700 transition-colors">
-                    טען תמונות נוספות
-                </button>
+            <div class="grid md:grid-cols-2 gap-12 items-center">
+                <div>
+                    <h3 class="text-2xl font-semibold mb-4">במה אנחנו מתמקדים:</h3>
+                    <ul class="space-y-3 text-lg">
+                        <li class="flex items-start">
+                            <span class="text-blue-200 mr-3">•</span>
+                            <span>רכישה וייבוא ציוד צבאי חיוני מהארץ ומארה"ב באישור רשמי של משרד הביטחון וגורמי המכס</span>
+                        </li>
+                        <li class="flex items-start">
+                            <span class="text-blue-200 mr-3">•</span>
+                            <span>הרמת ערבי על האש ודוכני אוכל לריענון והרמת המורל לכוחות הביטחון בכל גזרות הלחימה</span>
+                        </li>
+                        <li class="flex items-start">
+                            <span class="text-blue-200 mr-3">•</span>
+                            <span>רכישת ציוד היגיינה וציוד חיוני נוסף לחיילינו, כיתות הכוננות וכוחות ההצלה</span>
+                        </li>
+                        <li class="flex items-start">
+                            <span class="text-blue-200 mr-3">•</span>
+                            <span>שיתוף פעולה עם חמל״ים רבים ברחבי הארץ וסיוע במערך היסעים ושינוע לכוחות הביטחון</span>
+                        </li>
+                    </ul>
+                </div>
+                
+                <div class="bg-white rounded-lg p-8 text-gray-900">
+                    <h3 class="text-2xl font-semibold mb-4 text-center">תרומה</h3>
+                    
+                    <!-- Achievement Banner -->
+                    <div class="bg-gradient-to-r from-blue-50 to-green-50 border-l-4 border-blue-500 p-4 mb-6 rounded-lg">
+                        <div class="flex items-center">
+                            <div class="flex-shrink-0">
+                                <svg class="h-8 w-8 text-blue-500" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z" />
+                                </svg>
+                            </div>
+                            <div class="mr-3">
+                                <p class="text-lg font-semibold text-blue-900">
+                                    עד כה גוייסו יותר מ-1.5 מיליון ₪
+                                </p>
+                                <p class="text-sm text-blue-700">
+                                  תודות לכם, הצלחנו לרומם את רוח הלוחמים ולרכוש עבורם ציוד חיוני ומציל חיים!
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <p class="text-gray-600 mb-6 text-center">
+                        כל תרומה, קטנה כגדולה, תסייע לנו להמשיך לשמח את הלוחמים ולהביע את הערכתנו.
+                    </p>
+                    <div class="space-y-4">
+                        <a href="https://links.payboxapp.com/QKOo0OXNOUb" target="_blank" rel="noopener noreferrer" class="flex items-center justify-center w-full text-white py-3 rounded-lg font-semibold transition-colors" style="background-color: #26a9f0;" onmouseover="this.style.backgroundColor='#1e8bc3'" onmouseout="this.style.backgroundColor='#26a9f0'">
+                            <img src="public/images/logos/paybox-logo.png" alt="PayBox Logo" class="w-6 h-6 ml-2 rounded">
+                            <span>תרומה דרך פייבוקס</span>
+                        </a>
+                        <a href="https://wa.me/972544973945?text=תרומה לחמ״ל מודיעין דרך עמותה" class="flex items-center justify-center w-full text-white py-3 rounded-lg font-semibold transition-colors" style="background-color: #24d366;" onmouseover="this.style.backgroundColor='#1da851'" onmouseout="this.style.backgroundColor='#24d366'">
+                          <img src="public/images/logos/whatsapp-logo.png" alt="WhatsApp Logo" class="w-6 h-6 ml-2 rounded">
+                          <span>צור קשר לתרומה דרך עמותה</span>
+                        </a>
+                    </div>
+                </div>
             </div>
         </div>
     </section>
@@ -633,7 +572,5 @@
             </div>
         </div>
     </footer>
-
-    <script src="script.js"></script>
 </body>
 </html>
