@@ -1,8 +1,13 @@
 <!DOCTYPE html>
-<html lang="he" dir="rtl">
+<html lang="he" dir="rtl" class="scroll-smooth">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <style type="text/tailwindcss">
+        @custom-variant dark (&:where(.dark, .dark *));
+    </style>
+
     <title>חמ״ל מודיעין - תמיכה בלוחמי צה״ל | ציוד טקטי וחיוני לכוחות הביטחון</title>
     <meta name="description" content="חמ״ל מודיעין - מתנדבים ממודיעין ויישובי גזר רוכשים ומעבירים ציוד טקטי וחיוני ללוחמי צה״ל. גייסנו יותר מ-1.5 מיליון ₪ לתמיכה בכוחות הביטחון.">
     <meta name="keywords" content="חמ״ל מודיעין, מתנדבים, צה״ל, מודיעין, גזר, תמיכה בלוחמים, תרומה, ציוד טקטי, ציוד צבאי, כוחות ביטחון, מילואים, חרבות ברזל">
@@ -19,10 +24,10 @@
     
     <!-- Favicon -->
     <link rel="icon" type="image/x-icon" href="favicon.ico">
-    <link rel="icon" type="image/png" sizes="32x32" href="public/icons/favicon-32x32.png">
-    <link rel="icon" type="image/png" sizes="16x16" href="public/icons/favicon-16x16.png">
-    <link rel="apple-touch-icon" sizes="192x192" href="public/icons/favicon-192x192.png">
-    <link rel="manifest" href="public/icons/site.webmanifest">
+    <link rel="icon" type="image/png" sizes="32x32" href="public/images/icons/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="public/images/icons/favicon-16x16.png">
+    <link rel="apple-touch-icon" sizes="192x192" href="public/images/icons/favicon-192x192.png">
+    <link rel="manifest" href="public/images/icons/site.webmanifest">
     
     <!-- Open Graph / Facebook -->
     <meta property="og:type" content="website">
@@ -41,53 +46,67 @@
     <!-- Additional meta tags -->
     <meta name="theme-color" content="#2563eb">
     <meta name="msapplication-TileColor" content="#2563eb">
-    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="mobile-web-app-capable" content="yes">
     <meta name="apple-mobile-web-app-status-bar-style" content="default">
     <meta name="apple-mobile-web-app-title" content="חמ״ל מודיעין">
-    
-    <!-- Preconnect to external domains -->
-    <script src="https://cdn.jsdelivr.net/npm/@tailwindplus/elements@1" type="module"></script>
-    <script src="https://cdn.tailwindcss.com"></script>
 
     <link rel="stylesheet" href="https://rsms.me/inter/inter.css" />
     <link rel="icon" type="image/x-icon" href="/favicon.ico">
 </head>
-<body class="bg-gray-50 text-gray-900">
+<body class="bg-white dark:bg-gray-950 text-gray-900 dark:text-gray-100 transition-colors duration-300">
     <!-- Navigation -->
-    <nav class="bg-white shadow-sm border-b border-gray-200 sticky top-0 z-50">
+    <nav class="bg-white dark:bg-gray-950 shadow-sm border-b border-gray-200 dark:border-gray-700 sticky top-0 z-50 transition-colors duration-300">
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
             <div class="flex justify-between items-center h-16">
-                <div class="flex items-center">
+                <div class="flex items-center w-60">
                     <div class="flex-shrink-0">
-                      <a href="" class="text-gray-900 hover:text-blue-600 px-3 py-2 rounded-md text-sm font-medium">
-                        <h1 class="text-xl font-bold text-blue-600">חמ״ל מודיעין</h1>
+                      <a href="" class="text-gray-900 dark:text-gray-100 hover:text-blue-600 dark:hover:text-blue-400 px-3 py-2 rounded-md text-sm font-medium">
+                        <h1 class="text-xl font-bold text-blue-600 dark:text-blue-400" data-i18n="site.title">חמ״ל מודיעין</h1>
                       </a>
                     </div>
                 </div>
                 <div class="hidden md:block">
-                    <div class="ml-10 flex items-baseline space-x-4 space-x-reverse">
-                        <a href="#about" class="text-gray-500 hover:text-blue-600 px-3 py-2 rounded-md text-sm font-medium">אודות</a>
-                        <a href="#activities" class="text-gray-500 hover:text-blue-600 px-3 py-2 rounded-md text-sm font-medium">פעילות</a>
-                        <a href="#gallery" class="text-gray-500 hover:text-blue-600 px-3 py-2 rounded-md text-sm font-medium">גלריה</a>
-                        <a href="#testimonials" class="text-gray-500 hover:text-blue-600 px-3 py-2 rounded-md text-sm font-medium">פרגונים</a>
-                        <a href="#donate" class="text-gray-500 hover:text-blue-600 px-3 py-2 rounded-md text-sm font-medium">תמיכה בלוחמים</a>
+                    <div class="flex items-baseline space-x-4 space-x-reverse">
+                        <a href="#about" class="text-gray-700 dark:text-gray-200 hover:text-blue-600 dark:hover:text-blue-400 px-3 py-2 rounded-md text-sm font-medium" data-i18n="nav.about">אודות</a>
+                        <a href="#activities" class="text-gray-700 dark:text-gray-200 hover:text-blue-600 dark:hover:text-blue-400 px-3 py-2 rounded-md text-sm font-medium" data-i18n="nav.activities">פעילות</a>
+                        <a href="#gallery" class="text-gray-700 dark:text-gray-200 hover:text-blue-600 dark:hover:text-blue-400 px-3 py-2 rounded-md text-sm font-medium" data-i18n="nav.gallery">גלריה</a>
+                        <a href="#testimonials" class="text-gray-700 dark:text-gray-200 hover:text-blue-600 dark:hover:text-blue-400 px-3 py-2 rounded-md text-sm font-medium" data-i18n="nav.testimonials">פרגונים</a>
+                        <a href="#donate" class="text-gray-700 dark:text-gray-200 hover:text-blue-600 dark:hover:text-blue-400 px-3 py-2 rounded-md text-sm font-medium" data-i18n="nav.donate">תמיכה בלוחמים</a>
                     </div>
+                </div>
+                
+                <!-- Language Switcher -->
+                <div class="hidden md:flex items-center space-x-2 mr-4" dir="ltr">
+                    <!-- Language Buttons -->
+                    <button onclick="changeLanguage('he')" id="lang-he" class="px-2 py-1 text-sm rounded bg-blue-600 text-white hover:bg-blue-700 transition-colors">עברית 🇮🇱</button>
+                    <button onclick="changeLanguage('en')" id="lang-en" class="px-2 py-1 text-sm rounded bg-gray-200 text-gray-700 hover:bg-gray-300 transition-colors">English 🇺🇸</button>
+                    <button onclick="changeLanguage('fr')" id="lang-fr" class="px-2 py-1 text-sm rounded bg-gray-200 text-gray-700 hover:bg-gray-300 transition-colors">Français 🇫🇷</button>
                 </div>
                 <div class="md:hidden">
                     <el-dropdown class="relative inline-block text-left">
-                        <button class="inline-flex w-full justify-center gap-x-1.5 rounded-md bg-white px-3 py-2 text-sm font-semibold text-gray-900 shadow-xs ring-1 ring-gray-300 ring-inset hover:bg-gray-50">
-                            תפריט
-                            <svg viewBox="0 0 20 20" fill="currentColor" aria-hidden="true" class="-mr-1 size-5 text-gray-400">
+                        <button class="inline-flex w-full justify-center gap-x-1.5 rounded-md bg-white dark:bg-gray-700 px-3 py-2 text-sm font-semibold text-gray-900 dark:text-gray-100 shadow-xs ring-1 ring-gray-300 dark:ring-gray-600 ring-inset hover:bg-gray-50 dark:hover:bg-gray-600">
+                            <span data-i18n="nav.menu">תפריט</span>
+                            <svg viewBox="0 0 20 20" fill="currentColor" aria-hidden="true" class="-mr-1 size-5 text-gray-400 dark:text-gray-300">
                                 <path d="M5.22 8.22a.75.75 0 0 1 1.06 0L10 11.94l3.72-3.72a.75.75 0 1 1 1.06 1.06l-4.25 4.25a.75.75 0 0 1-1.06 0L5.22 9.28a.75.75 0 0 1 0-1.06Z" clip-rule="evenodd" fill-rule="evenodd" />
                             </svg>
                         </button>
-                        <el-menu anchor="bottom end" popover class="w-56 origin-top-right rounded-md bg-white shadow-lg ring-1 ring-black/5 transition transition-discrete [--anchor-gap:--spacing(2)] focus:outline-hidden data-closed:scale-95 data-closed:transform data-closed:opacity-0 data-enter:duration-100 data-enter:ease-out data-leave:duration-75 data-leave:ease-in">
+                        <el-menu anchor="bottom end" popover class="w-56 origin-top-right rounded-md bg-white dark:bg-gray-700 shadow-lg ring-1 ring-black/5 dark:ring-gray-600 transition transition-discrete [--anchor-gap:--spacing(2)] focus:outline-hidden data-closed:scale-95 data-closed:transform data-closed:opacity-0 data-enter:duration-100 data-enter:ease-out data-leave:duration-75 data-leave:ease-in">
                             <div class="py-1">
-                                <a href="#home" class="block px-4 py-2 text-sm text-gray-700 focus:bg-gray-100 focus:text-gray-900 focus:outline-hidden">בית</a>
-                                <a href="#about" class="block px-4 py-2 text-sm text-gray-700 focus:bg-gray-100 focus:text-gray-900 focus:outline-hidden">אודות</a>
-                                <a href="#activities" class="block px-4 py-2 text-sm text-gray-700 focus:bg-gray-100 focus:text-gray-900 focus:outline-hidden">פעילות</a>
-                                <a href="#gallery" class="block px-4 py-2 text-sm text-gray-700 focus:bg-gray-100 focus:text-gray-900 focus:outline-hidden">גלריה</a>
-                                <a href="#donate" class="block px-4 py-2 text-sm text-gray-700 focus:bg-gray-100 focus:text-gray-900 focus:outline-hidden">תרומה</a>
+                                <a href="#home" class="block px-4 py-2 text-sm text-gray-700 dark:text-gray-200 focus:bg-gray-100 dark:focus:bg-gray-600 focus:text-gray-900 dark:focus:text-white focus:outline-hidden" data-i18n="nav.home">בית</a>
+                                <a href="#about" class="block px-4 py-2 text-sm text-gray-700 focus:bg-gray-100 focus:text-gray-900 focus:outline-hidden" data-i18n="nav.about">אודות</a>
+                                <a href="#activities" class="block px-4 py-2 text-sm text-gray-700 focus:bg-gray-100 focus:text-gray-900 focus:outline-hidden" data-i18n="nav.activities">פעילות</a>
+                                <a href="#gallery" class="block px-4 py-2 text-sm text-gray-700 focus:bg-gray-100 focus:text-gray-900 focus:outline-hidden" data-i18n="nav.gallery">גלריה</a>
+                                <a href="#testimonials" class="block px-4 py-2 text-sm text-gray-700 focus:bg-gray-100 focus:text-gray-900 focus:outline-hidden" data-i18n="nav.testimonials">פרגונים</a>
+                                <a href="#donate" class="block px-4 py-2 text-sm text-gray-700 focus:bg-gray-100 focus:text-gray-900 focus:outline-hidden" data-i18n="nav.donate">תרומה</a>
+                                <hr class="my-1">
+                                <div class="px-4 py-2">
+                                    <span class="text-xs text-gray-500 dark:text-gray-400" data-i18n="nav.language">שפה:</span>
+                                    <div class="flex space-x-1 mt-1">
+                                        <button onclick="changeLanguage('he')" id="mobile-lang-he" class="px-2 py-1 text-md rounded bg-blue-600 text-white">🇮🇱</button>
+                                        <button onclick="changeLanguage('en')" id="mobile-lang-en" class="px-2 py-1 text-md rounded bg-gray-200 text-gray-700">🇺🇸</button>
+                                        <button onclick="changeLanguage('fr')" id="mobile-lang-fr" class="px-2 py-1 text-md rounded bg-gray-200 text-gray-700">🇫🇷</button>
+                                    </div>
+                                </div>
                             </div>
                         </el-menu>
                     </el-dropdown>
@@ -97,20 +116,20 @@
     </nav>
 
     <!-- Hero Section -->
-    <section id="home" class="hero-section relative text-white overflow-hidden bg-blue-600">
+    <section id="home" class="hero-section relative text-white overflow-hidden bg-blue-600 dark:bg-blue-900">
         <div class="hero-content relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-24">
             <div class="text-center">
-                <h1 class="text-4xl md:text-6xl font-bold mb-6">
+                <h1 class="text-4xl md:text-6xl font-bold mb-6" data-i18n="hero.title">
                     חמ״ל מודיעין
                 </h1>
-                <p class="text-xl md:text-2xl mb-8 max-w-3xl mx-auto">
+                <p class="text-xl md:text-2xl mb-8 max-w-3xl mx-auto" data-i18n="hero.subtitle">
                   מתנדבים ממודיעין ויישובי גזר לעמידה לצד כוחות הביטחון, ההצלה וכיתות הכוננות
                 </p>
                 <div class="flex flex-col sm:flex-row gap-4 justify-center">
-                    <a href="#about" class="border-2 border-white bg-blue-600 text-white px-8 py-3 rounded-lg font-semibold hover:bg-blue-700 transition-colors">
+                    <a href="#about" class="bg-blue-600 dark:bg-blue-700 text-white px-8 py-3 rounded-lg font-semibold hover:bg-blue-700 dark:hover:bg-blue-600 transition-colors" data-i18n="hero.about_btn">
                         אודות החמ״ל
                     </a>
-                    <a href="#donate" class="border-2 border-white bg-white text-blue-600 px-8 py-3 rounded-lg font-semibold hover:bg-gray-100 transition-colors">
+                    <a href="#donate" class="bg-white dark:bg-gray-200 text-blue-600 dark:text-blue-800 px-8 py-3 rounded-lg font-semibold hover:bg-gray-100 dark:hover:bg-gray-300 transition-colors" data-i18n="hero.donate_btn">
                         לתרומות
                     </a>
                 </div>
@@ -119,29 +138,29 @@
     </section>
 
     <!-- About Section -->
-    <section id="about" class="py-16 bg-white">
+    <section id="about" class="py-16 bg-white dark:bg-gray-950">
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <h2 class="text-3xl font-bold mb-4">אודות החמ״ל</h2>
+          <h2 class="text-3xl font-bold mb-4 text-gray-900 dark:text-white" data-i18n="about.title">אודות החמ״ל</h2>
             <div class="grid md:grid-cols-2 gap-12 items-center">
                 <div>
-                    <blockquote class="text-xl italic text-gray-700 mb-6 border-r-4 border-blue-600 pr-6">
-                        "לראשונה בחיי הרגשתי סיפוק רב ועוצמתי מתוצאה שאינה מתורגמת לכסף, מתוצאה שאינה נמדדת ברווחים. לראשונה בחיי התמכרתי לאתגרים חדשים, רבים מספור, שבסופם מטרה אחת בלבד - הצלת חיי אדם". ערן אפרת
+                    <blockquote class="text-xl italic text-gray-700 dark:text-gray-300 mb-6 border-r-2 border-blue-600 dark:border-blue-400 pr-6">
+                        "<span data-i18n="about.quote">לראשונה בחיי הרגשתי סיפוק רב ועוצמתי מתוצאה שאינה מתורגמת לכסף, מתוצאה שאינה נמדדת ברווחים. לראשונה בחיי התמכרתי לאתגרים חדשים, רבים מספור, שבסופם מטרה אחת בלבד - הצלת חיי אדם</span>". <span data-i18n="about.quote_author">ערן אפרת</span>
                     </blockquote>
-                    <p class="text-gray-600 mb-4">
-                        <strong>המשימה שלנו:</strong> הבטיח לחיילינו, לכיתות הכוננות, לכוחות ההצלה, ולכל כוחות הביטחון את המשאבים הדרושים כדי לבצע את תפקידם החיוני ללא דיחוי.
+                    <p class="text-gray-600 dark:text-gray-400 mb-4">
+                        <strong data-i18n="about.mission_label">המשימה שלנו:</strong> <span data-i18n="about.mission_text">הבטיח לחיילינו, לכיתות הכוננות, לכוחות ההצלה, ולכל כוחות הביטחון את המשאבים הדרושים כדי לבצע את תפקידם החיוני ללא דיחוי.</span>
                     </p>
-                    <p class="text-gray-600 mb-4">
+                    <p class="text-gray-600 dark:text-gray-400 mb-4" data-i18n="about.description1">
                         מאז הקמת החמ״ל, המתנדבים עושים לילות כימים ברכישה והעברת ציוד טקטי, תרמי וציוד חיוני נוסף ליחידות לוחמות בעזה, בגבול הצפון ובאזורים נוספים לפי הצורך.
                     </p>
-                    <p class="text-gray-600 mb-4">
-                        אחד מההישגים הניכרים שלנו במהלך המלחמה הוא רכישה וייבוא של ציוד צבאי חיוני מהארץ ומארה"ב, באישור רשמי של משרד הביטחון וגורמי המכס. ציוד זה הכרחי וחיוני לבטיחות וייעילות כוחות הביטחון בשטח. <strong>ציוד אשר הציל חיים.</strong>
+                    <p class="text-gray-600 dark:text-gray-400 mb-4">
+                        <span data-i18n="about.description2">אחד מההישגים הניכרים שלנו במהלך המלחמה הוא רכישה וייבוא של ציוד צבאי חיוני מהארץ ומארה"ב, באישור רשמי של משרד הביטחון וגורמי המכס. ציוד זה הכרחי וחיוני לבטיחות וייעילות כוחות הביטחון בשטח.</span> <strong data-i18n="about.lifesaving">ציוד אשר הציל חיים.</strong>
                     </p>
-                    <p class="text-gray-600">
+                    <p class="text-gray-600 dark:text-gray-400" data-i18n="about.description3">
                         כעת אני מתמקדים בהרמת  ערבי על האש ודוכני שווארמה ליחידות סדירות ומילואים בכל גזרות הלחימה לריענון הכוחות והרמת המורל. אנחנו משתפים פעולה עם חמל״ים רבים ברחבי הארץ ומתמקדים בסיוע לרכישת מזון וציוד היגיינה שיכול לסייע ולו במעט לחיילים להפחית לחצים, להתרענן ולהרגע בין המשימות השונות והמאתגרות.
                     </p>
                     
                 </div>
-                <div class="bg-gray-200 rounded-lg p-8 text-center">
+                <div class="bg-gray-200 dark:bg-gray-700 rounded-lg p-8 text-center">
                   <img src="public/images/social.png" alt="שיתוף פעולה" class="w-full h-64 object-cover transition-transform duration-300 group-hover:scale-105" loading="lazy">
                 </div>
             </div>
@@ -149,35 +168,35 @@
     </section>
 
     <!-- Activities Section -->
-    <section id="activities" class="py-16 bg-blue-50">
+    <section id="activities" class="py-16 bg-blue-50 dark:bg-gray-900">
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 md:grid-cols-3 gap-8">
-          <h2 class="text-3xl font-bold mb-4">פעילות החמ״ל</h2>
+          <h2 class="text-3xl font-bold mb-4 text-gray-900 dark:text-white" data-i18n="activities.title">פעילות החמ״ל</h2>
           <div class="grid md:grid-cols-3 gap-8">
-                <div class="bg-white rounded-lg shadow-sm p-6">
-                    <div class="w-12 h-12 bg-green-100 rounded-lg flex items-center justify-center mb-4 text-2xl">
+                <div class="bg-white dark:bg-white/5 rounded-lg shadow-sm p-6">
+                    <div class="w-12 h-12 bg-green-100 dark:bg-green-900 rounded-lg flex items-center justify-center mb-4 text-2xl">
                     🛟
                     </div>
-                    <h3 class="text-xl font-semibold text-gray-900 mb-2">רכישה וייבוא של ציוד טקטי</h3>
-                    <p class="text-gray-600">רוכשים ומייבאים ציוד צבאי חיוני מהארץ ומארה"ב באישור רשמי של משרד הביטחון וגורמי המכס. ציוד אשר מציל חיים.</p>
-                    <p class="mt-4 text-gray-600">בחצי השנה הראשונה למלחמה צוות החמ״ל התגייס בשיתופי פעולה חובקי עולם לייבוא של יותר מ-1,000 אפודים קרמיים, אלפי כפפות טקטיות, ואינספור מוצרי היגיינה וציוד מציל חיים.</p>
+                    <h3 class="text-xl font-semibold text-gray-900 dark:text-white mb-2" data-i18n="activities.equipment.title">רכישה וייבוא של ציוד טקטי</h3>
+                    <p class="text-gray-600 dark:text-gray-400" data-i18n="activities.equipment.description">רוכשים ומייבאים ציוד צבאי חיוני מהארץ ומארה"ב באישור רשמי של משרד הביטחון וגורמי המכס. ציוד אשר מציל חיים.</p>
+                    <p class="mt-4 text-gray-600 dark:text-gray-400" data-i18n="activities.equipment.details">בחצי השנה הראשונה למלחמה צוות החמ״ל התגייס בשיתופי פעולה חובקי עולם לייבוא של יותר מ-1,000 אפודים קרמיים, אלפי כפפות טקטיות, ואינספור מוצרי היגיינה וציוד מציל חיים.</p>
                 </div>
                 
-                <div class="bg-white rounded-lg shadow-sm p-6">
+                <div class="bg-white dark:bg-white/5 rounded-lg shadow-sm p-6">
                     <div class="w-12 h-12 bg-red-100 rounded-lg flex items-center justify-center mb-4 text-2xl">
                      🔥
                     </div>
-                    <h3 class="text-xl font-semibold text-gray-900 mb-2">אירועי על האש</h3>
-                    <p class="text-gray-600">מרימים ערבי על האש ודוכני שווארמה ליחידות סדירות ומילואים, כיתות כוננות וכוחות הצלה בכל גזרות הלחימה.</p>
-                    <p class="mt-4 text-gray-600">עד כה צוות החמ״ל הרים יותר מ-200 ארועי על האש, דוכני מזון, ותרומות לעשרות אלפים מלוחמינו היקרים!</p>
+                    <h3 class="text-xl font-semibold text-gray-900 dark:text-white mb-2" data-i18n="activities.events.title">אירועי על האש</h3>
+                    <p class="mt-4 text-gray-600 dark:text-gray-400" data-i18n="activities.events.description">מרימים ערבי על האש ודוכני שווארמה ליחידות סדירות ומילואים, כיתות כוננות וכוחות הצלה בכל גזרות הלחימה.</p>
+                    <p class="mt-4 text-gray-600 dark:text-gray-400" data-i18n="activities.events.details">עד כה צוות החמ״ל הרים יותר מ-200 ארועי על האש, דוכני מזון, ותרומות לעשרות אלפים מלוחמינו היקרים!</p>
                 </div>
                 
-                <div class="bg-white rounded-lg shadow-sm p-6">
+                <div class="bg-white dark:bg-white/5 rounded-lg shadow-sm p-6">
                     <div class="w-12 h-12 bg-yellow-100 rounded-lg flex items-center justify-center mb-4 text-2xl">
                     🤝
                     </div>
-                    <h3 class="text-xl font-semibold text-gray-900 mb-2">שיתופי פעולה</h3>
-                    <p class="text-gray-600">משתפים פעולה עם חמל״ים רבים ברחבי הארץ ומסייעים במערך היסעים ושינוע לכוחות הביטחון השונים היסעים לכוחות הביטחון השונים</p>
-                    <p class="mt-4 text-gray-600">שיתופי הפעולה עם חמ״ל JShield - נחושה וחיפה וחמ״ל מבשלות מודיעין מינף את יכולות החמ״ל והיריעה לסיוע במערכי שינוע, אריזה, התרמות כספים ועוד ועוד.</p>
+                    <h3 class="text-xl font-semibold text-gray-900 dark:text-white mb-2" data-i18n="activities.collaboration.title">שיתופי פעולה</h3>
+                    <p class="mt-4 text-gray-600 dark:text-gray-400" data-i18n="activities.collaboration.description">משתפים פעולה עם חמל״ים רבים ברחבי הארץ ומסייעים במערך היסעים ושינוע לכוחות הביטחון השונים היסעים לכוחות הביטחון השונים</p>
+                    <p class="mt-4 text-gray-600 dark:text-gray-400" data-i18n="activities.collaboration.details">שיתופי הפעולה עם חמ״ל JShield - נחושה וחיפה וחמ״ל מבשלות מודיעין מינף את יכולות החמ״ל והיריעה לסיוע במערכי שינוע, אריזה, התרמות כספים ועוד ועוד.</p>
                 </div>
             </div>
           </div>
@@ -185,9 +204,9 @@
     </section>
 
     <!-- Gallery Section -->
-    <section id="gallery" class="py-16 bg-gray-50">
+    <section id="gallery" class="py-16 bg-white dark:bg-gray-950/10">
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-            <h2 class="text-3xl font-bold mb-4">תמונות מהארועים השונים</h2>
+            <h2 class="text-3xl font-bold mb-4" data-i18n="gallery.title">תמונות מהארועים השונים</h2>
             <!-- Masonry Gallery Layout -->
             <div class="grid grid-cols-2 md:grid-cols-4 gap-4">
                 <!-- Column 1: WIDE, TALL, WIDE, TALL... -->
@@ -253,15 +272,13 @@
                         <img class="h-auto max-w-full rounded-lg shadow-lg hover:shadow-xl transition-shadow" src="public/images/IMG_6528.jpg" alt="הכנות לפעילות" loading="lazy">
                     </div>
                     <!-- TALL -->
-                    <div class="cursor-pointer hover:opacity-75 transition-opacity" onclick="openLightbox('public/images/img-15.jpeg', 'תמיכה מיוחדת')">
-                        <img class="h-auto max-w-full rounded-lg shadow-lg hover:shadow-xl transition-shadow" src="public/images/img-15.jpeg" alt="תמיכה מיוחדת" loading="lazy">
+                    <div class="cursor-pointer hover:opacity-75 transition-opacity" onclick="openLightbox('public/images/img-19.jpeg', 'פעילות נוספת')">
+                        <img class="h-auto max-w-full rounded-lg shadow-lg hover:shadow-xl transition-shadow" src="public/images/img-19.jpeg" alt="פעילות נוספת" loading="lazy">
                     </div>
                     <!-- WIDE -->
                     <div class="cursor-pointer hover:opacity-75 transition-opacity" onclick="openLightbox('public/images/IMG_5907.jpg', 'פעילות נוספת')">
                         <img class="h-auto max-w-full rounded-lg shadow-lg hover:shadow-xl transition-shadow" src="public/images/IMG_5907.jpg" alt="פעילות נוספת" loading="lazy">
                     </div>
-                    
-                    
                 </div>
                 
                 <!-- Column 2: TALL, WIDE, TALL, WIDE... -->
@@ -331,9 +348,10 @@
                         <img class="h-auto max-w-full rounded-lg shadow-lg hover:shadow-xl transition-shadow" src="public/images/a4113d76-486c-4cbc-b070-c029f21d9ed3.jpg" alt="ציוד מיוחד" loading="lazy">
                     </div>
                     <!-- TALL -->
-                    <div class="cursor-pointer hover:opacity-75 transition-opacity" onclick="openLightbox('public/images/img-19.jpeg', 'פעילות נוספת')">
-                        <img class="h-auto max-w-full rounded-lg shadow-lg hover:shadow-xl transition-shadow" src="public/images/img-19.jpeg" alt="פעילות נוספת" loading="lazy">
+                    <div class="cursor-pointer hover:opacity-75 transition-opacity" onclick="openLightbox('public/images/img-15.jpeg', 'תמיכה מיוחדת')">
+                        <img class="h-auto max-w-full rounded-lg shadow-lg hover:shadow-xl transition-shadow" src="public/images/img-15.jpeg" alt="תמיכה מיוחדת" loading="lazy">
                     </div>
+                    
                 </div>
                 
                 <!-- Column 3: WIDE, TALL, WIDE, TALL... -->
@@ -399,8 +417,8 @@
                         <img class="h-auto max-w-full rounded-lg shadow-lg hover:shadow-xl transition-shadow" src="public/images/img-7.jpeg" alt="פעילות שטח" loading="lazy">
                     </div>
                     <!-- TALL -->
-                    <div class="cursor-pointer hover:opacity-75 transition-opacity" onclick="openLightbox('public/images/img-11.jpeg', 'תמיכה מיוחדת')">
-                        <img class="h-auto max-w-full rounded-lg shadow-lg hover:shadow-xl transition-shadow" src="public/images/img-11.jpeg" alt="תמיכה מיוחדת" loading="lazy">
+                    <div class="cursor-pointer hover:opacity-75 transition-opacity" onclick="openLightbox('public/images/img-18.jpeg', 'תמיכה מיוחדת')">
+                        <img class="h-auto max-w-full rounded-lg shadow-lg hover:shadow-xl transition-shadow" src="public/images/img-18.jpeg" alt="תמיכה מיוחדת" loading="lazy">
                     </div>
                     <!-- WIDE -->
                     <div class="cursor-pointer hover:opacity-75 transition-opacity" onclick="openLightbox('public/images/e46fcc1a-b00e-47fd-9a42-6e790b54ffec.jpg', 'פעילות מיוחדת')">
@@ -450,7 +468,6 @@
                     <div class="cursor-pointer hover:opacity-75 transition-opacity" onclick="openLightbox('public/images/img-4.jpeg', 'פעילות שטח')">
                         <img class="h-auto max-w-full rounded-lg shadow-lg hover:shadow-xl transition-shadow" src="public/images/img-4.jpeg" alt="פעילות שטח" loading="lazy">
                     </div>
-                    
                     <!-- TALL -->
                     <div class="cursor-pointer hover:opacity-75 transition-opacity" onclick="openLightbox('public/images/img-16.jpeg', 'תמיכה מיוחדת')">
                         <img class="h-auto max-w-full rounded-lg shadow-lg hover:shadow-xl transition-shadow" src="public/images/img-16.jpeg" alt="תמיכה מיוחדת" loading="lazy">
@@ -476,8 +493,8 @@
                         <img class="h-auto max-w-full rounded-lg shadow-lg hover:shadow-xl transition-shadow" src="public/images/IMG_5811.jpg" alt="ציוד לילה" loading="lazy">
                     </div>
                     <!-- TALL -->
-                    <div class="cursor-pointer hover:opacity-75 transition-opacity" onclick="openLightbox('public/images/img-18.jpeg', 'תמיכה מיוחדת')">
-                        <img class="h-auto max-w-full rounded-lg shadow-lg hover:shadow-xl transition-shadow" src="public/images/img-18.jpeg" alt="תמיכה מיוחדת" loading="lazy">
+                    <div class="cursor-pointer hover:opacity-75 transition-opacity" onclick="openLightbox('public/images/img-11.jpeg', 'תמיכה מיוחדת')">
+                        <img class="h-auto max-w-full rounded-lg shadow-lg hover:shadow-xl transition-shadow" src="public/images/img-11.jpeg" alt="תמיכה מיוחדת" loading="lazy">
                     </div>
                 </div>
         </div>
@@ -485,131 +502,131 @@
 
 
     <!-- Testimonials Section -->
-    <section id="testimonials" class="py-16 bg-blue-50">
+    <section id="testimonials" class="py-16 bg-gray-50 dark:bg-gray-900">
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-            <h2 class="text-3xl font-bold mb-12 text-gray-900">פרגונים</h2>
+            <h2 class="text-3xl font-bold mb-12 text-gray-900 dark:text-white" data-i18n="testimonials.title">פרגונים</h2>
             <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
                 
                 <!-- Testimonial 1 -->
-                <div class="bg-white rounded-xl shadow-lg p-6 border-r-4 border-green-500">
+                <div class="bg-white dark:bg-white/5 rounded-xl shadow-lg p-6 border-r-2 border-green-500">
                     <div class="mb-4">
                         <svg class="w-8 h-8 text-green-500 mb-4" fill="currentColor" viewBox="0 0 20 20">
                             <path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"/>
                         </svg>
                     </div>
-                    <blockquote class="text-gray-700 mb-4 text-lg leading-relaxed">
+                    <blockquote class="text-gray-700 dark:text-gray-50 mb-4 text-lg leading-relaxed" data-i18n="testimonials.testimonial1.quote">
                         "פלוגה ב מגדוד 7106 שתפסו קו בלבנון בשלושת החודשים האחרונים מוסרים תודה רבה"
                     </blockquote>
                     <div class="flex items-center">
                         <div class="mr-3">
-                            <div class="font-semibold text-gray-900">א.</div>
-                            <div class="text-gray-600 text-sm">גדוד 7106</div>
+                            <div class="font-semibold text-gray-900 dark:text-gray-200" data-i18n="testimonials.testimonial1.name">א.</div>
+                            <div class="text-gray-600 dark:text-gray-400 text-sm" data-i18n="testimonials.testimonial1.unit">גדוד 7106</div>
                         </div>
                     </div>
                 </div>
 
                 <!-- Testimonial 2 -->
-                <div class="bg-white rounded-xl shadow-lg p-6 border-r-4 border-black">
+                <div class="bg-white dark:bg-white/5 rounded-xl shadow-lg p-6 border-r-2 border-black">
                     <div class="mb-4">
                         <svg class="w-8 h-8 text-black mb-4" fill="currentColor" viewBox="0 0 20 20">
                             <path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"/>
                         </svg>
                     </div>
-                    <blockquote class="text-gray-700 mb-4 text-lg leading-relaxed">
+                    <blockquote class="text-gray-700 dark:text-gray-50 mb-4 text-lg leading-relaxed" data-i18n="testimonials.testimonial2.quote">
                         "תודה רבה לכם על ההשקעה אתמול!! הבן שלי קיבל לשמירה בתוך הרצועה מנה של בשר שאפילו הגיעה חמימה וממש התענג עליה
                         <br><br>
                         תמשיכו לעשות טוב! 🙏🇮🇱 "
                     </blockquote>
                     <div class="flex items-center">
                         <div class="mr-3">
-                            <div class="font-semibold text-gray-900">הורה של לוחם</div>
-                            <div class="text-gray-600 text-sm">שריון</div>
+                            <div class="font-semibold text-gray-900 dark:text-gray-200" data-i18n="testimonials.testimonial2.name">הורה של לוחם</div>
+                            <div class="text-gray-600 dark:text-gray-400 text-sm" data-i18n="testimonials.testimonial2.unit">שריון</div>
                         </div>
                     </div>
                 </div>
 
                 <!-- Testimonial 3 -->
-                <div class="bg-white rounded-xl shadow-lg p-6 border-r-4 border-gray-500">
+                <div class="bg-white dark:bg-white/5 rounded-xl shadow-lg p-6 border-r-2 border-gray-500">
                     <div class="mb-4">
                         <svg class="w-8 h-8 text-gray-500 mb-4" fill="currentColor" viewBox="0 0 20 20">
                             <path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"/>
                         </svg>
                     </div>
-                    <blockquote class="text-gray-700 mb-4 text-lg leading-relaxed">
+                    <blockquote class="text-gray-700 dark:text-gray-50 mb-4 text-lg leading-relaxed" data-i18n="testimonials.testimonial3.quote">
                         "היי כולם 😊 תודה על ההירתמות פעם אחר פעם. מוערך מאוד, מדהים לראות את האחדות והעשייה המשותפת של כולם, בטח בתקופה הזאת🙏"
                     </blockquote>
                     <div class="flex items-center">
                         <div class="mr-3">
-                            <div class="font-semibold text-gray-900">ח.</div>
-                            <div class="text-gray-600 text-sm">יחידת יהל״ם</div>
+                            <div class="font-semibold text-gray-900 dark:text-gray-200" data-i18n="testimonials.testimonial3.name">ח.</div>
+                            <div class="text-gray-600 dark:text-gray-400 text-sm" data-i18n="testimonials.testimonial3.unit">יחידת יהל״ם</div>
                         </div>
                     </div>
                 </div>
 
                 <!-- Testimonial 4 -->
-                <div class="bg-white rounded-xl shadow-lg p-6 border-r-4 border-orange-500">
+                <div class="bg-white dark:bg-white/5 rounded-xl shadow-lg p-6 border-r-2 border-orange-500">
                     <div class="mb-4">
                         <svg class="w-8 h-8 text-orange-500 mb-4" fill="currentColor" viewBox="0 0 20 20">
                             <path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"/>
                         </svg>
                     </div>
-                    <blockquote class="text-gray-700 mb-4 text-lg leading-relaxed">
+                    <blockquote class="text-gray-700 dark:text-gray-50 mb-4 text-lg leading-relaxed" data-i18n="testimonials.testimonial4.quote">
                         "אליאור פנינה וכול צוות חמ״ל מודיעין המופלאים!✨️🎖🏆🏅 
                         <br><br>
                         אתם גיבורי על של ממש!!!! תודה רבה לכולכם שבאתם ושימחתם את פלוגת הסיירות שיצאו מעזה ומסיימים השבוע קורס מפקדים. בשמי ובשם כול ההורים תודה ענקית תבורכו ותהיו תמיד בצד שנותן!"
                     </blockquote>
                     <div class="flex items-center">
                         <div class="mr-3">
-                            <div class="font-semibold text-gray-900">הורים ללוחמים</div>
-                            <div class="text-gray-600 text-sm">פלוגת סיירות</div>
+                            <div class="font-semibold text-gray-900 dark:text-gray-200" data-i18n="testimonials.testimonial4.name">הורים ללוחמים</div>
+                            <div class="text-gray-600 dark:text-gray-400 text-sm" data-i18n="testimonials.testimonial4.unit">פלוגת סיירות</div>
                         </div>
                     </div>
                 </div>
 
                 <!-- Testimonial 5 -->
-                <div class="bg-white rounded-xl shadow-lg p-6 border-r-4 border-gray-500">
+                <div class="bg-white dark:bg-white/5 rounded-xl shadow-lg p-6 border-r-2 border-gray-500">
                     <div class="mb-4">
                         <svg class="w-8 h-8 text-gray-500 mb-4" fill="currentColor" viewBox="0 0 20 20">
                             <path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"/>
                         </svg>
                     </div>
-                    <blockquote class="text-gray-700 mb-4 text-lg leading-relaxed">
+                    <blockquote class="text-gray-700 dark:text-gray-50 mb-4 text-lg leading-relaxed" data-i18n="testimonials.testimonial5.quote">
                         "בשם הלוחמים, רוצה לומר לכולכם המון המון תודה!! ממש לא מובן מאליו, כל ההשקעה, הזמן, והאכפתיות. היה טעים ממש וכיף והלוחמים מאוד מאוד נהנו! תבורכו על העבודה החשובה"
                     </blockquote>
                     <div class="flex items-center">
                         <div class="mr-3">
-                            <div class="font-semibold text-gray-900">ב.</div>
-                            <div class="text-gray-600 text-sm">הנדסה קרבית</div>
+                            <div class="font-semibold text-gray-900 dark:text-gray-200" data-i18n="testimonials.testimonial5.name">ב.</div>
+                            <div class="text-gray-600 dark:text-gray-400 text-sm" data-i18n="testimonials.testimonial5.unit">הנדסה קרבית</div>
                         </div>
                     </div>
                 </div>
 
                 <!-- Testimonial 6 -->
-                <div class="bg-white rounded-xl shadow-lg p-6 border-r-4 border-indigo-500">
+                <div class="bg-white dark:bg-white/5 rounded-xl shadow-lg p-6 border-r-2 border-indigo-500">
                     <div class="mb-4">
                         <svg class="w-8 h-8 text-indigo-500 mb-4" fill="currentColor" viewBox="0 0 20 20">
                             <path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"/>
                         </svg>
                     </div>
-                    <blockquote class="text-gray-700 mb-4 text-lg leading-relaxed">
+                    <blockquote class="text-gray-700 dark:text-gray-50 mb-4 text-lg leading-relaxed" data-i18n="testimonials.testimonial6.quote">
                         "אנשים יקרים רוצה לומר לכם תודה ענקית בשמי ובשם כל הלוחמים שפינקתם ברמה הכי גבוהה שהייתה לנו עד עכשיו ואנחנו מספיק זמן על מדים אז שאפו לכל העוסקים במלאכה בשבילכם אנחנו כאן עם ישראל חי 🇮🇱"
                     </blockquote>
                     <div class="flex items-center">
                         <div class="mr-3">
-                            <div class="font-semibold text-gray-900">ס.</div>
-                            <div class="text-gray-600 text-sm">גדוד 969</div>
+                            <div class="font-semibold text-gray-900 dark:text-gray-200" data-i18n="testimonials.testimonial6.name">ס.</div>
+                            <div class="text-gray-600 dark:text-gray-400 text-sm" data-i18n="testimonials.testimonial6.unit">גדוד 969</div>
                         </div>
                     </div>
                 </div>
 
                  <!-- Testimonial 7 -->
-                 <div class="bg-white rounded-xl shadow-lg p-6 border-r-4 border-yellow-500">
+                 <div class="bg-white dark:bg-white/5 rounded-xl shadow-lg p-6 border-r-2 border-yellow-500">
                     <div class="mb-4">
                         <svg class="w-8 h-8 text-yellow-500 mb-4" fill="currentColor" viewBox="0 0 20 20">
                             <path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"/>
                         </svg>
                     </div>
-                    <blockquote class="text-gray-700 mb-4 text-lg leading-relaxed">
+                    <blockquote class="text-gray-700 dark:text-gray-50 mb-4 text-lg leading-relaxed" data-i18n="testimonials.testimonial7.quote">
                         ״חברים וחברות יקרים
                         <br>
                         רציתי להגיד לכל אחד ואחת מכם באופן אישי תודה רבה ❤️
@@ -625,20 +642,20 @@
                     </blockquote>
                     <div class="flex items-center">
                         <div class="mr-3">
-                            <div class="font-semibold text-gray-900">נ.</div>
-                            <div class="text-gray-600 text-sm">גדוד מלר 9206</div>
+                            <div class="font-semibold text-gray-900 dark:text-gray-200" data-i18n="testimonials.testimonial7.name">נ.</div>
+                            <div class="text-gray-600 dark:text-gray-400 text-sm" data-i18n="testimonials.testimonial7.unit">גדוד מלר 9206</div>
                         </div>
                     </div>
                 </div>
 
                 <!-- Testimonial 8 -->
-                <div class="bg-white rounded-xl shadow-lg p-6 border-r-4 border-purple-500">
+                <div class="bg-white dark:bg-white/5 rounded-xl shadow-lg p-6 border-r-2 border-purple-500">
                     <div class="mb-4">
                         <svg class="w-8 h-8 text-purple-500 mb-4" fill="currentColor" viewBox="0 0 20 20">
                             <path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"/>
                         </svg>
                     </div>
-                    <blockquote class="text-gray-700 mb-4 text-lg leading-relaxed">
+                    <blockquote class="text-gray-700 dark:text-gray-50 mb-4 text-lg leading-relaxed" data-i18n="testimonials.testimonial8.quote">
                         ״תודה רבה לכם אנשים יקרים שהגעתם מרחוק בשביל לעזור לנו לסיים תקופה של מילואים באווירה טובה, שמחה וטעימה.
                         כל אחד ואחת מכם נתן את הטעם שלו, האנרגיה החיובית, החיוכים והפינוקים והגעתם עד אחרון החיילים!
                         <br>
@@ -650,20 +667,20 @@
                     </blockquote>
                     <div class="flex items-center">
                         <div class="mr-3">
-                            <div class="font-semibold text-gray-900">ד.</div>
-                            <div class="text-gray-600 text-sm">סיירת גבעתי</div>
+                            <div class="font-semibold text-gray-900 dark:text-gray-200" data-i18n="testimonials.testimonial8.name">ד.</div>
+                            <div class="text-gray-600 dark:text-gray-400 text-sm" data-i18n="testimonials.testimonial8.unit">סיירת גבעתי</div>
                         </div>
                     </div>
                 </div>
 
                 <!-- Testimonial 8 -->
-                <div class="bg-white rounded-xl shadow-lg p-6 border-r-4 border-orange-500">
+                <div class="bg-white dark:bg-white/5 rounded-xl shadow-lg p-6 border-r-2 border-orange-500">
                     <div class="mb-4">
                         <svg class="w-8 h-8 text-orange-500 mb-4" fill="currentColor" viewBox="0 0 20 20">
                             <path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"/>
                         </svg>
                     </div>
-                    <blockquote class="text-gray-700 mb-4 text-lg leading-relaxed">
+                    <blockquote class="text-gray-700 dark:text-gray-50 mb-4 text-lg leading-relaxed" data-i18n="testimonials.testimonial9.quote">
                         ״לחברה המתנדבים המדהימה 
                         <br>
         רצינו להגיד תודה ענקית על ערב פשוט מטורף
@@ -680,20 +697,20 @@
                     </blockquote>
                     <div class="flex items-center">
                         <div class="mr-3">
-                            <div class="font-semibold text-gray-900">י.</div>
-                            <div class="text-gray-600 text-sm">פלגת תו״פ</div>
+                            <div class="font-semibold text-gray-900 dark:text-gray-200" data-i18n="testimonials.testimonial9.name">י.</div>
+                            <div class="text-gray-600 dark:text-gray-400 text-sm" data-i18n="testimonials.testimonial9.unit">פלגת תו״פ</div>
                         </div>
                     </div>
                 </div>
 
                 <!-- Testimonial 9 -->
-                <div class="bg-white rounded-xl shadow-lg p-6 border-r-4 border-purple-500">
+                <div class="bg-white dark:bg-white/5 rounded-xl shadow-lg p-6 border-r-2 border-purple-500">
                     <div class="mb-4">
                         <svg class="w-8 h-8 text-purple-500 mb-4" fill="currentColor" viewBox="0 0 20 20">
                             <path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"/>
                         </svg>
                     </div>
-                    <blockquote class="text-gray-700 mb-4 text-lg leading-relaxed">
+                    <blockquote class="text-gray-700 dark:text-gray-50 mb-4 text-lg leading-relaxed" data-i18n="testimonials.testimonial10.quote">
                         חברים יקרים תודה רבה על אתמול עשיתם אותנו שמחים דאגתם לנו להכל אין עליכם שהשם יתן לכם רק טוב,
                         <br>
                         <br>
@@ -701,41 +718,41 @@
                     </blockquote>
                     <div class="flex items-center">
                         <div class="mr-3">
-                            <div class="font-semibold text-gray-900">א.</div>
-                            <div class="text-gray-600 text-sm">סיירת גבעתי</div>
+                            <div class="font-semibold text-gray-900 dark:text-gray-200" data-i18n="testimonials.testimonial10.name">א.</div>
+                            <div class="text-gray-600 dark:text-gray-400 text-sm" data-i18n="testimonials.testimonial10.unit">סיירת גבעתי</div>
                         </div>
                     </div>
                 </div>
 
 
                 <!-- Testimonial 9 -->
-                <div class="bg-white rounded-xl shadow-lg p-6 border-r-4 border-green-700">
+                <div class="bg-white dark:bg-white/5 rounded-xl shadow-lg p-6 border-r-2 border-green-700">
                     <div class="mb-4">
                         <svg class="w-8 h-8 text-green-700 mb-4" fill="currentColor" viewBox="0 0 20 20">
                             <path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"/>
                         </svg>
                     </div>
-                    <blockquote class="text-gray-700 mb-4 text-lg leading-relaxed">
+                    <blockquote class="text-gray-700 dark:text-gray-50 mb-4 text-lg leading-relaxed" data-i18n="testimonials.testimonial11.quote">
                 חברים ממש תודה על הכל החיילים ממש נהנו, היו מבסוטים וזה שווה הכל
                 האוכל היה נהדר ומעל המצופה 
                 מודים לכם מכל הלב תודה רבה על הכל❤️🙏🏻
                     </blockquote>
                     <div class="flex items-center">
                         <div class="mr-3">
-                            <div class="font-semibold text-gray-900">נ.</div>
-                            <div class="text-gray-600 text-sm">חטיבת כפיר</div>
+                            <div class="font-semibold text-gray-900 dark:text-gray-200" data-i18n="testimonials.testimonial11.name">נ.</div>
+                            <div class="text-gray-600 dark:text-gray-400 text-sm" data-i18n="testimonials.testimonial11.unit">חטיבת כפיר</div>
                         </div>
                     </div>
                 </div>
 
                 <!-- Testimonial 10 -->
-                <div class="bg-white rounded-xl shadow-lg p-6 border-r-4 border-gray-700">
+                <div class="bg-white dark:bg-white/5 rounded-xl shadow-lg p-6 border-r-2 border-gray-700">
                     <div class="mb-4">
                         <svg class="w-8 h-8 text-gray-700 mb-4" fill="currentColor" viewBox="0 0 20 20">
                             <path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"/>
                         </svg>
                     </div>
-                    <blockquote class="text-gray-700 mb-4 text-lg leading-relaxed">
+                    <blockquote class="text-gray-700 dark:text-gray-50 mb-4 text-lg leading-relaxed" data-i18n="testimonials.testimonial12.quote">
                         תודה רבה לכם אנשים יקרים
                         אתם לא מבינים מה אתם עושים לחיילים
                         נותנים להם רוח וממלאים את המצברים
@@ -743,64 +760,64 @@
                     </blockquote>
                     <div class="flex items-center">
                         <div class="mr-3">
-                            <div class="font-semibold text-gray-900">ס.</div>
-                            <div class="text-gray-600 text-sm">גדס״ר 551</div>
+                            <div class="font-semibold text-gray-900 dark:text-gray-200" data-i18n="testimonials.testimonial12.name">ס.</div>
+                            <div class="text-gray-600 dark:text-gray-400 text-sm" data-i18n="testimonials.testimonial12.unit">גדס״ר 551</div>
                         </div>
                     </div>
                 </div>
 
                  <!-- Testimonial 11 -->
-                 <div class="bg-white rounded-xl shadow-lg p-6 border-r-4 border-gray-700">
+                 <div class="bg-white dark:bg-white/5 rounded-xl shadow-lg p-6 border-r-2 border-gray-700">
                     <div class="mb-4">
                         <svg class="w-8 h-8 text-gray-700 mb-4" fill="currentColor" viewBox="0 0 20 20">
                             <path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"/>
                         </svg>
                     </div>
-                    <blockquote class="text-gray-700 mb-4 text-lg leading-relaxed">
+                    <blockquote class="text-gray-700 dark:text-gray-50 mb-4 text-lg leading-relaxed" data-i18n="testimonials.testimonial13.quote">
                         אלופים!! רציתי למסור לכם תודה רבה בשמי ובשם כל הפלוגה. אנחנו מאוד מעריכים את התרומה שלכם וחיממתם לנו את הלב ונתתם לנו כוח להמשיך . 
 אין על העם שלנו ! 💙🤍
 אוהבים פלוגת מסייעת 8116 💜
                     </blockquote>
                     <div class="flex items-center">
                         <div class="mr-3">
-                            <div class="font-semibold text-gray-900">נ.</div>
-                            <div class="text-gray-600 text-sm">מסייעת 8116</div>
+                            <div class="font-semibold text-gray-900 dark:text-gray-200" data-i18n="testimonials.testimonial13.name">נ.</div>
+                            <div class="text-gray-600 dark:text-gray-400 text-sm" data-i18n="testimonials.testimonial13.unit">מסייעת 8116</div>
                         </div>
                     </div>
                 </div>
 
                 <!-- Testimonial 12 -->
-                <div class="bg-white rounded-xl shadow-lg p-6 border-r-4 border-orange-700">
+                <div class="bg-white dark:bg-white/5 rounded-xl shadow-lg p-6 border-r-2 border-orange-700">
                     <div class="mb-4">
                         <svg class="w-8 h-8 text-orange-700 mb-4" fill="currentColor" viewBox="0 0 20 20">
                             <path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"/>
                         </svg>
                     </div>
-                    <blockquote class="text-gray-700 mb-4 text-lg leading-relaxed">
+                    <blockquote class="text-gray-700 dark:text-gray-50 mb-4 text-lg leading-relaxed" data-i18n="testimonials.testimonial14.quote">
                 מקווה שכל אחד (ואחת) מכם נם בביתו ואתם תקראו את ההודעה רק בבוקר.
                 <br>
                 <br>
                 שוב תודה על ארוחת ערב נעימה וטעימה, אתם מקצוענים, חיילי החטיבה נהנו ושבעו וכך גם כמה וכמה אורחיים על הדרך (הלוואי והיינו יכולים לארח כל חייל ובכלל).
                 <br>
                 <br>
-                וותרתם על ערב נח בבית, השקעתם זמן, כסף ושאר משאבים וזה ניכר בתוצאות. זה נותן לנו כח. שנזכה ב"ה להחזיר את החטופים במהרה ולהכריע את אויבנו ולהשמידם.  🩵
+                ויתרתם על ערב נח בבית, השקעתם זמן, כסף ושאר משאבים וזה ניכר בתוצאות. זה נותן לנו כח. שנזכה ב"ה להחזיר את החטופים במהרה ולהכריע את אויבנו ולהשמידם.  🩵
                     </blockquote>
                     <div class="flex items-center">
                         <div class="mr-3">
-                            <div class="font-semibold text-gray-900">ב.</div>
-                            <div class="text-gray-600 text-sm">חטיבה 8237</div>
+                            <div class="font-semibold text-gray-900 dark:text-gray-200" data-i18n="testimonials.testimonial14.name">ב.</div>
+                            <div class="text-gray-600 dark:text-gray-400 text-sm" data-i18n="testimonials.testimonial14.unit">חטיבה 8237</div>
                         </div>
                     </div>
                 </div>
 
                  <!-- Testimonial 13 -->
-                 <div class="bg-white rounded-xl shadow-lg p-6 border-r-4 border-green-500">
+                 <div class="bg-white dark:bg-white/5 rounded-xl shadow-lg p-6 border-r-2 border-green-500">
                     <div class="mb-4">
                         <svg class="w-8 h-8 text-green-500 mb-4" fill="currentColor" viewBox="0 0 20 20">
                             <path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"/>
                         </svg>
                     </div>
-                    <blockquote class="text-gray-700 mb-4 text-lg leading-relaxed">
+                    <blockquote class="text-gray-700 dark:text-gray-50 mb-4 text-lg leading-relaxed" data-i18n="testimonials.testimonial15.quote">
                         רוצה להודות בשמי ובשם הפלוגה על ערב מטורף!
                         החבר'ה נהנו ברמה הכי גבוהה שיש!
                         <br>
@@ -820,8 +837,8 @@
                     </blockquote>
                     <div class="flex items-center">
                         <div class="mr-3">
-                            <div class="font-semibold text-gray-900">י.</div>
-                            <div class="text-gray-600 text-sm">מסייעת סיירת הנח״ל</div>
+                            <div class="font-semibold text-gray-900 dark:text-gray-200" data-i18n="testimonials.testimonial15.name">י.</div>
+                            <div class="text-gray-600 dark:text-gray-400 text-sm" data-i18n="testimonials.testimonial15.unit">מסייעת סיירת הנח״ל</div>
                         </div>
                     </div>
                 </div>
@@ -832,11 +849,11 @@
 
 
     <!-- Donate Section -->
-    <section id="donate" class="py-16 bg-blue-600 text-white">
+    <section id="donate" class="py-16 bg-blue-600 text-white dark:bg-blue-900 dark:text-white">
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
             <div class="text-center mb-12">
-                <h2 class="text-3xl font-bold mb-4">תמיכה בלוחמים</h2>
-                <p class="text-xl mb-8 max-w-3xl mx-auto">
+                <h2 class="text-3xl font-bold mb-4" data-i18n="donation.support_title">תמיכה בלוחמים</h2>
+                <p class="text-xl mb-8 max-w-3xl mx-auto" data-i18n="donation.intro">
                     בימים מאתגרים אלה, כשסוף סוף עם ישראל ולוחמיו היקרים עומדים בלי פחד ובלי מורא אל מול הרוע הטהור, 
                     אנחנו בחמ״ל מודיעין ממשיכים בגיוס תרומות לסיוע בכלל האתגרים העומדים בפני חיילינו, כיתות הכוננות, כוחות ההצלה וכל כוחות הביטחון.
                 </p>
@@ -844,60 +861,60 @@
             
             <div class="grid md:grid-cols-2 gap-12 items-center">
                 <div>
-                    <h3 class="text-2xl font-semibold mb-4">במה אנחנו מתמקדים:</h3>
+                    <h3 class="text-2xl font-semibold mb-4" data-i18n="donation.focus_title">במה אנחנו מתמקדים:</h3>
                     <ul class="space-y-3 text-lg">
                         <li class="flex items-start">
                             <span class="text-blue-200 mr-3">•</span>
-                            <span>רכישה וייבוא ציוד צבאי חיוני מהארץ ומארה"ב באישור רשמי של משרד הביטחון וגורמי המכס</span>
+                            <span data-i18n="donation.focus_1">רכישה וייבוא ציוד צבאי חיוני מהארץ ומארה"ב באישור רשמי של משרד הביטחון וגורמי המכס</span>
                         </li>
                         <li class="flex items-start">
                             <span class="text-blue-200 mr-3">•</span>
-                            <span>הרמת ערבי על האש ודוכני אוכל לריענון והרמת המורל לכוחות הביטחון בכל גזרות הלחימה</span>
+                            <span data-i18n="donation.focus_2">הרמת ערבי על האש ודוכני אוכל לריענון והרמת המורל לכוחות הביטחון בכל גזרות הלחימה</span>
                         </li>
                         <li class="flex items-start">
                             <span class="text-blue-200 mr-3">•</span>
-                            <span>רכישת ציוד היגיינה וציוד חיוני נוסף לחיילינו, כיתות הכוננות וכוחות ההצלה</span>
+                            <span data-i18n="donation.focus_3">רכישת ציוד היגיינה וציוד חיוני נוסף לחיילינו, כיתות הכוננות וכוחות ההצלה</span>
                         </li>
                         <li class="flex items-start">
                             <span class="text-blue-200 mr-3">•</span>
-                            <span>שיתוף פעולה עם חמל״ים רבים ברחבי הארץ וסיוע במערך היסעים ושינוע לכוחות הביטחון</span>
+                            <span data-i18n="donation.focus_4">שיתוף פעולה עם חמל״ים רבים ברחבי הארץ וסיוע במערך היסעים ושינוע לכוחות הביטחון</span>
                         </li>
                     </ul>
                 </div>
                 
-                <div class="bg-white rounded-lg p-8 text-gray-900">
-                    <h3 class="text-2xl font-semibold mb-4 text-center">תרומה</h3>
+                <div class="bg-white dark:bg-gray-900 rounded-lg p-8 text-gray-900 dark:text-white">
+                    <h3 class="text-2xl font-semibold mb-4 text-center" data-i18n="donation.title">תרומה</h3>
                     
                     <!-- Achievement Banner -->
-                    <div class="bg-gradient-to-r from-blue-50 to-green-50 border-l-4 border-blue-500 p-4 mb-6 rounded-lg">
+                    <div class="p-4 mb-6 rounded-lg bg-blue-100 dark:bg-gray-800">
                         <div class="flex items-center">
                             <div class="flex-shrink-0">
-                                <svg class="h-8 w-8 text-blue-500" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                <svg class="h-8 w-8 text-blue-500 dark:text-blue-400" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                                     <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z" />
                                 </svg>
                             </div>
-                            <div class="mr-3">
-                                <p class="text-lg font-semibold text-blue-900">
+                            <div class="mx-3">
+                                <p class="text-lg font-semibold dark:text-white text-blue-900" data-i18n="donation.achievement">
                                     עד כה גוייסו יותר מ-1.5 מיליון ₪
                                 </p>
-                                <p class="text-sm text-blue-700">
+                                <p class="text-sm dark:text-white text-blue-700" data-i18n="donation.achievement_subtitle">
                                   תודות לכם, הצלחנו לרומם את רוח הלוחמים ולרכוש עבורם ציוד חיוני ומציל חיים!
                                 </p>
                             </div>
                         </div>
                     </div>
                     
-                    <p class="text-gray-600 mb-6 text-center">
+                    <p class="dark:text-gray-200 text-gray-600 mb-6 text-center" data-i18n="donation.description">
                         כל תרומה, קטנה כגדולה, תסייע לנו להמשיך לשמח את הלוחמים ולהביע את הערכתנו.
                     </p>
                     <div class="space-y-4">
                         <a href="https://links.payboxapp.com/QKOo0OXNOUb" target="_blank" rel="noopener noreferrer" class="flex items-center justify-center w-full text-white py-3 rounded-lg font-semibold transition-colors bg-blue-600 hover:bg-blue-700">
-                            <img src="public/images/logos/paybox-logo.png" alt="PayBox Logo" class="w-6 h-6 ml-2 rounded">
-                            <span>תרומה דרך פייבוקס</span>
+                            <img src="public/images/logos/paybox-logo.png" alt="PayBox Logo" class="w-6 h-6 mx-2 rounded">
+                            <span data-i18n="donation.paybox_btn">תרומה דרך פייבוקס</span>
                         </a>
                         <a href="https://wa.me/972544973945?text=תרומה לחמ״ל מודיעין דרך עמותה" target="_blank" rel="noopener noreferrer"  class="flex items-center justify-center w-full text-white py-3 rounded-lg font-semibold transition-colors bg-green-700 hover:bg-green-800" >
-                          <img src="public/images/logos/whatsapp-logo.png" alt="WhatsApp Logo" class="w-6 h-6 ml-2 rounded">
-                          <span>צור קשר לתרומה דרך עמותה</span>
+                          <img src="public/images/logos/whatsapp-logo.png" alt="WhatsApp Logo" class="w-6 h-6 mx-2 rounded">
+                          <span data-i18n="donation.whatsapp_btn">צור קשר לתרומה דרך עמותה</span>
                         </a>
                     </div>
                 </div>
@@ -905,21 +922,55 @@
         </div>
     </section>
 
-    
-
     <!-- Footer -->
-    <footer class="bg-gray-900 text-white py-12">
+    <footer class="bg-white dark:bg-gray-950 dark:text-white text-gray-700 py-12">
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
             <div class="text-center">
-                <h3 class="text-xl font-semibold mb-4">חמ״ל מודיעין</h3>
-                <p class="text-gray-400">
+                <h3 class="text-xl font-semibold mb-4" data-i18n="site.title">חמ״ל מודיעין</h3>
+                <p class="dark:text-gray-400 text-gray-700" data-i18n="footer.description">
                     מתנדבים ממודיעין ויישובי גזר התומכים בכוחות הביטחון בכל גזרות הלחימה
                 </p>
             </div>
-            <div class="mt-8 pt-8 border-t border-gray-800 text-center">
-                <p class="text-gray-400">
-                    © 2025 חמ״ל מודיעין. כל הזכויות שמורות.
-                </p>
+
+            <div class="flex justify-between items-center mt-8 pt-8 border-t dark:border-gray-800 border-gray-200">
+                <div class="text-center">
+                    <p class="dark:text-gray-400 text-gray-700" data-i18n="footer.copyright">
+                        © 2025 חמ״ל מודיעין. כל הזכויות שמורות.
+                    </p>
+                </div>
+
+                <!-- Theme Picker -->
+                <div dir="ltr" class="text-center">
+                    <div class="relative z-0 inline-grid grid-cols-3 gap-0.5 rounded-full bg-gray-950/5 p-0.75 text-gray-950 dark:bg-white/10 dark:text-white" id="theme-picker" role="radiogroup">
+                        <span class="cursor-pointer rounded-full p-1.5 *:size-7 data-checked:bg-white data-checked:ring data-checked:inset-ring data-checked:ring-gray-950/10 data-checked:inset-ring-white/10 sm:p-0 dark:data-checked:bg-gray-700 dark:data-checked:text-white dark:data-checked:ring-transparent" aria-label="System theme" id="theme-system" onclick="setTheme('system')" data-theme="system">
+                            <svg viewBox="0 0 28 28" fill="none" class="size-6">
+                                <path d="M7.5 8.5C7.5 7.94772 7.94772 7.5 8.5 7.5H19.5C20.0523 7.5 20.5 7.94772 20.5 8.5V16.5C20.5 17.0523 20.0523 17.5 19.5 17.5H8.5C7.94772 17.5 7.5 17.0523 7.5 16.5V8.5Z" stroke="currentColor"></path>
+                                <path d="M7.5 8.5C7.5 7.94772 7.94772 7.5 8.5 7.5H19.5C20.0523 7.5 20.5 7.94772 20.5 8.5V14.5C20.5 15.0523 20.0523 15.5 19.5 15.5H8.5C7.94772 15.5 7.5 15.0523 7.5 14.5V8.5Z" stroke="currentColor"></path>
+                                <path d="M16.5 20.5V17.5H11.5V20.5M16.5 20.5H11.5M16.5 20.5H17.5M11.5 20.5H10.5" stroke="currentColor" stroke-linecap="round"></path>
+                            </svg>
+                        </span>
+                        <span class="cursor-pointer rounded-full p-1.5 *:size-7 data-checked:bg-white data-checked:ring data-checked:inset-ring data-checked:ring-gray-950/10 data-checked:inset-ring-white/10 sm:p-0 dark:data-checked:bg-gray-700 dark:data-checked:text-white dark:data-checked:ring-transparent" aria-label="Light theme" id="theme-light" onclick="setTheme('light')" data-theme="light">
+                            <svg viewBox="0 0 28 28" fill="none" class="size-6">
+                                <circle cx="14" cy="14" r="3.5" stroke="currentColor"></circle>
+                                <path d="M14 8.5V6.5" stroke="currentColor" stroke-linecap="round"></path>
+                                <path d="M17.889 10.1115L19.3032 8.69727" stroke="currentColor" stroke-linecap="round"></path>
+                                <path d="M19.5 14L21.5 14" stroke="currentColor" stroke-linecap="round"></path>
+                                <path d="M17.889 17.8885L19.3032 19.3027" stroke="currentColor" stroke-linecap="round"></path>
+                                <path d="M14 21.5V19.5" stroke="currentColor" stroke-linecap="round"></path>
+                                <path d="M8.69663 19.3029L10.1108 17.8887" stroke="currentColor" stroke-linecap="round"></path>
+                                <path d="M6.5 14L8.5 14" stroke="currentColor" stroke-linecap="round"></path>
+                                <path d="M8.69663 8.69711L10.1108 10.1113" stroke="currentColor" stroke-linecap="round"></path>
+                            </svg>
+                        </span>
+                        <span class="cursor-pointer rounded-full p-1.5 *:size-7 data-checked:bg-white data-checked:ring data-checked:inset-ring data-checked:ring-gray-950/10 data-checked:inset-ring-white/10 sm:p-0 dark:data-checked:bg-gray-700 dark:data-checked:text-white dark:data-checked:ring-transparent" aria-label="Dark theme" id="theme-dark" onclick="setTheme('dark')" data-theme="dark">
+                            <svg viewBox="0 0 28 28" fill="none" class="size-6">
+                                <path d="M10.5 9.99914C10.5 14.1413 13.8579 17.4991 18 17.4991C19.0332 17.4991 20.0176 17.2902 20.9132 16.9123C19.7761 19.6075 17.109 21.4991 14 21.4991C9.85786 21.4991 6.5 18.1413 6.5 13.9991C6.5 10.8902 8.39167 8.22304 11.0868 7.08594C10.7089 7.98159 10.5 8.96597 10.5 9.99914Z" stroke="currentColor" stroke-linejoin="round"></path>
+                                <path d="M16.3561 6.50754L16.5 5.5L16.6439 6.50754C16.7068 6.94752 17.0525 7.29321 17.4925 7.35607L18.5 7.5L17.4925 7.64393C17.0525 7.70679 16.7068 8.05248 16.6439 8.49246L16.5 9.5L16.3561 8.49246C16.2932 8.05248 15.9475 7.70679 15.5075 7.64393L14.5 7.5L15.5075 7.35607C15.9475 7.29321 16.2932 6.94752 16.3561 6.50754Z" fill="currentColor" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"></path>
+                                <path d="M20.3561 11.5075L20.5 10.5L20.6439 11.5075C20.7068 11.9475 21.0525 12.2932 21.4925 12.3561L22.5 12.5L21.4925 12.6439C21.0525 12.7068 20.7068 13.0525 20.6439 13.4925L20.5 14.5L20.3561 13.4925C20.2932 13.0525 19.9475 12.7068 19.5075 12.6439L18.5 12.5L19.5075 12.3561C19.9475 12.2932 20.2932 11.9475 20.3561 11.5075Z" fill="currentColor" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"></path>
+                            </svg>
+                        </span>
+                    </div>
+                </div>
             </div>
         </div>
     </footer>
@@ -972,6 +1023,174 @@
             }
         });
 
+        // Internationalization System
+        let translations = {};
+        const supportedLanguages = ['he', 'en', 'fr'];
+        
+        // Load translation file
+        async function loadTranslations(lang) {
+            try {
+                const response = await fetch(`public/translations/${lang}.json`);
+                if (!response.ok) {
+                    throw new Error(`Failed to load translations for ${lang}`);
+                }
+                const data = await response.json();
+                translations[lang] = flattenObject(data);
+                return translations[lang];
+            } catch (error) {
+                console.error(`Error loading translations for ${lang}:`, error);
+                // Fallback to Hebrew if translation fails
+                if (lang !== 'he') {
+                    return loadTranslations('he');
+                }
+                return {};
+            }
+        }
+        
+        // Flatten nested object for dot notation access
+        function flattenObject(obj, prefix = '') {
+            const flattened = {};
+            for (const key in obj) {
+                if (obj.hasOwnProperty(key)) {
+                    const newKey = prefix ? `${prefix}.${key}` : key;
+                    if (typeof obj[key] === 'object' && obj[key] !== null) {
+                        Object.assign(flattened, flattenObject(obj[key], newKey));
+                    } else {
+                        flattened[newKey] = obj[key];
+                    }
+                }
+            }
+            return flattened;
+        }
+
+        let currentLanguage = 'he';
+
+        async function changeLanguage(lang) {
+            currentLanguage = lang;
+            
+            // Load translations if not already loaded
+            if (!translations[lang]) {
+                await loadTranslations(lang);
+            }
+            
+            // Update active language buttons (both desktop and mobile)
+            document.querySelectorAll('[id^="lang-"], [id^="mobile-lang-"]').forEach(btn => {
+                btn.classList.remove('bg-blue-600', 'text-white');
+                btn.classList.add('bg-gray-200', 'text-gray-700', 'hover:bg-gray-300');
+            });
+            
+            // Update desktop button
+            const desktopBtn = document.getElementById(`lang-${lang}`);
+            if (desktopBtn) {
+                desktopBtn.classList.remove('bg-gray-200', 'text-gray-700', 'hover:bg-gray-300');
+                desktopBtn.classList.add('bg-blue-600', 'text-white', 'hover:bg-blue-700');
+            }
+            
+            // Update mobile button
+            const mobileBtn = document.getElementById(`mobile-lang-${lang}`);
+            if (mobileBtn) {
+                mobileBtn.classList.remove('bg-gray-200', 'text-gray-700', 'hover:bg-gray-300');
+                mobileBtn.classList.add('bg-blue-600', 'text-white', 'hover:bg-blue-700');
+            }
+            
+            // Update text direction and language attribute
+            document.documentElement.dir = lang === 'he' ? 'rtl' : 'ltr';
+            document.documentElement.lang = lang;
+            
+            // Update HTML lang attribute for SEO
+            document.documentElement.setAttribute('lang', lang);
+            
+            // Update navigation spacing based on language direction
+            const navContainer = document.querySelector('.ml-10.flex.items-baseline');
+            if (navContainer) {
+                if (lang === 'he') {
+                    navContainer.classList.remove('space-x-4');
+                    navContainer.classList.add('space-x-reverse', 'space-x-4');
+                } else {
+                    navContainer.classList.remove('space-x-reverse');
+                    navContainer.classList.add('space-x-4');
+                }
+            }
+            
+            // Update all translatable elements
+            document.querySelectorAll('[data-i18n]').forEach(element => {
+                const key = element.getAttribute('data-i18n');
+                if (translations[lang] && translations[lang][key]) {
+                    // Use innerHTML for testimonial quotes and other elements that may contain HTML
+                    if (key.includes('testimonials') && key.includes('quote')) {
+                        element.innerHTML = translations[lang][key];
+                    } else {
+                        element.textContent = translations[lang][key];
+                    }
+                }
+            });
+            
+            // Store language preference
+            localStorage.setItem('preferredLanguage', lang);
+        }
+
+        // Initialize language on page load
+        async function initializeLanguage() {
+            const savedLang = localStorage.getItem('preferredLanguage') || 'he';
+            await changeLanguage(savedLang);
+        }
+
+        // Theme functionality
+        function setTheme(theme) {
+            const html = document.documentElement;
+            
+            // Update localStorage
+            localStorage.setItem('theme', theme);
+            
+            // Apply theme
+            if (theme === 'dark') {
+                html.classList.remove('light');
+                html.classList.add('dark');
+            } else if (theme === 'light') {
+                html.classList.remove('dark');
+                html.classList.add('light');
+            } else { // system
+                html.classList.remove('dark');
+                html.classList.remove('light');
+                const prefersDark = window.matchMedia('(prefers-color-scheme: dark)').matches;
+                if (prefersDark) {
+                    html.classList.add('dark');
+                } else {
+                    html.classList.add('light');
+                }
+            }
+            
+            // Update UI
+            updateThemePickerUI(theme);
+        }
+
+        function updateThemePickerUI(activeTheme) {
+            // Reset all buttons
+            document.querySelectorAll('#theme-picker span').forEach(btn => {
+                btn.removeAttribute('data-checked');
+                btn.setAttribute('aria-checked', 'false');
+            });
+            
+            // Highlight active button
+            const activeBtn = document.getElementById(`theme-${activeTheme}`);
+            if (activeBtn) {
+                activeBtn.setAttribute('data-checked', '');
+                activeBtn.setAttribute('aria-checked', 'true');
+            }
+        }
+
+        function initializeTheme() {
+            const savedTheme = localStorage.getItem('theme') || 'system';
+            setTheme(savedTheme);
+        }
+
+        // Initialize language and theme when page loads
+        document.addEventListener('DOMContentLoaded', function() {
+            initializeLanguage();
+            initializeTheme();
+        });
+
     </script>
 </body>
 </html>
+

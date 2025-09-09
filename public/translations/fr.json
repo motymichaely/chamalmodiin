@@ -1,0 +1,155 @@
+{
+  "site": {
+    "title": "Chamal Modiin"
+  },
+  "nav": {
+    "home": "Accueil",
+    "about": "À propos",
+    "activities": "Activités",
+    "gallery": "Galerie", 
+    "testimonials": "Témoignages",
+    "donate": "Soutenir nos soldats",
+    "menu": "Menu",
+    "dark_mode": "Mode sombre",
+    "language": "Langue:"
+  },
+  "hero": {
+    "title": "Chamal Modiin",
+    "subtitle": "Bénévoles de Modiin et des environs soutenant les forces de sécurité, les équipes de secours et les unités d'intervention d'urgence",
+    "about_btn": "À propos de Chamal",
+    "donate_btn": "Faire un don"
+  },
+  "about": {
+    "title": "À propos de Chamal",
+    "quote": "Pour la première fois de ma vie, j'ai ressenti une satisfaction profonde et puissante de résultats qui ne peuvent pas être traduits en argent, des résultats qui ne peuvent pas être mesurés en profits. Pour la première fois de ma vie, je suis devenu accro aux nouveaux défis, innombrables, avec un seul objectif à la fin - sauver des vies humaines",
+    "quote_author": "Eran Efrat",
+    "mission_label": "Notre Mission:",
+    "mission_text": "Assurer que nos soldats, équipes d'intervention d'urgence, forces de secours et tout le personnel de sécurité disposent des ressources nécessaires pour accomplir leurs tâches vitales sans délai.",
+    "description1": "Depuis la création de Chamal, les bénévoles travaillent jour et nuit pour acheter et livrer des équipements tactiques, thermiques et autres équipements essentiels aux unités de combat à Gaza, à la frontière nord et dans d'autres zones selon les besoins.",
+    "description2": "L'une de nos réalisations notables pendant la guerre est l'achat et l'importation d'équipements militaires essentiels d'Israël et des États-Unis, avec l'approbation officielle du ministère de la Défense et des autorités douanières. Cet équipement est essentiel et vital pour la sécurité et l'efficacité des forces de sécurité sur le terrain.",
+    "lifesaving": "Équipement qui a sauvé des vies.",
+    "description3": "Actuellement, nous nous concentrons sur l'organisation de soirées barbecue et de stands de shawarma pour les unités régulières et de réserve dans tous les secteurs de combat pour rafraîchir les forces et remonter le moral. Nous collaborons avec de nombreuses organisations de soutien à travers le pays et nous concentrons sur l'aide à l'achat de nourriture et de fournitures d'hygiène qui peuvent aider les soldats à réduire le stress, se rafraîchir et se détendre entre diverses missions difficiles."
+  },
+  "activities": {
+    "title": "Activités de Chamal",
+    "equipment": {
+      "title": "Acquisition d'équipement tactique",
+      "description": "Nous achetons et importons des équipements militaires essentiels d'Israël et des États-Unis avec l'approbation officielle du ministère de la Défense et des autorités douanières. Équipement qui sauve des vies.",
+      "details": "Dans la première moitié de l'année de guerre, l'équipe Chamal a mobilisé des collaborations mondiales pour importer plus de 1 000 gilets en céramique, des milliers de gants tactiques et d'innombrables produits d'hygiène et équipements de sauvetage."
+    },
+    "events": {
+      "title": "Événements barbecue",
+      "description": "Nous organisons des soirées barbecue et des stands de shawarma pour les unités régulières et de réserve, les équipes d'intervention d'urgence et les forces de secours dans tous les secteurs de combat.",
+      "details": "Jusqu'à présent, l'équipe Chamal a organisé plus de 200 événements barbecue, stands alimentaires et dons pour des dizaines de milliers de nos précieux combattants!"
+    },
+    "collaboration": {
+      "title": "Réseau collaboratif",
+      "description": "Nous collaborons avec de nombreuses organisations de soutien à travers le pays et aidons avec le transport et la logistique pour diverses forces de sécurité.",
+      "details": "Les collaborations avec Chamal JShield - Nehusha et Haïfa, et Chamal Brewery Modiin exploitent les capacités de Chamal pour aider avec le transport, l'emballage, la collecte de fonds et bien plus encore."
+    }
+  },
+  "gallery": {
+    "title": "Photos de nos divers événements"
+  },
+  "testimonials": {
+    "title": "Témoignages",
+    "testimonial1": {
+      "quote": "La Compagnie B du Bataillon 7106, qui a tenu la ligne au Liban pendant les trois derniers mois, adresse de nombreux remerciements",
+      "name": "A.",
+      "unit": "Bataillon 7106"
+    },
+    "testimonial2": {
+      "quote": "Merci beaucoup pour vos efforts d'hier!! Mon fils a reçu une portion de viande chaude pendant son service de garde dans la Bande, et elle est même arrivée chaude - il l'a vraiment appréciée.<br><br>Continuez à faire le bien! 🙏🇮🇱",
+      "name": "Parent d'un combattant",
+      "unit": "Corps blindé"
+    },
+    "testimonial3": {
+      "quote": "Salut tout le monde 😊 Merci pour la mobilisation encore et encore. Très apprécié, incroyable de voir l'unité et l'action commune de tous, surtout en cette période🙏",
+      "name": "H.",
+      "unit": "Unité Yahalom"
+    },
+    "testimonial4": {
+      "quote": "Elior Penina et toute l'équipe merveilleuse de Chamal Modiin!✨️🎖🏆🏅<br><br>Vous êtes de vrais super-héros!!!! Merci beaucoup à vous tous d'être venus apporter de la joie à la compagnie de reconnaissance qui est sortie de Gaza et a terminé le cours des commandants cette semaine. En mon nom et au nom de tous les parents, merci énorme - puissiez-vous être bénis et toujours être du côté qui donne!",
+      "name": "Parents de combattants",
+      "unit": "Compagnie de reconnaissance"
+    },
+    "testimonial5": {
+      "quote": "Au nom des combattants, je veux vous dire un énorme merci à tous!! Ce n'est vraiment pas évident, tout l'investissement, le temps et l'attention. C'était vraiment délicieux et amusant, et les combattants ont beaucoup apprécié! Bénédictions pour le travail important",
+      "name": "B.",
+      "unit": "Génie de combat"
+    },
+    "testimonial6": {
+      "quote": "Chers gens, je veux vous dire un énorme merci en mon nom et au nom de tous les soldats que vous avez choyés au plus haut niveau que nous ayons eu jusqu'à présent, et nous sommes en uniforme depuis assez longtemps, alors bravo à tous ceux impliqués dans le travail. Pour vous, nous sommes ici - Am Yisrael Chai 🇮🇱",
+      "name": "S.",
+      "unit": "Bataillon 969"
+    },
+    "testimonial7": {
+      "quote": "\"Chers amis,<br>Je voulais remercier personnellement chacun d'entre vous ❤️<br>Merci pour la quantité de nourriture qui était définitivement suffisante pour le bataillon et même plus<br>Merci pour la salade qui a été finement hachée malgré les mortiers en arrière-plan.<br>Vous êtes extraordinaires!<br>Nous tous du Bataillon 9206 vous remercions du fond du cœur ❤️<br><br>Puissiez-vous continuer à être du côté qui donne et que Dieu vous rende au double\"",
+      "name": "N.",
+      "unit": "Bataillon Maler 9206"
+    },
+    "testimonial8": {
+      "quote": "\"Merci beaucoup, chers gens, d'être venus de loin pour nous aider à finir une période de réserve dans une atmosphère bonne, joyeuse et délicieuse.<br>Chacun d'entre vous a donné sa propre saveur, son énergie positive, ses sourires et ses friandises, et vous avez atteint chaque dernier soldat!<br><br>Merci beaucoup, gens merveilleux. Rien n'est pris pour acquis, et votre mobilisation était au-delà. Vous avez fait la meilleure soirée que la compagnie ait jamais eue - comme l'ont déjà dit de nombreux soldats!!!<br><br>Merci beaucoup\"",
+      "name": "D.",
+      "unit": "Reconnaissance Givati"
+    },
+    "testimonial9": {
+      "quote": "\"Au groupe de bénévoles extraordinaire<br>Nous voulions dire un énorme merci pour une soirée simplement folle<br>C'était délicieux, investi et émouvant<br>L'atmosphère, la nourriture, tout était un plaisir<br>Merci pour toute l'énergie, l'investissement et l'âme.<br>Amour et appréciation<br>❤️❤️❤️❤️❤️❤️❤️❤️❤️\"",
+      "name": "Y.",
+      "unit": "Compagnie d'artillerie"
+    },
+    "testimonial10": {
+      "quote": "Chers amis, merci beaucoup pour hier, vous nous avez rendus heureux, vous avez pris soin de tout pour nous, vous êtes les meilleurs, que Dieu ne vous donne que du bien,<br><br>On vous aime, Corbeaux Givati🦅🦅🦅\"",
+      "name": "A.",
+      "unit": "Reconnaissance Givati"
+    },
+    "testimonial11": {
+      "quote": "Amis, vraiment merci pour tout, les soldats ont vraiment apprécié, ils étaient ravis et ça vaut tout<br>La nourriture était merveilleuse et au-delà des attentes<br>Nous vous remercions du fond du cœur, merci beaucoup pour tout❤️🙏🏻",
+      "name": "N.",
+      "unit": "Brigade Kfir"
+    },
+    "testimonial12": {
+      "quote": "Merci beaucoup, chers gens<br>Vous ne comprenez pas ce que vous faites pour les soldats<br>Vous leur donnez de l'esprit et rechargez leurs batteries<br>Très émouvant🙏🏻🙏🏻🙏🏻",
+      "name": "S.",
+      "unit": "Gadsar 551"
+    },
+    "testimonial13": {
+      "quote": "Champions!! Je voulais transmettre un grand merci en mon nom et au nom de toute la compagnie. Nous apprécions grandement votre contribution et vous avez réchauffé nos cœurs et nous avez donné la force de continuer.<br>Il n'y a rien comme notre peuple! 💙🤍<br>Amour, Compagnie de soutien 8116 💜",
+      "name": "N.",
+      "unit": "Soutien 8116"
+    },
+    "testimonial14": {
+      "quote": "J'espère que chacun d'entre vous dort chez lui et que vous ne lirez ce message que le matin.<br><br>Encore une fois, merci pour un dîner agréable et délicieux, vous êtes des professionnels, les soldats de la brigade ont apprécié et ont été satisfaits, ainsi que plusieurs invités en chemin (nous aimerions pouvoir accueillir chaque soldat et plus).<br><br>Vous avez renoncé à une soirée paisible à la maison, investi du temps, de l'argent et d'autres ressources et cela se voit dans les résultats. Cela nous donne de la force. Puissions-nous mériter, si Dieu le veut, de ramener les otages bientôt et de vaincre et détruire nos ennemis. 🩵",
+      "name": "B.",
+      "unit": "Brigade 8237"
+    },
+    "testimonial15": {
+      "quote": "Je veux remercier en mon nom et au nom de la compagnie pour une soirée folle!<br>Les gars ont apprécié au plus haut niveau possible!<br><br>Cher Moti et chacun d'entre vous -<br>Il n'y a pas assez de mots pour décrire à quel point vous êtes des gens spéciaux et extraordinaires.<br><br>Les gens ici n'ont pas cessé de sourire jusqu'à maintenant...<br>Vous ne comprenez pas à quel point nous avions besoin de cela.<br>Merci du fond de nos cœurs 💚<br><br>Yuval, et tout le soutien de reconnaissance Nahal 🫡",
+      "name": "Y.",
+      "unit": "Soutien de reconnaissance Nahal"
+    }
+  },
+  "donation": {
+    "title": "Don",
+    "support_title": "Soutenir nos soldats",
+    "intro": "En ces temps difficiles, lorsque le peuple d'Israël et nos précieux combattants se dressent enfin sans peur et sans terreur contre le mal pur, nous à Chamal Modiin continuons à collecter des fonds pour aider avec tous les défis auxquels sont confrontés nos soldats, équipes d'intervention d'urgence, forces de secours et tout le personnel de sécurité.",
+    "focus_title": "Sur quoi nous nous concentrons:",
+    "focus_1": "Achat et importation d'équipements militaires essentiels d'Israël et des États-Unis avec l'approbation officielle du ministère de la Défense et des autorités douanières",
+    "focus_2": "Organisation de soirées barbecue et de stands alimentaires pour rafraîchir et remonter le moral des forces de sécurité dans tous les secteurs de combat",
+    "focus_3": "Achat d'équipements d'hygiène et d'autres fournitures essentielles pour nos soldats, équipes d'intervention d'urgence et forces de secours",
+    "focus_4": "Collaboration avec de nombreuses organisations de soutien à travers le pays et aide au transport et à la logistique pour les forces de sécurité",
+    "achievement": "Plus de 1,5 million ₪ collectés à ce jour",
+    "achievement_subtitle": "Grâce à vous, nous avons pu remonter le moral de nos combattants et acheter pour eux des équipements essentiels qui sauvent des vies!",
+    "description": "Chaque don, grand ou petit, nous aide à continuer à soutenir nos soldats et à montrer notre appréciation.",
+    "paybox_btn": "Donner via PayBox",
+    "whatsapp_btn": "Donner via Association",
+    "bit_btn": "Donner via Bit"
+  },
+  "footer": {
+    "contact": "Nous contacter",
+    "social": "Suivez-nous",
+    "description": "Bénévoles de Modiin et des environs soutenant les forces de sécurité dans tous les secteurs de combat",
+    "theme": "Thème:",
+    "copyright": "© 2025 Chamal Modiin. Tous droits réservés."
+  }
+}
