@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindplus/elements@1" type="module"></script>
     <style type="text/tailwindcss">
         @custom-variant dark (&:where(.dark, .dark *));
     </style>
@@ -93,14 +94,13 @@
                         <el-menu anchor="bottom end" popover class="w-56 origin-top-right rounded-md bg-white dark:bg-gray-700 shadow-lg ring-1 ring-black/5 dark:ring-gray-600 transition transition-discrete [--anchor-gap:--spacing(2)] focus:outline-hidden data-closed:scale-95 data-closed:transform data-closed:opacity-0 data-enter:duration-100 data-enter:ease-out data-leave:duration-75 data-leave:ease-in">
                             <div class="py-1">
                                 <a href="#home" class="block px-4 py-2 text-sm text-gray-700 dark:text-gray-200 focus:bg-gray-100 dark:focus:bg-gray-600 focus:text-gray-900 dark:focus:text-white focus:outline-hidden" data-i18n="nav.home">בית</a>
-                                <a href="#about" class="block px-4 py-2 text-sm text-gray-700 focus:bg-gray-100 focus:text-gray-900 focus:outline-hidden" data-i18n="nav.about">אודות</a>
-                                <a href="#activities" class="block px-4 py-2 text-sm text-gray-700 focus:bg-gray-100 focus:text-gray-900 focus:outline-hidden" data-i18n="nav.activities">פעילות</a>
-                                <a href="#gallery" class="block px-4 py-2 text-sm text-gray-700 focus:bg-gray-100 focus:text-gray-900 focus:outline-hidden" data-i18n="nav.gallery">גלריה</a>
-                                <a href="#testimonials" class="block px-4 py-2 text-sm text-gray-700 focus:bg-gray-100 focus:text-gray-900 focus:outline-hidden" data-i18n="nav.testimonials">פרגונים</a>
-                                <a href="#donate" class="block px-4 py-2 text-sm text-gray-700 focus:bg-gray-100 focus:text-gray-900 focus:outline-hidden" data-i18n="nav.donate">תרומה</a>
-                                <hr class="my-1">
+                                <a href="#about" class="block px-4 py-2 text-sm text-gray-700 dark:text-gray-200 focus:bg-gray-100 dark:focus:bg-gray-600 focus:text-gray-900 dark:focus:text-white focus:outline-hidden" data-i18n="nav.about">אודות</a>
+                                <a href="#activities" class="block px-4 py-2 text-sm text-gray-700 dark:text-gray-200 focus:bg-gray-100 dark:focus:bg-gray-600 focus:text-gray-900 dark:focus:text-white focus:outline-hidden" data-i18n="nav.activities">פעילות</a>
+                                <a href="#gallery" class="block px-4 py-2 text-sm text-gray-700 dark:text-gray-200 focus:bg-gray-100 dark:focus:bg-gray-600 focus:text-gray-900 dark:focus:text-white focus:outline-hidden" data-i18n="nav.gallery">גלריה</a>
+                                <a href="#testimonials" class="block px-4 py-2 text-sm text-gray-700 dark:text-gray-200 focus:bg-gray-100 dark:focus:bg-gray-600 focus:text-gray-900 dark:focus:text-white focus:outline-hidden" data-i18n="nav.testimonials">פרגונים</a>
+                                <a href="#donate" class="block px-4 py-2 text-sm text-gray-700 dark:text-gray-200 focus:bg-gray-100 dark:focus:bg-gray-600 focus:text-gray-900 dark:focus:text-white focus:outline-hidden" data-i18n="nav.donate">תרומה</a>
+                                <hr class="my-1 dark:border-gray-600">
                                 <div class="px-4 py-2">
-                                    <span class="text-xs text-gray-500 dark:text-gray-400" data-i18n="nav.language">שפה:</span>
                                     <div class="flex space-x-1 mt-1">
                                         <button onclick="changeLanguage('he')" id="mobile-lang-he" class="px-2 py-1 text-md rounded bg-blue-600 text-white">🇮🇱</button>
                                         <button onclick="changeLanguage('en')" id="mobile-lang-en" class="px-2 py-1 text-md rounded bg-gray-200 text-gray-700">🇺🇸</button>
@@ -147,7 +147,7 @@
                         "<span data-i18n="about.quote">לראשונה בחיי הרגשתי סיפוק רב ועוצמתי מתוצאה שאינה מתורגמת לכסף, מתוצאה שאינה נמדדת ברווחים. לראשונה בחיי התמכרתי לאתגרים חדשים, רבים מספור, שבסופם מטרה אחת בלבד - הצלת חיי אדם</span>". <span data-i18n="about.quote_author">ערן אפרת</span>
                     </blockquote>
                     <p class="text-gray-600 dark:text-gray-400 mb-4">
-                        <strong data-i18n="about.mission_label">המשימה שלנו:</strong> <span data-i18n="about.mission_text">הבטיח לחיילינו, לכיתות הכוננות, לכוחות ההצלה, ולכל כוחות הביטחון את המשאבים הדרושים כדי לבצע את תפקידם החיוני ללא דיחוי.</span>
+                        <strong data-i18n="about.mission_label">המשימה שלנו:</strong> <span data-i18n="about.mission_text">להבטיח לחיילינו, לכיתות הכוננות, לכוחות ההצלה, ולכל כוחות הביטחון את המשאבים הדרושים כדי לבצע את תפקידם החיוני ללא דיחוי.</span>
                     </p>
                     <p class="text-gray-600 dark:text-gray-400 mb-4" data-i18n="about.description1">
                         מאז הקמת החמ״ל, המתנדבים עושים לילות כימים ברכישה והעברת ציוד טקטי, תרמי וציוד חיוני נוסף ליחידות לוחמות בעזה, בגבול הצפון ובאזורים נוספים לפי הצורך.
@@ -156,7 +156,7 @@
                         <span data-i18n="about.description2">אחד מההישגים הניכרים שלנו במהלך המלחמה הוא רכישה וייבוא של ציוד צבאי חיוני מהארץ ומארה"ב, באישור רשמי של משרד הביטחון וגורמי המכס. ציוד זה הכרחי וחיוני לבטיחות וייעילות כוחות הביטחון בשטח.</span> <strong data-i18n="about.lifesaving">ציוד אשר הציל חיים.</strong>
                     </p>
                     <p class="text-gray-600 dark:text-gray-400" data-i18n="about.description3">
-                        כעת אני מתמקדים בהרמת  ערבי על האש ודוכני שווארמה ליחידות סדירות ומילואים בכל גזרות הלחימה לריענון הכוחות והרמת המורל. אנחנו משתפים פעולה עם חמל״ים רבים ברחבי הארץ ומתמקדים בסיוע לרכישת מזון וציוד היגיינה שיכול לסייע ולו במעט לחיילים להפחית לחצים, להתרענן ולהרגע בין המשימות השונות והמאתגרות.
+                        כעת אנו מתמקדים בהרמת ערבי על האש ודוכני שווארמה ליחידות סדירות ומילואים בכל גזרות הלחימה לריענון הכוחות והרמת המורל. אנחנו משתפים פעולה עם חמל״ים רבים ברחבי הארץ ומתמקדים בסיוע לרכישת מזון וציוד היגיינה שיכול לסייע ולו במעט לחיילים להפחית לחצים, להתרענן ולהרגע בין המשימות השונות והמאתגרות.
                     </p>
                     
                 </div>
@@ -932,7 +932,7 @@
                 </p>
             </div>
 
-            <div class="flex justify-between items-center mt-8 pt-8 border-t dark:border-gray-800 border-gray-200">
+            <div class="sm:flex-row sm:items-center sm:justify-between sm:gap-8 px-4 md:px-6 lg:px-8 flex w-full flex-col justify-between items-center mt-8 pt-8 border-t dark:border-gray-800 border-gray-200">
                 <div class="text-center">
                     <p class="dark:text-gray-400 text-gray-700" data-i18n="footer.copyright">
                         © 2025 חמ״ל מודיעין. כל הזכויות שמורות.
