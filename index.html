@@ -125,7 +125,7 @@
             <div class="grid md:grid-cols-2 gap-12 items-center">
                 <div>
                     <blockquote class="text-xl italic text-gray-700 mb-6 border-r-4 border-blue-600 pr-6">
-                        "לראשונה בחיי הרגשתי סיפור רב ועוצמתי מתוצאה שאינה מתורגמת לכסף, מתוצאה שאינה נמדדת ברווחים. לראשונה בחיי התמכרתי לאתגרים חדשים, רבים מספור, שבסופם מטרה אחת בלבד - הצלת חיי אדם". ערן אפרת
+                        "לראשונה בחיי הרגשתי סיפוק רב ועוצמתי מתוצאה שאינה מתורגמת לכסף, מתוצאה שאינה נמדדת ברווחים. לראשונה בחיי התמכרתי לאתגרים חדשים, רבים מספור, שבסופם מטרה אחת בלבד - הצלת חיי אדם". ערן אפרת
                     </blockquote>
                     <p class="text-gray-600 mb-4">
                         <strong>המשימה שלנו:</strong> הבטיח לחיילינו, לכיתות הכוננות, לכוחות ההצלה, ולכל כוחות הביטחון את המשאבים הדרושים כדי לבצע את תפקידם החיוני ללא דיחוי.
@@ -188,220 +188,298 @@
     <section id="gallery" class="py-16 bg-gray-50">
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
             <h2 class="text-3xl font-bold mb-4">תמונות מהארועים השונים</h2>
-            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
-                <!-- Gallery Item 1 -->
-                <div class="group relative overflow-hidden rounded-lg shadow-lg">
-                    <img src="public/images/IMG_3276.jpg" alt="פעילות מתנדבים" class="w-full h-64 object-cover transition-transform duration-300 group-hover:scale-105" loading="lazy">
+            <!-- Masonry Gallery Layout -->
+            <div class="grid grid-cols-2 md:grid-cols-4 gap-4">
+                <!-- Column 1: WIDE, TALL, WIDE, TALL... -->
+                <div class="grid gap-4">
+                    <!-- WIDE -->
+                    <div class="cursor-pointer hover:opacity-75 transition-opacity" onclick="openLightbox('public/images/IMG_3276.jpg', 'פעילות מתנדבים')">
+                        <img class="h-auto max-w-full rounded-lg shadow-lg hover:shadow-xl transition-shadow" src="public/images/IMG_3276.jpg" alt="פעילות מתנדבים" loading="lazy">
+                    </div>
+                    <!-- TALL -->
+                    <div class="cursor-pointer hover:opacity-75 transition-opacity" onclick="openLightbox('public/images/IMG_4042.jpg', 'תמיכה למתגייסים')">
+                        <img class="h-auto max-w-full rounded-lg shadow-lg hover:shadow-xl transition-shadow" src="public/images/IMG_4042.jpg" alt="תמיכה למתגייסים" loading="lazy">
+                    </div>
+                    <!-- WIDE -->
+                    <div class="cursor-pointer hover:opacity-75 transition-opacity" onclick="openLightbox('public/images/IMG_5131.jpg', 'מתנדבים בפעולה')">
+                        <img class="h-auto max-w-full rounded-lg shadow-lg hover:shadow-xl transition-shadow" src="public/images/IMG_5131.jpg" alt="מתנדבים בפעולה" loading="lazy">
+                    </div>
+                    <!-- TALL -->
+                    <div class="cursor-pointer hover:opacity-75 transition-opacity" onclick="openLightbox('public/images/IMG_6629.jpg', 'הכנות מיוחדות')">
+                        <img class="h-auto max-w-full rounded-lg shadow-lg hover:shadow-xl transition-shadow" src="public/images/IMG_6629.jpg" alt="הכנות מיוחדות" loading="lazy">
+                    </div>
+                    <!-- WIDE -->
+                    <div class="cursor-pointer hover:opacity-75 transition-opacity" onclick="openLightbox('public/images/2a9509b3-8651-44e9-8ca7-e3f5f14cb8e5.jpg', 'פעילות מיוחדת')">
+                        <img class="h-auto max-w-full rounded-lg shadow-lg hover:shadow-xl transition-shadow" src="public/images/2a9509b3-8651-44e9-8ca7-e3f5f14cb8e5.jpg" alt="פעילות מיוחדת" loading="lazy">
+                    </div>
+                    <!-- TALL -->
+                    <div class="cursor-pointer hover:opacity-75 transition-opacity" onclick="openLightbox('public/images/9c51d7f4-aaee-433c-bfba-36dfece70018.jpg', 'שיתוף פעולה')">
+                        <img class="h-auto max-w-full rounded-lg shadow-lg hover:shadow-xl transition-shadow" src="public/images/9c51d7f4-aaee-433c-bfba-36dfece70018.jpg" alt="שיתוף פעולה" loading="lazy">
+                    </div>
+                    <!-- WIDE -->
+                    <div class="cursor-pointer hover:opacity-75 transition-opacity" onclick="openLightbox('public/images/img-1.jpeg', 'פעילות שטח')">
+                        <img class="h-auto max-w-full rounded-lg shadow-lg hover:shadow-xl transition-shadow" src="public/images/img-1.jpeg" alt="פעילות שטח" loading="lazy">
+                    </div>
+                    <!-- TALL -->
+                    <div class="cursor-pointer hover:opacity-75 transition-opacity" onclick="openLightbox('public/images/IMG_8107.jpg', 'פעילות נוספת')">
+                        <img class="h-auto max-w-full rounded-lg shadow-lg hover:shadow-xl transition-shadow" src="public/images/IMG_8107.jpg" alt="פעילות נוספת" loading="lazy">
+                    </div>
+                    <!-- WIDE -->
+                    <div class="cursor-pointer hover:opacity-75 transition-opacity" onclick="openLightbox('public/images/IMG_5221.jpg', 'תמיכה בקהילה')">
+                        <img class="h-auto max-w-full rounded-lg shadow-lg hover:shadow-xl transition-shadow" src="public/images/IMG_5221.jpg" alt="תמיכה בקהילה" loading="lazy">
+                    </div>
+                    <!-- TALL -->
+                    <div class="cursor-pointer hover:opacity-75 transition-opacity" onclick="openLightbox('public/images/IMG_5378.jpg', 'ציוד לילה')">
+                        <img class="h-auto max-w-full rounded-lg shadow-lg hover:shadow-xl transition-shadow" src="public/images/IMG_5378.jpg" alt="ציוד לילה" loading="lazy">
+                    </div>
+                    <!-- WIDE -->
+                    <div class="cursor-pointer hover:opacity-75 transition-opacity" onclick="openLightbox('public/images/IMG_8437 2.jpg', 'ציוד מיוחד')">
+                        <img class="h-auto max-w-full rounded-lg shadow-lg hover:shadow-xl transition-shadow" src="public/images/IMG_8437 2.jpg" alt="ציוד מיוחד" loading="lazy">
+                    </div>
+                    <!-- TALL -->
+                    <div class="cursor-pointer hover:opacity-75 transition-opacity" onclick="openLightbox('public/images/e95409d3-4af5-4238-99f8-75b63d1e0368.jpg', 'ציוד הגנה')">
+                        <img class="h-auto max-w-full rounded-lg shadow-lg hover:shadow-xl transition-shadow" src="public/images/e95409d3-4af5-4238-99f8-75b63d1e0368.jpg" alt="ציוד הגנה" loading="lazy">
+                    </div>
+                    <!-- WIDE -->
+                    <div class="cursor-pointer hover:opacity-75 transition-opacity" onclick="openLightbox('public/images/IMG_4884.jpg', 'אריזת חבילות')">
+                        <img class="h-auto max-w-full rounded-lg shadow-lg hover:shadow-xl transition-shadow" src="public/images/IMG_4884.jpg" alt="אריזת חבילות" loading="lazy">
+                    </div>
+                    <!-- TALL -->
+                    <div class="cursor-pointer hover:opacity-75 transition-opacity" onclick="openLightbox('public/images/img-20.jpeg', 'פעילות מתנדבים')">
+                        <img class="h-auto max-w-full rounded-lg shadow-lg hover:shadow-xl transition-shadow" src="public/images/img-20.jpeg" alt="פעילות מתנדבים" loading="lazy">
+                    </div>
+                    <!-- WIDE -->
+                    <div class="cursor-pointer hover:opacity-75 transition-opacity" onclick="openLightbox('public/images/IMG_6528.jpg', 'הכנות לפעילות')">
+                        <img class="h-auto max-w-full rounded-lg shadow-lg hover:shadow-xl transition-shadow" src="public/images/IMG_6528.jpg" alt="הכנות לפעילות" loading="lazy">
+                    </div>
+                    <!-- TALL -->
+                    <div class="cursor-pointer hover:opacity-75 transition-opacity" onclick="openLightbox('public/images/img-15.jpeg', 'תמיכה מיוחדת')">
+                        <img class="h-auto max-w-full rounded-lg shadow-lg hover:shadow-xl transition-shadow" src="public/images/img-15.jpeg" alt="תמיכה מיוחדת" loading="lazy">
+                    </div>
+                    <!-- WIDE -->
+                    <div class="cursor-pointer hover:opacity-75 transition-opacity" onclick="openLightbox('public/images/IMG_5907.jpg', 'פעילות נוספת')">
+                        <img class="h-auto max-w-full rounded-lg shadow-lg hover:shadow-xl transition-shadow" src="public/images/IMG_5907.jpg" alt="פעילות נוספת" loading="lazy">
+                    </div>
+                    
+                    
                 </div>
                 
-                <!-- Gallery Item 2 -->
-                <div class="group relative overflow-hidden rounded-lg shadow-lg">
-                    <img src="public/images/IMG_3289.jpg" alt="ציוד צבאי" class="w-full h-64 object-cover transition-transform duration-300 group-hover:scale-105" loading="lazy">
+                <!-- Column 2: TALL, WIDE, TALL, WIDE... -->
+                <div class="grid gap-4">
+                    <!-- TALL -->
+                    <div class="cursor-pointer hover:opacity-75 transition-opacity" onclick="openLightbox('public/images/IMG_5272.jpg', 'ציוד מיגון')">
+                        <img class="h-auto max-w-full rounded-lg shadow-lg hover:shadow-xl transition-shadow" src="public/images/IMG_5272.jpg" alt="ציוד מיגון" loading="lazy">
+                    </div>
+                    <!-- WIDE -->
+                    <div class="cursor-pointer hover:opacity-75 transition-opacity" onclick="openLightbox('public/images/IMG_3289.jpg', 'ציוד צבאי')">
+                        <img class="h-auto max-w-full rounded-lg shadow-lg hover:shadow-xl transition-shadow" src="public/images/IMG_3289.jpg" alt="ציוד צבאי" loading="lazy">
+                    </div>
+                    <!-- TALL -->
+                    <div class="cursor-pointer hover:opacity-75 transition-opacity" onclick="openLightbox('public/images/38f744cd-c59d-4672-978e-e007af8ac10b.jpg', 'פיצה')">
+                        <img class="h-auto max-w-full rounded-lg shadow-lg hover:shadow-xl transition-shadow" src="public/images/38f744cd-c59d-4672-978e-e007af8ac10b.jpg" alt="פיצה" loading="lazy">
+                    </div>
+                    <!-- WIDE -->
+                    <div class="cursor-pointer hover:opacity-75 transition-opacity" onclick="openLightbox('public/images/IMG_6888.jpg', 'ציוד חורף')">
+                        <img class="h-auto max-w-full rounded-lg shadow-lg hover:shadow-xl transition-shadow" src="public/images/IMG_6888.jpg" alt="ציוד חורף" loading="lazy">
+                    </div>
+                    <!-- TALL -->
+                    <div class="cursor-pointer hover:opacity-75 transition-opacity" onclick="openLightbox('public/images/50882954-8ee4-4024-8093-d6b62c11ad88.jpg', 'אוהלים ללוחמים')">
+                        <img class="h-auto max-w-full rounded-lg shadow-lg hover:shadow-xl transition-shadow" src="public/images/50882954-8ee4-4024-8093-d6b62c11ad88.jpg" alt="אוהלים ללוחמים" loading="lazy">
+                    </div>
+                    <!-- WIDE -->
+                    <div class="cursor-pointer hover:opacity-75 transition-opacity" onclick="openLightbox('public/images/3fe8a380-b8e5-466a-ad9b-6413d32e89b7.jpg', 'ציוד מתקדם')">
+                        <img class="h-auto max-w-full rounded-lg shadow-lg hover:shadow-xl transition-shadow" src="public/images/3fe8a380-b8e5-466a-ad9b-6413d32e89b7.jpg" alt="ציוד מתקדם" loading="lazy">
+                    </div>
+                    <!-- TALL -->
+                    <div class="cursor-pointer hover:opacity-75 transition-opacity" onclick="openLightbox('public/images/img-8.jpeg', 'סטייקים טעימים')">
+                        <img class="h-auto max-w-full rounded-lg shadow-lg hover:shadow-xl transition-shadow" src="public/images/img-8.jpeg" alt="סטייקים טעימים" loading="lazy">
+                    </div>
+                    <!-- WIDE -->
+                    <div class="cursor-pointer hover:opacity-75 transition-opacity" onclick="openLightbox('public/images/img-2.jpeg', 'פעילות שטח')">
+                        <img class="h-auto max-w-full rounded-lg shadow-lg hover:shadow-xl transition-shadow" src="public/images/img-2.jpeg" alt="פעילות שטח" loading="lazy">
+                    </div>
+                    <!-- TALL -->
+                    <div class="cursor-pointer hover:opacity-75 transition-opacity" onclick="openLightbox('public/images/IMG_5379.jpg', 'תמיכה נוספת')">
+                        <img class="h-auto max-w-full rounded-lg shadow-lg hover:shadow-xl transition-shadow" src="public/images/IMG_5379.jpg" alt="תמיכה נוספת" loading="lazy">
+                    </div>
+                    <!-- WIDE -->
+                    <div class="cursor-pointer hover:opacity-75 transition-opacity" onclick="openLightbox('public/images/IMG_5001.jpg', 'סיירת')">
+                        <img class="h-auto max-w-full rounded-lg shadow-lg hover:shadow-xl transition-shadow" src="public/images/IMG_5001.jpg" alt="סיירת" loading="lazy">
+                    </div>
+                    <!-- TALL -->
+                    <div class="cursor-pointer hover:opacity-75 transition-opacity" onclick="openLightbox('public/images/6e188c65-3052-49c3-bcd9-4d3396888d36.jpg', 'שיתוף פעולה')">
+                        <img class="h-auto max-w-full rounded-lg shadow-lg hover:shadow-xl transition-shadow" src="public/images/6e188c65-3052-49c3-bcd9-4d3396888d36.jpg" alt="שיתוף פעולה" loading="lazy">
+                    </div>
+                    <!-- WIDE -->
+                    <div class="cursor-pointer hover:opacity-75 transition-opacity" onclick="openLightbox('public/images/IMG_4915.jpg', 'הובלת ציוד')">
+                        <img class="h-auto max-w-full rounded-lg shadow-lg hover:shadow-xl transition-shadow" src="public/images/IMG_4915.jpg" alt="הובלת ציוד" loading="lazy">
+                    </div>
+                    <!-- TALL -->
+                    <div class="cursor-pointer hover:opacity-75 transition-opacity" onclick="openLightbox('public/images/IMG_2840.jpg', 'פעילות קהילתית')">
+                        <img class="h-auto max-w-full rounded-lg shadow-lg hover:shadow-xl transition-shadow" src="public/images/IMG_2840.jpg" alt="פעילות קהילתית" loading="lazy">
+                    </div>
+                    <!-- WIDE -->
+                    <div class="cursor-pointer hover:opacity-75 transition-opacity" onclick="openLightbox('public/images/IMG_4944.jpg', 'ציוד טכנולוגי')">
+                        <img class="h-auto max-w-full rounded-lg shadow-lg hover:shadow-xl transition-shadow" src="public/images/IMG_4944.jpg" alt="ציוד טכנולוגי" loading="lazy">
+                    </div>
+                    <!-- TALL -->
+                    <div class="cursor-pointer hover:opacity-75 transition-opacity" onclick="openLightbox('public/images/img-12.jpeg', 'פעילות נוספת')">
+                        <img class="h-auto max-w-full rounded-lg shadow-lg hover:shadow-xl transition-shadow" src="public/images/img-12.jpeg" alt="פעילות נוספת" loading="lazy">
+                    </div>
+                    <!-- WIDE -->
+                    <div class="cursor-pointer hover:opacity-75 transition-opacity" onclick="openLightbox('public/images/a4113d76-486c-4cbc-b070-c029f21d9ed3.jpg', 'ציוד מיוחד')">
+                        <img class="h-auto max-w-full rounded-lg shadow-lg hover:shadow-xl transition-shadow" src="public/images/a4113d76-486c-4cbc-b070-c029f21d9ed3.jpg" alt="ציוד מיוחד" loading="lazy">
+                    </div>
+                    <!-- TALL -->
+                    <div class="cursor-pointer hover:opacity-75 transition-opacity" onclick="openLightbox('public/images/img-19.jpeg', 'פעילות נוספת')">
+                        <img class="h-auto max-w-full rounded-lg shadow-lg hover:shadow-xl transition-shadow" src="public/images/img-19.jpeg" alt="פעילות נוספת" loading="lazy">
+                    </div>
                 </div>
                 
-                <!-- Gallery Item 3 -->
-                <div class="group relative overflow-hidden rounded-lg shadow-lg">
-                    <img src="public/images/IMG_3889.jpg" alt="אירועי תמיכה" class="w-full h-64 object-cover transition-transform duration-300 group-hover:scale-105" loading="lazy">
+                <!-- Column 3: WIDE, TALL, WIDE, TALL... -->
+                <div class="grid gap-4">
+                    <!-- WIDE -->
+                    <div class="cursor-pointer hover:opacity-75 transition-opacity" onclick="openLightbox('public/images/IMG_3889.jpg', 'אירועי תמיכה')">
+                        <img class="h-auto max-w-full rounded-lg shadow-lg hover:shadow-xl transition-shadow" src="public/images/IMG_3889.jpg" alt="אירועי תמיכה" loading="lazy">
+                    </div>
+                    <!-- TALL -->
+                    <div class="cursor-pointer hover:opacity-75 transition-opacity" onclick="openLightbox('public/images/IMG_4522.jpg', 'הכנות לפעילות')">
+                        <img class="h-auto max-w-full rounded-lg shadow-lg hover:shadow-xl transition-shadow" src="public/images/IMG_4522.jpg" alt="הכנות לפעילות" loading="lazy">
+                    </div>
+                    <!-- WIDE -->
+                    <div class="cursor-pointer hover:opacity-75 transition-opacity" onclick="openLightbox('public/images/IMG_5352.jpg', 'חלוקת ציוד')">
+                        <img class="h-auto max-w-full rounded-lg shadow-lg hover:shadow-xl transition-shadow" src="public/images/IMG_5352.jpg" alt="חלוקת ציוד" loading="lazy">
+                    </div>
+                    <!-- TALL -->
+                    <div class="cursor-pointer hover:opacity-75 transition-opacity" onclick="openLightbox('public/images/9524fd0b-1e2a-4e9f-a9e8-39cf8eda6646.jpg', 'פיצה')">
+                        <img class="h-auto max-w-full rounded-lg shadow-lg hover:shadow-xl transition-shadow" src="public/images/9524fd0b-1e2a-4e9f-a9e8-39cf8eda6646.jpg" alt="פיצה" loading="lazy">
+                    </div>
+                    <!-- WIDE -->
+                    <div class="cursor-pointer hover:opacity-75 transition-opacity" onclick="openLightbox('public/images/IMG_7327.jpg', 'ציוד תקשורת')">
+                        <img class="h-auto max-w-full rounded-lg shadow-lg hover:shadow-xl transition-shadow" src="public/images/IMG_7327.jpg" alt="ציוד תקשורת" loading="lazy">
+                    </div>
+                    <!-- TALL -->
+                    <div class="cursor-pointer hover:opacity-75 transition-opacity" onclick="openLightbox('public/images/img-5.jpeg', 'פעילות שטח')">
+                        <img class="h-auto max-w-full rounded-lg shadow-lg hover:shadow-xl transition-shadow" src="public/images/img-5.jpeg" alt="פעילות שטח" loading="lazy">
+                    </div>
+                    <!-- WIDE -->
+                    <div class="cursor-pointer hover:opacity-75 transition-opacity" onclick="openLightbox('public/images/49d1a9f9-8618-41fc-aba8-6c4cc640b930.jpg', 'תמיכה לוגיסטית')">
+                        <img class="h-auto max-w-full rounded-lg shadow-lg hover:shadow-xl transition-shadow" src="public/images/49d1a9f9-8618-41fc-aba8-6c4cc640b930.jpg" alt="תמיכה לוגיסטית" loading="lazy">
+                    </div>
+                    <!-- TALL -->
+                    <div class="cursor-pointer hover:opacity-75 transition-opacity" onclick="openLightbox('public/images/img-6.jpeg', 'פעילות שטח')">
+                        <img class="h-auto max-w-full rounded-lg shadow-lg hover:shadow-xl transition-shadow" src="public/images/img-6.jpeg" alt="פעילות שטח" loading="lazy">
+                    </div>
+                    <!-- WIDE -->
+                    <div class="cursor-pointer hover:opacity-75 transition-opacity" onclick="openLightbox('public/images/img-3.jpeg', 'פעילות שטח')">
+                        <img class="h-auto max-w-full rounded-lg shadow-lg hover:shadow-xl transition-shadow" src="public/images/img-3.jpeg" alt="פעילות שטח" loading="lazy">
+                    </div>
+                    <!-- TALL -->
+                    <div class="cursor-pointer hover:opacity-75 transition-opacity" onclick="openLightbox('public/images/IMG_2191.jpg', 'איסוף וארגון')">
+                        <img class="h-auto max-w-full rounded-lg shadow-lg hover:shadow-xl transition-shadow" src="public/images/IMG_2191.jpg" alt="איסוף וארגון" loading="lazy">
+                    </div>
+                    <!-- WIDE -->
+                    <div class="cursor-pointer hover:opacity-75 transition-opacity" onclick="openLightbox('public/images/a2c60897-94b2-4759-a197-efe5b9a5d3f0.jpg', 'פעילות שטח')">
+                        <img class="h-auto max-w-full rounded-lg shadow-lg hover:shadow-xl transition-shadow" src="public/images/a2c60897-94b2-4759-a197-efe5b9a5d3f0.jpg" alt="פעילות שטח" loading="lazy">
+                    </div>
+                    <!-- TALL -->
+                    <div class="cursor-pointer hover:opacity-75 transition-opacity" onclick="openLightbox('public/images/edc77353-93d8-4808-8095-58d118180d43.jpg', 'תמיכה נוספת')">
+                        <img class="h-auto max-w-full rounded-lg shadow-lg hover:shadow-xl transition-shadow" src="public/images/edc77353-93d8-4808-8095-58d118180d43.jpg" alt="תמיכה נוספת" loading="lazy">
+                    </div>
+                    <!-- WIDE -->
+                    <div class="cursor-pointer hover:opacity-75 transition-opacity" onclick="openLightbox('public/images/IMG_3218.jpg', 'ציוד צבאי')">
+                        <img class="h-auto max-w-full rounded-lg shadow-lg hover:shadow-xl transition-shadow" src="public/images/IMG_3218.jpg" alt="ציוד צבאי" loading="lazy">
+                    </div>
+                    <!-- TALL -->
+                    <div class="cursor-pointer hover:opacity-75 transition-opacity" onclick="openLightbox('public/images/img-10.jpeg', 'תמיכה מיוחדת')">
+                        <img class="h-auto max-w-full rounded-lg shadow-lg hover:shadow-xl transition-shadow" src="public/images/img-10.jpeg" alt="תמיכה מיוחדת" loading="lazy">
+                    </div>
+                    <!-- WIDE -->
+                    <div class="cursor-pointer hover:opacity-75 transition-opacity" onclick="openLightbox('public/images/img-7.jpeg', 'פעילות שטח')">
+                        <img class="h-auto max-w-full rounded-lg shadow-lg hover:shadow-xl transition-shadow" src="public/images/img-7.jpeg" alt="פעילות שטח" loading="lazy">
+                    </div>
+                    <!-- TALL -->
+                    <div class="cursor-pointer hover:opacity-75 transition-opacity" onclick="openLightbox('public/images/img-11.jpeg', 'תמיכה מיוחדת')">
+                        <img class="h-auto max-w-full rounded-lg shadow-lg hover:shadow-xl transition-shadow" src="public/images/img-11.jpeg" alt="תמיכה מיוחדת" loading="lazy">
+                    </div>
+                    <!-- WIDE -->
+                    <div class="cursor-pointer hover:opacity-75 transition-opacity" onclick="openLightbox('public/images/e46fcc1a-b00e-47fd-9a42-6e790b54ffec.jpg', 'פעילות מיוחדת')">
+                        <img class="h-auto max-w-full rounded-lg shadow-lg hover:shadow-xl transition-shadow" src="public/images/e46fcc1a-b00e-47fd-9a42-6e790b54ffec.jpg" alt="פעילות מיוחדת" loading="lazy">
+                    </div>
                 </div>
                 
-                <!-- Gallery Item 4 -->
-                <div class="group relative overflow-hidden rounded-lg shadow-lg">
-                    <img src="public/images/IMG_3899.jpg" alt="לוגיסטיקה" class="w-full h-64 object-cover transition-transform duration-300 group-hover:scale-105" loading="lazy">
+                <!-- Column 4: TALL, WIDE, TALL, WIDE... -->
+                <div class="grid gap-4">
+                    <!-- TALL -->
+                    <div class="cursor-pointer hover:opacity-75 transition-opacity" onclick="openLightbox('public/images/IMG_3899.jpg', 'לוגיסטיקה')">
+                        <img class="h-auto max-w-full rounded-lg shadow-lg hover:shadow-xl transition-shadow" src="public/images/IMG_3899.jpg" alt="לוגיסטיקה" loading="lazy">
+                    </div>
+                    <!-- WIDE -->
+                    <div class="cursor-pointer hover:opacity-75 transition-opacity" onclick="openLightbox('public/images/IMG_4541.jpg', 'עבודת צוות')">
+                        <img class="h-auto max-w-full rounded-lg shadow-lg hover:shadow-xl transition-shadow" src="public/images/IMG_4541.jpg" alt="עבודת צוות" loading="lazy">
+                    </div>
+                    <!-- TALL -->
+                    <div class="cursor-pointer hover:opacity-75 transition-opacity" onclick="openLightbox('public/images/IMG_4834.jpg', 'איסוף תרומות')">
+                        <img class="h-auto max-w-full rounded-lg shadow-lg hover:shadow-xl transition-shadow" src="public/images/IMG_4834.jpg" alt="איסוף תרומות" loading="lazy">
+                    </div>
+                    <!-- WIDE -->
+                    <div class="cursor-pointer hover:opacity-75 transition-opacity" onclick="openLightbox('public/images/IMG_4476.jpg', 'אוכל ושתייה')">
+                        <img class="h-auto max-w-full rounded-lg shadow-lg hover:shadow-xl transition-shadow" src="public/images/IMG_4476.jpg" alt="אוכל ושתייה" loading="lazy">
+                    </div>
+                    <!-- TALL -->
+                    <div class="cursor-pointer hover:opacity-75 transition-opacity" onclick="openLightbox('public/images/img-9.jpeg', 'תמיכה נוספת')">
+                        <img class="h-auto max-w-full rounded-lg shadow-lg hover:shadow-xl transition-shadow" src="public/images/img-9.jpeg" alt="תמיכה נוספת" loading="lazy">
+                    </div>
+                    <!-- WIDE -->
+                    <div class="cursor-pointer hover:opacity-75 transition-opacity" onclick="openLightbox('public/images/IMG_5361.jpg', 'פעילות קהילתית')">
+                        <img class="h-auto max-w-full rounded-lg shadow-lg hover:shadow-xl transition-shadow" src="public/images/IMG_5361.jpg" alt="פעילות קהילתית" loading="lazy">
+                    </div>
+                    <!-- TALL -->
+                    <div class="cursor-pointer hover:opacity-75 transition-opacity" onclick="openLightbox('public/images/IMG_4843.jpg', 'ציוד רפואי')">
+                        <img class="h-auto max-w-full rounded-lg shadow-lg hover:shadow-xl transition-shadow" src="public/images/IMG_4843.jpg" alt="ציוד רפואי" loading="lazy">
+                    </div>
+                    <!-- WIDE -->
+                    <div class="cursor-pointer hover:opacity-75 transition-opacity" onclick="openLightbox('public/images/5381703b-95a0-4632-9559-78d3420a3360.jpg', 'ארגון משאבים')">
+                        <img class="h-auto max-w-full rounded-lg shadow-lg hover:shadow-xl transition-shadow" src="public/images/5381703b-95a0-4632-9559-78d3420a3360.jpg" alt="ארגון משאבים" loading="lazy">
+                    </div>
+                    <!-- TALL -->
+                    <div class="cursor-pointer hover:opacity-75 transition-opacity" onclick="openLightbox('public/images/7da06fa9-173c-4988-a408-f7b23bf514f0.jpg', 'שיתוף פעולה')">
+                        <img class="h-auto max-w-full rounded-lg shadow-lg hover:shadow-xl transition-shadow" src="public/images/7da06fa9-173c-4988-a408-f7b23bf514f0.jpg" alt="שיתוף פעולה" loading="lazy">
+                    </div>
+                    <!-- WIDE -->
+                    <div class="cursor-pointer hover:opacity-75 transition-opacity" onclick="openLightbox('public/images/img-4.jpeg', 'פעילות שטח')">
+                        <img class="h-auto max-w-full rounded-lg shadow-lg hover:shadow-xl transition-shadow" src="public/images/img-4.jpeg" alt="פעילות שטח" loading="lazy">
+                    </div>
+                    
+                    <!-- TALL -->
+                    <div class="cursor-pointer hover:opacity-75 transition-opacity" onclick="openLightbox('public/images/img-16.jpeg', 'תמיכה מיוחדת')">
+                        <img class="h-auto max-w-full rounded-lg shadow-lg hover:shadow-xl transition-shadow" src="public/images/img-16.jpeg" alt="תמיכה מיוחדת" loading="lazy">
+                    </div>
+                    <!-- WIDE -->
+                    <div class="cursor-pointer hover:opacity-75 transition-opacity" onclick="openLightbox('public/images/IMG_5467.jpg', 'ציוד מתקדם')">
+                        <img class="h-auto max-w-full rounded-lg shadow-lg hover:shadow-xl transition-shadow" src="public/images/IMG_5467.jpg" alt="ציוד מתקדם" loading="lazy">
+                    </div>
+                    <!-- TALL -->
+                    <div class="cursor-pointer hover:opacity-75 transition-opacity" onclick="openLightbox('public/images/img-14.jpeg', 'תמיכה מיוחדת')">
+                        <img class="h-auto max-w-full rounded-lg shadow-lg hover:shadow-xl transition-shadow" src="public/images/img-14.jpeg" alt="תמיכה מיוחדת" loading="lazy">
+                    </div>
+                    <!-- WIDE -->
+                    <div class="cursor-pointer hover:opacity-75 transition-opacity" onclick="openLightbox('public/images/IMG_5739.jpg', 'אירועי תמיכה')">
+                        <img class="h-auto max-w-full rounded-lg shadow-lg hover:shadow-xl transition-shadow" src="public/images/IMG_5739.jpg" alt="אירועי תמיכה" loading="lazy">
+                    </div>
+                    <!-- TALL -->
+                    <div class="cursor-pointer hover:opacity-75 transition-opacity" onclick="openLightbox('public/images/img-17.jpeg', 'תמיכה מיוחדת')">
+                        <img class="h-auto max-w-full rounded-lg shadow-lg hover:shadow-xl transition-shadow" src="public/images/img-17.jpeg" alt="תמיכה מיוחדת" loading="lazy">
+                    </div>
+                    <!-- WIDE -->
+                    <div class="cursor-pointer hover:opacity-75 transition-opacity" onclick="openLightbox('public/images/IMG_5811.jpg', 'ציוד לילה')">
+                        <img class="h-auto max-w-full rounded-lg shadow-lg hover:shadow-xl transition-shadow" src="public/images/IMG_5811.jpg" alt="ציוד לילה" loading="lazy">
+                    </div>
+                    <!-- TALL -->
+                    <div class="cursor-pointer hover:opacity-75 transition-opacity" onclick="openLightbox('public/images/img-18.jpeg', 'תמיכה מיוחדת')">
+                        <img class="h-auto max-w-full rounded-lg shadow-lg hover:shadow-xl transition-shadow" src="public/images/img-18.jpeg" alt="תמיכה מיוחדת" loading="lazy">
+                    </div>
                 </div>
-                
-                <!-- Gallery Item 5 -->
-                <div class="group relative overflow-hidden rounded-lg shadow-lg">
-                    <img src="public/images/IMG_2840.jpg" alt="שיתוף פעולה" class="w-full h-64 object-cover transition-transform duration-300 group-hover:scale-105" loading="lazy">
-                </div>
-                
-                <!-- Gallery Item 6 -->
-                <div class="group relative overflow-hidden rounded-lg shadow-lg">
-                    <img src="public/images/IMG_5221.jpg" alt="תמיכה בקהילה" class="w-full h-64 object-cover transition-transform duration-300 group-hover:scale-105" loading="lazy">
-                </div>
-                <!-- Gallery Item 7 -->
-                <div class="group relative overflow-hidden rounded-lg shadow-lg">
-                    <img src="public/images/IMG_8107.jpg" alt="פעילות נוספת" class="w-full h-64 object-cover transition-transform duration-300 group-hover:scale-105" loading="lazy">
-                </div>
-                
-                <!-- Gallery Item 8 -->
-                <div class="group relative overflow-hidden rounded-lg shadow-lg">
-                    <img src="public/images/IMG_8437 2.jpg" alt="ציוד מיוחד" class="w-full h-64 object-cover transition-transform duration-300 group-hover:scale-105" loading="lazy">
-                </div>
-                
-                <!-- Gallery Item 9 -->
-                <div class="group relative overflow-hidden rounded-lg shadow-lg">
-                    <img src="public/images/IMG_5379.jpg" alt="תמיכה נוספת" class="w-full h-64 object-cover transition-transform duration-300 group-hover:scale-105" loading="lazy">
-                </div>
-                
-                <!-- Gallery Item 10 -->
-                <div class="group relative overflow-hidden rounded-lg shadow-lg">
-                    <img src="public/images/IMG_4042.jpg" alt="תמיכה למתגייסים" class="w-full h-64 object-cover transition-transform duration-300 group-hover:scale-105" loading="lazy">
-                </div>
-                
-                <!-- Gallery Item 11 -->
-                <div class="group relative overflow-hidden rounded-lg shadow-lg">
-                    <img src="public/images/IMG_4476.jpg" alt="אוכל ושתייה" class="w-full h-64 object-cover transition-transform duration-300 group-hover:scale-105" loading="lazy">
-                </div>
-                
-                <!-- Gallery Item 12 -->
-                <div class="group relative overflow-hidden rounded-lg shadow-lg">
-                    <img src="public/images/IMG_4522.jpg" alt="הכנות לפעילות" class="w-full h-64 object-cover transition-transform duration-300 group-hover:scale-105" loading="lazy">
-                </div>
-                
-                <!-- Gallery Item 13 -->
-                <div class="group relative overflow-hidden rounded-lg shadow-lg">
-                    <img src="public/images/IMG_4541.jpg" alt="עבודת צוות" class="w-full h-64 object-cover transition-transform duration-300 group-hover:scale-105" loading="lazy">
-                </div>
-                
-                <!-- Gallery Item 14 -->
-                <div class="group relative overflow-hidden rounded-lg shadow-lg">
-                    <img src="public/images/IMG_4834.jpg" alt="איסוף תרומות" class="w-full h-64 object-cover transition-transform duration-300 group-hover:scale-105" loading="lazy">
-                </div>
-                
-                <!-- Gallery Item 15 -->
-                <div class="group relative overflow-hidden rounded-lg shadow-lg">
-                    <img src="public/images/IMG_4843.jpg" alt="ציוד רפואי" class="w-full h-64 object-cover transition-transform duration-300 group-hover:scale-105" loading="lazy">
-                </div>
-                
-                <!-- Gallery Item 16 -->
-                <div class="group relative overflow-hidden rounded-lg shadow-lg">
-                    <img src="public/images/IMG_4884.jpg" alt="אריזת חבילות" class="w-full h-64 object-cover transition-transform duration-300 group-hover:scale-105" loading="lazy">
-                </div>
-                
-                <!-- Gallery Item 17 -->
-                <div class="group relative overflow-hidden rounded-lg shadow-lg">
-                    <img src="public/images/IMG_4915.jpg" alt="הובלת ציוד" class="w-full h-64 object-cover transition-transform duration-300 group-hover:scale-105" loading="lazy">
-                </div>
-                
-                <!-- Gallery Item 18 -->
-                <div class="group relative overflow-hidden rounded-lg shadow-lg">
-                    <img src="public/images/IMG_4944.jpg" alt="ציוד טכנולוגי" class="w-full h-64 object-cover transition-transform duration-300 group-hover:scale-105" loading="lazy">
-                </div>
-                <!-- Gallery Batch 2 (Items 19-27) -->
-                <div class="group relative overflow-hidden rounded-lg shadow-lg">
-                    <img src="public/images/IMG_5131.jpg" alt="מתנדבים בפעולה" class="w-full h-64 object-cover transition-transform duration-300 group-hover:scale-105" loading="lazy">
-                </div>
-                
-                <div class="group relative overflow-hidden rounded-lg shadow-lg">
-                    <img src="public/images/IMG_5272.jpg" alt="ציוד מיגון" class="w-full h-64 object-cover transition-transform duration-300 group-hover:scale-105" loading="lazy">
-                </div>
-                
-                <div class="group relative overflow-hidden rounded-lg shadow-lg">
-                    <img src="public/images/IMG_5352.jpg" alt="חלוקת ציוד" class="w-full h-64 object-cover transition-transform duration-300 group-hover:scale-105" loading="lazy">
-                </div>
-                
-                <div class="group relative overflow-hidden rounded-lg shadow-lg">
-                    <img src="public/images/IMG_5361.jpg" alt="פעילות קהילתית" class="w-full h-64 object-cover transition-transform duration-300 group-hover:scale-105" loading="lazy">
-                </div>
-                
-                <div class="group relative overflow-hidden rounded-lg shadow-lg">
-                    <img src="public/images/IMG_5378.jpg" alt="ציוד לילה" class="w-full h-64 object-cover transition-transform duration-300 group-hover:scale-105" loading="lazy">
-                </div>
-                
-                <div class="group relative overflow-hidden rounded-lg shadow-lg">
-                    <img src="public/images/IMG_5467.jpg" alt="הדרכה וארגון" class="w-full h-64 object-cover transition-transform duration-300 group-hover:scale-105" loading="lazy">
-                </div>
-                
-                <div class="group relative overflow-hidden rounded-lg shadow-lg">
-                    <img src="public/images/IMG_5739.jpg" alt="ציוד מיוחד" class="w-full h-64 object-cover transition-transform duration-300 group-hover:scale-105" loading="lazy">
-                </div>
-                
-                <div class="group relative overflow-hidden rounded-lg shadow-lg">
-                    <img src="public/images/IMG_5811.jpg" alt="מכשור רפואי" class="w-full h-64 object-cover transition-transform duration-300 group-hover:scale-105" loading="lazy">
-                </div>
-                <!-- Gallery Batch 3 (Items 28+) -->
-                <div class="group relative overflow-hidden rounded-lg shadow-lg">
-                    <img src="public/images/IMG_5907.jpg" alt="ציוד הובלה" class="w-full h-64 object-cover transition-transform duration-300 group-hover:scale-105" loading="lazy">
-                </div>
-                
-                <div class="group relative overflow-hidden rounded-lg shadow-lg">
-                    <img src="public/images/IMG_6528.jpg" alt="אמצעי לחימה" class="w-full h-64 object-cover transition-transform duration-300 group-hover:scale-105" loading="lazy">
-                </div>
-                
-                <div class="group relative overflow-hidden rounded-lg shadow-lg">
-                    <img src="public/images/IMG_6629.jpg" alt="הכנות מיוחדות" class="w-full h-64 object-cover transition-transform duration-300 group-hover:scale-105" loading="lazy">
-                </div>
-                
-                <div class="group relative overflow-hidden rounded-lg shadow-lg">
-                    <img src="public/images/IMG_6888.jpg" alt="ציוד חורף" class="w-full h-64 object-cover transition-transform duration-300 group-hover:scale-105" loading="lazy">
-                </div>
-                
-                <div class="group relative overflow-hidden rounded-lg shadow-lg">
-                    <img src="public/images/IMG_7327.jpg" alt="ציוד תקשורת" class="w-full h-64 object-cover transition-transform duration-300 group-hover:scale-105" loading="lazy">
-                </div>
-                
-                <div class="group relative overflow-hidden rounded-lg shadow-lg">
-                    <img src="public/images/IMG_2191.jpg" alt="איסוף וארגון" class="w-full h-64 object-cover transition-transform duration-300 group-hover:scale-105" loading="lazy">
-                </div>
-                
-                <div class="group relative overflow-hidden rounded-lg shadow-lg">
-                    <img src="public/images/IMG_3218.jpg" alt="תמיכה רחבה" class="w-full h-64 object-cover transition-transform duration-300 group-hover:scale-105" loading="lazy">
-                </div>
-                
-                <div class="group relative overflow-hidden rounded-lg shadow-lg">
-                    <img src="public/images/IMG_3266.jpg" alt="מחויבות מתמדת" class="w-full h-64 object-cover transition-transform duration-300 group-hover:scale-105" loading="lazy">
-                </div>
-                
-                <div class="group relative overflow-hidden rounded-lg shadow-lg">
-                    <img src="public/images/2a9509b3-8651-44e9-8ca7-e3f5f14cb8e5.jpg" alt="פעילות מיוחדת" class="w-full h-64 object-cover transition-transform duration-300 group-hover:scale-105" loading="lazy">
-                </div>
-                
-                <div class="group relative overflow-hidden rounded-lg shadow-lg">
-                    <img src="public/images/3fe8a380-b8e5-466a-ad9b-6413d32e89b7.jpg" alt="ציוד מתקדם" class="w-full h-64 object-cover transition-transform duration-300 group-hover:scale-105" loading="lazy">
-                </div>
-                
-                <div class="group relative overflow-hidden rounded-lg shadow-lg">
-                    <img src="public/images/49d1a9f9-8618-41fc-aba8-6c4cc640b930.jpg" alt="תמיכה לוגיסטית" class="w-full h-64 object-cover transition-transform duration-300 group-hover:scale-105" loading="lazy">
-                </div>
-                
-                <div class="group relative overflow-hidden rounded-lg shadow-lg">
-                    <img src="public/images/5381703b-95a0-4632-9559-78d3420a3360.jpg" alt="ארגון משאבים" class="w-full h-64 object-cover transition-transform duration-300 group-hover:scale-105" loading="lazy">
-                </div>
-
-                <div class="group relative overflow-hidden rounded-lg shadow-lg">
-                    <img src="public/images/IMG_5001.jpg" alt="סיירת" class="w-full h-64 object-cover transition-transform duration-300 group-hover:scale-105" loading="lazy">
-                </div>
-                
-               <div class="group relative overflow-hidden rounded-lg shadow-lg">
-                    <img src="public/images/a4113d76-486c-4cbc-b070-c029f21d9ed3.jpg" alt="תיאום פעילות" class="w-full h-64 object-cover transition-transform duration-300 group-hover:scale-105" loading="lazy">
-                </div>
-                
-                <div class="group relative overflow-hidden rounded-lg shadow-lg">
-                    <img src="public/images/e46fcc1a-b00e-47fd-9a42-6e790b54ffec.jpg" alt="ציוד מיגון נוסף" class="w-full h-64 object-cover transition-transform duration-300 group-hover:scale-105" loading="lazy">
-                </div>
-                
-                <div class="group relative overflow-hidden rounded-lg shadow-lg">
-                    <img src="public/images/e95409d3-4af5-4238-99f8-75b63d1e0368.jpg" alt="הכנות מיוחדות" class="w-full h-64 object-cover transition-transform duration-300 group-hover:scale-105" loading="lazy">
-                </div>
-                
-                <div class="group relative overflow-hidden rounded-lg shadow-lg">
-                    <img src="public/images/edc77353-93d8-4808-8095-58d118180d43.jpg" alt="תמיכה נוספת" class="w-full h-64 object-cover transition-transform duration-300 group-hover:scale-105" loading="lazy">
-                </div>
-                <div class="group relative overflow-hidden rounded-lg shadow-lg">
-                    <img src="public/images/6e188c65-3052-49c3-bcd9-4d3396888d36.jpg" alt="שיתוף פעולה" class="w-full h-64 object-cover transition-transform duration-300 group-hover:scale-105" loading="lazy">
-                </div>
-
-                <div class="group relative overflow-hidden rounded-lg shadow-lg">
-                    <img src="public/images/7da06fa9-173c-4988-a408-f7b23bf514f0.jpg" alt="שיתוף פעולה" class="w-full h-64 object-cover transition-transform duration-300 group-hover:scale-105" loading="lazy">
-                </div>
-                <div class="group relative overflow-hidden rounded-lg shadow-lg">
-                    <img src="public/images/9c51d7f4-aaee-433c-bfba-36dfece70018.jpg" alt="שיתוף פעולה" class="w-full h-64 object-cover transition-transform duration-300 group-hover:scale-105" loading="lazy">
-                </div>
-                <div class="group relative overflow-hidden rounded-lg shadow-lg">
-                    <img src="public/images/38f744cd-c59d-4672-978e-e007af8ac10b.jpg" alt="פיצה" class="w-full h-64 object-cover transition-transform duration-300 group-hover:scale-105" loading="lazy">
-                </div>
-                <div class="group relative overflow-hidden rounded-lg shadow-lg">
-                    <img src="public/images/9524fd0b-1e2a-4e9f-a9e8-39cf8eda6646.jpg" alt="פיצה" class="w-full h-64 object-cover transition-transform duration-300 group-hover:scale-105" loading="lazy">
-                </div>
-                <div class="group relative overflow-hidden rounded-lg shadow-lg">
-                    <img src="public/images/50882954-8ee4-4024-8093-d6b62c11ad88.jpg" alt="אוהלים ללוחמים" class="w-full h-64 object-cover transition-transform duration-300 group-hover:scale-105" loading="lazy">
-                </div>
-                <div class="group relative overflow-hidden rounded-lg shadow-lg">
-                    <img src="public/images/a2c60897-94b2-4759-a197-efe5b9a5d3f0.jpg" alt="פעילות שטח" class="w-full h-64 object-cover transition-transform duration-300 group-hover:scale-105" loading="lazy">
-                </div>
-                
-                
-            </div>
         </div>
     </section>
 
@@ -630,6 +708,124 @@
                 </div>
 
 
+                <!-- Testimonial 9 -->
+                <div class="bg-white rounded-xl shadow-lg p-6 border-r-4 border-green-700">
+                    <div class="mb-4">
+                        <svg class="w-8 h-8 text-green-700 mb-4" fill="currentColor" viewBox="0 0 20 20">
+                            <path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"/>
+                        </svg>
+                    </div>
+                    <blockquote class="text-gray-700 mb-4 text-lg leading-relaxed">
+                חברים ממש תודה על הכל החיילים ממש נהנו, היו מבסוטים וזה שווה הכל
+                האוכל היה נהדר ומעל המצופה 
+                מודים לכם מכל הלב תודה רבה על הכל❤️🙏🏻
+                    </blockquote>
+                    <div class="flex items-center">
+                        <div class="mr-3">
+                            <div class="font-semibold text-gray-900">נ.</div>
+                            <div class="text-gray-600 text-sm">חטיבת כפיר</div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Testimonial 10 -->
+                <div class="bg-white rounded-xl shadow-lg p-6 border-r-4 border-gray-700">
+                    <div class="mb-4">
+                        <svg class="w-8 h-8 text-gray-700 mb-4" fill="currentColor" viewBox="0 0 20 20">
+                            <path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"/>
+                        </svg>
+                    </div>
+                    <blockquote class="text-gray-700 mb-4 text-lg leading-relaxed">
+                        תודה רבה לכם אנשים יקרים
+                        אתם לא מבינים מה אתם עושים לחיילים
+                        נותנים להם רוח וממלאים את המצברים
+                        מרגש מאוד🙏🏻🙏🏻🙏🏻
+                    </blockquote>
+                    <div class="flex items-center">
+                        <div class="mr-3">
+                            <div class="font-semibold text-gray-900">ס.</div>
+                            <div class="text-gray-600 text-sm">גדס״ר 551</div>
+                        </div>
+                    </div>
+                </div>
+
+                 <!-- Testimonial 11 -->
+                 <div class="bg-white rounded-xl shadow-lg p-6 border-r-4 border-gray-700">
+                    <div class="mb-4">
+                        <svg class="w-8 h-8 text-gray-700 mb-4" fill="currentColor" viewBox="0 0 20 20">
+                            <path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"/>
+                        </svg>
+                    </div>
+                    <blockquote class="text-gray-700 mb-4 text-lg leading-relaxed">
+                        אלופים!! רציתי למסור לכם תודה רבה בשמי ובשם כל הפלוגה. אנחנו מאוד מעריכים את התרומה שלכם וחיממתם לנו את הלב ונתתם לנו כוח להמשיך . 
+אין על העם שלנו ! 💙🤍
+אוהבים פלוגת מסייעת 8116 💜
+                    </blockquote>
+                    <div class="flex items-center">
+                        <div class="mr-3">
+                            <div class="font-semibold text-gray-900">נ.</div>
+                            <div class="text-gray-600 text-sm">מסייעת 8116</div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Testimonial 12 -->
+                <div class="bg-white rounded-xl shadow-lg p-6 border-r-4 border-orange-700">
+                    <div class="mb-4">
+                        <svg class="w-8 h-8 text-orange-700 mb-4" fill="currentColor" viewBox="0 0 20 20">
+                            <path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"/>
+                        </svg>
+                    </div>
+                    <blockquote class="text-gray-700 mb-4 text-lg leading-relaxed">
+                מקווה שכל אחד (ואחת) מכם נם בביתו ואתם תקראו את ההודעה רק בבוקר.
+                <br>
+                <br>
+                שוב תודה על ארוחת ערב נעימה וטעימה, אתם מקצוענים, חיילי החטיבה נהנו ושבעו וכך גם כמה וכמה אורחיים על הדרך (הלוואי והיינו יכולים לארח כל חייל ובכלל).
+                <br>
+                <br>
+                וותרתם על ערב נח בבית, השקעתם זמן, כסף ושאר משאבים וזה ניכר בתוצאות. זה נותן לנו כח. שנזכה ב"ה להחזיר את החטופים במהרה ולהכריע את אויבנו ולהשמידם.  🩵
+                    </blockquote>
+                    <div class="flex items-center">
+                        <div class="mr-3">
+                            <div class="font-semibold text-gray-900">ב.</div>
+                            <div class="text-gray-600 text-sm">חטיבה 8237</div>
+                        </div>
+                    </div>
+                </div>
+
+                 <!-- Testimonial 13 -->
+                 <div class="bg-white rounded-xl shadow-lg p-6 border-r-4 border-green-500">
+                    <div class="mb-4">
+                        <svg class="w-8 h-8 text-green-500 mb-4" fill="currentColor" viewBox="0 0 20 20">
+                            <path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"/>
+                        </svg>
+                    </div>
+                    <blockquote class="text-gray-700 mb-4 text-lg leading-relaxed">
+                        רוצה להודות בשמי ובשם הפלוגה על ערב מטורף!
+                        החבר'ה נהנו ברמה הכי גבוהה שיש!
+                        <br>
+                        <br>
+                        מוטי היקר וכל אחד ואחת מכם - 
+                         אין מספיק מילים לתאר, כמה אתם אנשים מיוחדים ומדהימים. 
+                        <br>
+                        <br>
+                        אנשים פה לא מפסיקים לחייך עד עכשיו...
+                        <br>
+                        אתם לא מבינים כמה היינו צריכים את זה. 
+                        <br>
+                        תודה לכם מעומק הלב 💚
+                        <br>
+                        <br>
+                        יובל, וכל מסייעת סיירת הנח״ל 🫡
+                    </blockquote>
+                    <div class="flex items-center">
+                        <div class="mr-3">
+                            <div class="font-semibold text-gray-900">י.</div>
+                            <div class="text-gray-600 text-sm">מסייעת סיירת הנח״ל</div>
+                        </div>
+                    </div>
+                </div>
+
             </div>
         </div>
     </section>
@@ -727,5 +923,55 @@
             </div>
         </div>
     </footer>
+
+    <!-- Lightbox Modal -->
+    <div id="lightbox" class="hidden fixed inset-0 bg-black bg-opacity-90 z-50 flex items-center justify-center p-4">
+        <div class="relative max-w-full max-h-full">
+            <!-- Close button -->
+            <button onclick="closeLightbox()" class="absolute top-4 right-4 text-white text-4xl hover:text-gray-300 transition-colors z-10">
+                &times;
+            </button>
+            <!-- Image container -->
+            <img id="lightboxImage" class="max-w-full max-h-full object-contain rounded-lg" alt="">
+        </div>
+    </div>
+
+    <script>
+        // Lightbox functionality
+        function openLightbox(imageSrc, imageAlt) {
+            const lightbox = document.getElementById('lightbox');
+            const lightboxImage = document.getElementById('lightboxImage');
+            
+            lightboxImage.src = imageSrc;
+            lightboxImage.alt = imageAlt;
+            lightbox.classList.remove('hidden');
+            
+            // Prevent body scroll when lightbox is open
+            document.body.style.overflow = 'hidden';
+        }
+
+        function closeLightbox() {
+            const lightbox = document.getElementById('lightbox');
+            lightbox.classList.add('hidden');
+            
+            // Restore body scroll
+            document.body.style.overflow = '';
+        }
+
+        // Close lightbox when clicking outside the image
+        document.getElementById('lightbox').addEventListener('click', function(e) {
+            if (e.target === this) {
+                closeLightbox();
+            }
+        });
+
+        // Close lightbox with Escape key
+        document.addEventListener('keydown', function(e) {
+            if (e.key === 'Escape') {
+                closeLightbox();
+            }
+        });
+
+    </script>
 </body>
 </html>
