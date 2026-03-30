@@ -40,7 +40,7 @@
     "events": {
       "title": "Événements barbecue",
       "description": "Nous organisons des soirées barbecue et des stands de shawarma pour les unités régulières et de réserve, les équipes d'intervention d'urgence et les forces de secours dans tous les secteurs de combat.",
-      "details": "Jusqu'à présent, l'équipe Chamal a organisé plus de 200 événements barbecue, stands alimentaires et dons pour des dizaines de milliers de nos précieux combattants!"
+      "details": "Jusqu'à présent, l'équipe Chamal a organisé plus de 320 événements barbecue, stands alimentaires et dons pour des dizaines de milliers de nos précieux combattants!"
     },
     "collaboration": {
       "title": "Réseau collaboratif",
@@ -127,6 +127,41 @@
       "quote": "Je veux remercier en mon nom et au nom de la compagnie pour une soirée folle!<br>Les gars ont apprécié au plus haut niveau possible!<br><br>Cher Moti et chacun d'entre vous -<br>Il n'y a pas assez de mots pour décrire à quel point vous êtes des gens spéciaux et extraordinaires.<br><br>Les gens ici n'ont pas cessé de sourire jusqu'à maintenant...<br>Vous ne comprenez pas à quel point nous avions besoin de cela.<br>Merci du fond de nos cœurs 💚<br><br>Yuval, et tout le soutien de reconnaissance Nahal 🫡",
       "name": "Y.",
       "unit": "Soutien de reconnaissance Nahal"
+    },
+    "testimonial16": {
+      "quote": "Un grand merci du fond du cœur aux personnes extraordinaires de Chamal Modiin, qui sont venues nous rejoindre quelque part dans le nord et ont préparé un festin royal pour notre batterie dans le cadre d'une soirée de fin de rotation et d'adieu à notre commandant incroyable (qui ne va nulle part — il sera le commandant adjoint du bataillon).<br><br>Merci du fond du cœur, au nom de tous les combattants de la Batterie C, Bataillon 531",
+      "name": "Combattants de la Batterie C",
+      "unit": "Bataillon 531"
+    },
+    "testimonial17": {
+      "quote": "Chers amis, mille mercis — que Dieu vous protège et vous donne la force de continuer à faire le bien",
+      "name": "Ts.",
+      "unit": "Bataillon 9294"
+    },
+    "testimonial18": {
+      "quote": "Amis, merci beaucoup pour l'étreinte chaleureuse et votre soutien incroyable!!!!! Vous êtes tout simplement extraordinaires. Merci.",
+      "name": "M.",
+      "unit": "Bataillon 8237"
+    },
+    "testimonial19": {
+      "quote": "Je vous remercie de tout cœur pour l'investissement — pour le barbecue spécial, mais aussi pour l'inspiration de personnes remarquables. Les combattants ont vu des bénévoles qui ont pris un jour de congé pour investir en eux, arrivant tôt dans le nord et traversant la frontière !!!. Ils ont entendu un discours inspirant d'un père dont le fils a été blessé, d'un héros israélien amputé des deux jambes, et d'une mère en deuil. Nous n'avons jamais eu une telle équipe.<br><br>Et en plus, arriver pleins d'énergie sans douche.. pour cela seul, je vous salue.",
+      "name": "P.",
+      "unit": "Compagnie Shaked Givati"
+    },
+    "testimonial20": {
+      "quote": "Un grand merci à vous, vous nous avez vraiment touchés!<br>Merci à Dieu pour des gens comme vous qui ne veulent que donner et aider<br>Nous espérons que vous avez apprécié partager notre joie<br>Il n'y a personne comme vous, merci beaucoup — c'est vraiment apprécié ❤️❤️❤️",
+      "name": "Roni",
+      "unit": "Compagnie de police des frontières"
+    },
+    "testimonial21": {
+      "quote": "Chers amis, encore un grand merci à vous tous — ce n'est vraiment pas évident du tout. Vous avez organisé ici la production de toute une vie, et les soldats apprécient et sont aux anges<br>Qu'il soit toujours possible de donner avec amour et plaisir, et que tout le bien vous revienne<br>Plein d'amour, Bataillon 882",
+      "name": "M.",
+      "unit": "Bataillon 882"
+    },
+    "testimonial22": {
+      "quote": "Merci pour le privilège de voir les incroyables combattants en réhabilitation de Sheba et Loewenstein, et les otages libérés venus fêter avec eux — wow, quelle connexion folle. Voir de près les personnes qui ont tout sacrifié, corps et âme, pour que nos otages rentrent à la maison. Les voir sourire, heureuses, reconnaissantes, pleines d'énergie — c'est simplement émouvant… ça entre profondément dans le cœur et nous rappelle pour quoi nos héroïques combattants se sont battus, et à quel point il est important que nous continuions à nous battre pour eux.",
+      "name": "A.",
+      "unit": "Bénévole, département de réhabilitation Sheba"
     }
   },
   "donation": {
@@ -138,7 +173,7 @@
     "focus_2": "Organisation de soirées barbecue et de stands alimentaires pour rafraîchir et remonter le moral des forces de sécurité dans tous les secteurs de combat",
     "focus_3": "Achat d'équipements d'hygiène et d'autres fournitures essentielles pour nos soldats, équipes d'intervention d'urgence et forces de secours",
     "focus_4": "Collaboration avec de nombreuses organisations de soutien à travers le pays et aide au transport et à la logistique pour les forces de sécurité",
-    "achievement": "Plus de 1,5 million ₪ collectés à ce jour",
+    "achievement": "Plus de 2 millions ₪ collectés à ce jour",
     "achievement_subtitle": "Grâce à vous, nous avons pu remonter le moral de nos combattants et acheter pour eux des équipements essentiels qui sauvent des vies!",
     "description": "Chaque don, grand ou petit, nous aide à continuer à soutenir nos soldats et à montrer notre appréciation.",
     "paybox_btn": "Donner via PayBox",
@@ -150,6 +185,6 @@
     "social": "Suivez-nous",
     "description": "Bénévoles de Modiin et des environs soutenant les forces de sécurité dans tous les secteurs de combat",
     "theme": "Thème:",
-    "copyright": "© 2025 Chamal Modiin. Tous droits réservés."
+    "copyright": "© 2026 Chamal Modiin. Tous droits réservés."
   }
 }

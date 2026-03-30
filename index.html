@@ -8,9 +8,31 @@
     <style type="text/tailwindcss">
         @custom-variant dark (&:where(.dark, .dark *));
     </style>
+    <style>
+        #testimonials .grid > div {
+            transition: transform 0.2s ease, box-shadow 0.2s ease;
+        }
+        #testimonials .grid > div:hover {
+            transform: translateY(-4px);
+            box-shadow: 0 20px 40px -10px rgba(0, 0, 0, 0.15);
+        }
+        .section-accent-bar {
+            height: 4px;
+            width: 56px;
+            border-radius: 9999px;
+            background: linear-gradient(to right, #2563eb, #60a5fa);
+            margin-bottom: 2rem;
+        }
+        #gallery .grid > div {
+            transition: transform 0.2s ease, opacity 0.2s ease;
+        }
+        #gallery .grid > div:hover {
+            transform: scale(1.02);
+        }
+    </style>
 
     <title>חמ״ל מודיעין - תמיכה בלוחמי צה״ל | ציוד טקטי וחיוני לכוחות הביטחון</title>
-    <meta name="description" content="חמ״ל מודיעין - מתנדבים ממודיעין ויישובי גזר רוכשים ומעבירים ציוד טקטי וחיוני ללוחמי צה״ל. גייסנו יותר מ-1.5 מיליון ₪ לתמיכה בכוחות הביטחון.">
+    <meta name="description" content="חמ״ל מודיעין - מתנדבים ממודיעין ויישובי גזר רוכשים ומעבירים ציוד טקטי וחיוני ללוחמי צה״ל. גייסנו יותר מ-2 מיליון ₪ לתמיכה בכוחות הביטחון.">
     <meta name="keywords" content="חמ״ל מודיעין, מתנדבים, צה״ל, מודיעין, גזר, תמיכה בלוחמים, תרומה, ציוד טקטי, ציוד צבאי, כוחות ביטחון, מילואים, חרבות ברזל">
     <meta name="author" content="חמ״ל מודיעין">
     <meta name="robots" content="index, follow">
@@ -147,7 +169,7 @@
                         "<span data-i18n="about.quote">לראשונה בחיי הרגשתי סיפוק רב ועוצמתי מתוצאה שאינה מתורגמת לכסף, מתוצאה שאינה נמדדת ברווחים. לראשונה בחיי התמכרתי לאתגרים חדשים, רבים מספור, שבסופם מטרה אחת בלבד - הצלת חיי אדם</span>". <span data-i18n="about.quote_author">ערן אפרת</span>
                     </blockquote>
                     <p class="text-gray-600 dark:text-gray-400 mb-4">
-                        <strong data-i18n="about.mission_label">המשימה שלנו:</strong> <span data-i18n="about.mission_text">להבטיח לחיילינו, לכיתות הכוננות, לכוחות ההצלה, ולכל כוחות הביטחון את המשאבים הדרושים כדי לבצע את תפקידם החיוני ללא דיחוי.</span>
+                        <strong data-i18n="about.mission_label">המשימה שלנו:</strong> <span data-i18n="about.mission_text">ללהבטיח לחיילינו, לכיתות הכוננות, לכוחות ההצלה, ולכל כוחות הביטחון את המשאבים הדרושים כדי לבצע את תפקידם החיוני ללא דיחוי.</span>
                     </p>
                     <p class="text-gray-600 dark:text-gray-400 mb-4" data-i18n="about.description1">
                         מאז הקמת החמ״ל, המתנדבים עושים לילות כימים ברכישה והעברת ציוד טקטי, תרמי וציוד חיוני נוסף ליחידות לוחמות בעזה, בגבול הצפון ובאזורים נוספים לפי הצורך.
@@ -187,7 +209,7 @@
                     </div>
                     <h3 class="text-xl font-semibold text-gray-900 dark:text-white mb-2" data-i18n="activities.events.title">אירועי על האש</h3>
                     <p class="mt-4 text-gray-600 dark:text-gray-400" data-i18n="activities.events.description">מרימים ערבי על האש ודוכני שווארמה ליחידות סדירות ומילואים, כיתות כוננות וכוחות הצלה בכל גזרות הלחימה.</p>
-                    <p class="mt-4 text-gray-600 dark:text-gray-400" data-i18n="activities.events.details">עד כה צוות החמ״ל הרים יותר מ-200 ארועי על האש, דוכני מזון, ותרומות לעשרות אלפים מלוחמינו היקרים!</p>
+                    <p class="mt-4 text-gray-600 dark:text-gray-400" data-i18n="activities.events.details">עד כה צוות החמ״ל הרים יותר מ-320 ארועי על האש, דוכני מזון, ותרומות לעשרות אלפים מלוחמינו היקרים!</p>
                 </div>
                 
                 <div class="bg-white dark:bg-white/5 rounded-lg shadow-sm p-6">
@@ -206,7 +228,8 @@
     <!-- Gallery Section -->
     <section id="gallery" class="py-16 bg-white dark:bg-gray-950/10">
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-            <h2 class="text-3xl font-bold mb-4" data-i18n="gallery.title">תמונות מהארועים השונים</h2>
+            <h2 class="text-3xl font-bold mb-3" data-i18n="gallery.title">תמונות מהארועים השונים</h2>
+            <div class="section-accent-bar mb-6"></div>
             <!-- Masonry Gallery Layout -->
             <div class="grid grid-cols-2 md:grid-cols-4 gap-4">
                 <!-- Column 1: WIDE, TALL, WIDE, TALL... -->
@@ -279,8 +302,32 @@
                     <div class="cursor-pointer hover:opacity-75 transition-opacity" onclick="openLightbox('public/images/IMG_5907.jpg', 'פעילות נוספת')">
                         <img class="h-auto max-w-full rounded-lg shadow-lg hover:shadow-xl transition-shadow" src="public/images/IMG_5907.jpg" alt="פעילות נוספת" loading="lazy">
                     </div>
+                    <div class="cursor-pointer hover:opacity-75 transition-opacity" onclick="openLightbox('public/images/img-21.jpeg', 'ארוע על האש')">
+                        <img class="h-auto max-w-full rounded-lg shadow-lg hover:shadow-xl transition-shadow" src="public/images/img-21.jpeg" alt="ארוע על האש" loading="lazy">
+                    </div>
+                    <div class="cursor-pointer hover:opacity-75 transition-opacity" onclick="openLightbox('public/images/img-22.jpeg', 'פעילות מתנדבים')">
+                        <img class="h-auto max-w-full rounded-lg shadow-lg hover:shadow-xl transition-shadow" src="public/images/img-22.jpeg" alt="פעילות מתנדבים" loading="lazy">
+                    </div>
+                    <div class="cursor-pointer hover:opacity-75 transition-opacity" onclick="openLightbox('public/images/img-23.jpeg', 'תמיכה בלוחמים')">
+                        <img class="h-auto max-w-full rounded-lg shadow-lg hover:shadow-xl transition-shadow" src="public/images/img-23.jpeg" alt="תמיכה בלוחמים" loading="lazy">
+                    </div>
+                    <div class="cursor-pointer hover:opacity-75 transition-opacity" onclick="openLightbox('public/images/img-24.jpeg', 'אוכל לחיילים')">
+                        <img class="h-auto max-w-full rounded-lg shadow-lg hover:shadow-xl transition-shadow" src="public/images/img-24.jpeg" alt="אוכל לחיילים" loading="lazy">
+                    </div>
+                    <div class="cursor-pointer hover:opacity-75 transition-opacity" onclick="openLightbox('public/images/img-25.jpeg', 'פעילות שטח')">
+                        <img class="h-auto max-w-full rounded-lg shadow-lg hover:shadow-xl transition-shadow" src="public/images/img-25.jpeg" alt="פעילות שטח" loading="lazy">
+                    </div>
+                    <div class="cursor-pointer hover:opacity-75 transition-opacity" onclick="openLightbox('public/images/img-26.jpeg', 'ערב על האש')">
+                        <img class="h-auto max-w-full rounded-lg shadow-lg hover:shadow-xl transition-shadow" src="public/images/img-26.jpeg" alt="ערב על האש" loading="lazy">
+                    </div>
+                    <div class="cursor-pointer hover:opacity-75 transition-opacity" onclick="openLightbox('public/images/img-27.jpeg', 'שמחת לוחמים')">
+                        <img class="h-auto max-w-full rounded-lg shadow-lg hover:shadow-xl transition-shadow" src="public/images/img-27.jpeg" alt="שמחת לוחמים" loading="lazy">
+                    </div>
+                    <div class="cursor-pointer hover:opacity-75 transition-opacity" onclick="openLightbox('public/images/img-28.jpeg', 'פעילות נוספת')">
+                        <img class="h-auto max-w-full rounded-lg shadow-lg hover:shadow-xl transition-shadow" src="public/images/img-28.jpeg" alt="פעילות נוספת" loading="lazy">
+                    </div>
                 </div>
-                
+
                 <!-- Column 2: TALL, WIDE, TALL, WIDE... -->
                 <div class="grid gap-4">
                     <!-- TALL -->
@@ -351,9 +398,32 @@
                     <div class="cursor-pointer hover:opacity-75 transition-opacity" onclick="openLightbox('public/images/img-15.jpeg', 'תמיכה מיוחדת')">
                         <img class="h-auto max-w-full rounded-lg shadow-lg hover:shadow-xl transition-shadow" src="public/images/img-15.jpeg" alt="תמיכה מיוחדת" loading="lazy">
                     </div>
-                    
+                    <div class="cursor-pointer hover:opacity-75 transition-opacity" onclick="openLightbox('public/images/img-29.jpeg', 'הכנות לארוע')">
+                        <img class="h-auto max-w-full rounded-lg shadow-lg hover:shadow-xl transition-shadow" src="public/images/img-29.jpeg" alt="הכנות לארוע" loading="lazy">
+                    </div>
+                    <div class="cursor-pointer hover:opacity-75 transition-opacity" onclick="openLightbox('public/images/img-30.jpeg', 'אנרגיה חיובית')">
+                        <img class="h-auto max-w-full rounded-lg shadow-lg hover:shadow-xl transition-shadow" src="public/images/img-30.jpeg" alt="אנרגיה חיובית" loading="lazy">
+                    </div>
+                    <div class="cursor-pointer hover:opacity-75 transition-opacity" onclick="openLightbox('public/images/img-31.jpeg', 'פינוקים לחיילים')">
+                        <img class="h-auto max-w-full rounded-lg shadow-lg hover:shadow-xl transition-shadow" src="public/images/img-31.jpeg" alt="פינוקים לחיילים" loading="lazy">
+                    </div>
+                    <div class="cursor-pointer hover:opacity-75 transition-opacity" onclick="openLightbox('public/images/img-32.jpeg', 'שיתוף פעולה')">
+                        <img class="h-auto max-w-full rounded-lg shadow-lg hover:shadow-xl transition-shadow" src="public/images/img-32.jpeg" alt="שיתוף פעולה" loading="lazy">
+                    </div>
+                    <div class="cursor-pointer hover:opacity-75 transition-opacity" onclick="openLightbox('public/images/img-33.jpeg', 'ציוד לחיילים')">
+                        <img class="h-auto max-w-full rounded-lg shadow-lg hover:shadow-xl transition-shadow" src="public/images/img-33.jpeg" alt="ציוד לחיילים" loading="lazy">
+                    </div>
+                    <div class="cursor-pointer hover:opacity-75 transition-opacity" onclick="openLightbox('public/images/img-34.jpeg', 'ארוע על האש')">
+                        <img class="h-auto max-w-full rounded-lg shadow-lg hover:shadow-xl transition-shadow" src="public/images/img-34.jpeg" alt="ארוע על האש" loading="lazy">
+                    </div>
+                    <div class="cursor-pointer hover:opacity-75 transition-opacity" onclick="openLightbox('public/images/img-35.jpeg', 'פעילות קהילתית')">
+                        <img class="h-auto max-w-full rounded-lg shadow-lg hover:shadow-xl transition-shadow" src="public/images/img-35.jpeg" alt="פעילות קהילתית" loading="lazy">
+                    </div>
+                    <div class="cursor-pointer hover:opacity-75 transition-opacity" onclick="openLightbox('public/images/img-36.jpeg', 'תמיכה בלוחמים')">
+                        <img class="h-auto max-w-full rounded-lg shadow-lg hover:shadow-xl transition-shadow" src="public/images/img-36.jpeg" alt="תמיכה בלוחמים" loading="lazy">
+                    </div>
                 </div>
-                
+
                 <!-- Column 3: WIDE, TALL, WIDE, TALL... -->
                 <div class="grid gap-4">
                     <!-- WIDE -->
@@ -424,8 +494,32 @@
                     <div class="cursor-pointer hover:opacity-75 transition-opacity" onclick="openLightbox('public/images/e46fcc1a-b00e-47fd-9a42-6e790b54ffec.jpg', 'פעילות מיוחדת')">
                         <img class="h-auto max-w-full rounded-lg shadow-lg hover:shadow-xl transition-shadow" src="public/images/e46fcc1a-b00e-47fd-9a42-6e790b54ffec.jpg" alt="פעילות מיוחדת" loading="lazy">
                     </div>
+                    <div class="cursor-pointer hover:opacity-75 transition-opacity" onclick="openLightbox('public/images/img-37.jpeg', 'מתנדבים בפעולה')">
+                        <img class="h-auto max-w-full rounded-lg shadow-lg hover:shadow-xl transition-shadow" src="public/images/img-37.jpeg" alt="מתנדבים בפעולה" loading="lazy">
+                    </div>
+                    <div class="cursor-pointer hover:opacity-75 transition-opacity" onclick="openLightbox('public/images/img-38.jpeg', 'הרמת מורל')">
+                        <img class="h-auto max-w-full rounded-lg shadow-lg hover:shadow-xl transition-shadow" src="public/images/img-38.jpeg" alt="הרמת מורל" loading="lazy">
+                    </div>
+                    <div class="cursor-pointer hover:opacity-75 transition-opacity" onclick="openLightbox('public/images/img-39.jpeg', 'פינוקים מיוחדים')">
+                        <img class="h-auto max-w-full rounded-lg shadow-lg hover:shadow-xl transition-shadow" src="public/images/img-39.jpeg" alt="פינוקים מיוחדים" loading="lazy">
+                    </div>
+                    <div class="cursor-pointer hover:opacity-75 transition-opacity" onclick="openLightbox('public/images/img-40.jpeg', 'שמחה בשטח')">
+                        <img class="h-auto max-w-full rounded-lg shadow-lg hover:shadow-xl transition-shadow" src="public/images/img-40.jpeg" alt="שמחה בשטח" loading="lazy">
+                    </div>
+                    <div class="cursor-pointer hover:opacity-75 transition-opacity" onclick="openLightbox('public/images/img-41.jpeg', 'ציוד וחיוכים')">
+                        <img class="h-auto max-w-full rounded-lg shadow-lg hover:shadow-xl transition-shadow" src="public/images/img-41.jpeg" alt="ציוד וחיוכים" loading="lazy">
+                    </div>
+                    <div class="cursor-pointer hover:opacity-75 transition-opacity" onclick="openLightbox('public/images/img-42.jpeg', 'ארוע מיוחד')">
+                        <img class="h-auto max-w-full rounded-lg shadow-lg hover:shadow-xl transition-shadow" src="public/images/img-42.jpeg" alt="ארוע מיוחד" loading="lazy">
+                    </div>
+                    <div class="cursor-pointer hover:opacity-75 transition-opacity" onclick="openLightbox('public/images/img-43.jpeg', 'תמיכה אמיתית')">
+                        <img class="h-auto max-w-full rounded-lg shadow-lg hover:shadow-xl transition-shadow" src="public/images/img-43.jpeg" alt="תמיכה אמיתית" loading="lazy">
+                    </div>
+                    <div class="cursor-pointer hover:opacity-75 transition-opacity" onclick="openLightbox('public/images/img-44.jpeg', 'פעילות נוספת')">
+                        <img class="h-auto max-w-full rounded-lg shadow-lg hover:shadow-xl transition-shadow" src="public/images/img-44.jpeg" alt="פעילות נוספת" loading="lazy">
+                    </div>
                 </div>
-                
+
                 <!-- Column 4: TALL, WIDE, TALL, WIDE... -->
                 <div class="grid gap-4">
                     <!-- TALL -->
@@ -496,6 +590,42 @@
                     <div class="cursor-pointer hover:opacity-75 transition-opacity" onclick="openLightbox('public/images/img-11.jpeg', 'תמיכה מיוחדת')">
                         <img class="h-auto max-w-full rounded-lg shadow-lg hover:shadow-xl transition-shadow" src="public/images/img-11.jpeg" alt="תמיכה מיוחדת" loading="lazy">
                     </div>
+                    <div class="cursor-pointer hover:opacity-75 transition-opacity" onclick="openLightbox('public/images/img-45.jpeg', 'ארוע על האש')">
+                        <img class="h-auto max-w-full rounded-lg shadow-lg hover:shadow-xl transition-shadow" src="public/images/img-45.jpeg" alt="ארוע על האש" loading="lazy">
+                    </div>
+                    <div class="cursor-pointer hover:opacity-75 transition-opacity" onclick="openLightbox('public/images/img-46.jpeg', 'פינוקים לחיילים')">
+                        <img class="h-auto max-w-full rounded-lg shadow-lg hover:shadow-xl transition-shadow" src="public/images/img-46.jpeg" alt="פינוקים לחיילים" loading="lazy">
+                    </div>
+                    <div class="cursor-pointer hover:opacity-75 transition-opacity" onclick="openLightbox('public/images/img-47.jpeg', 'שמחת לוחמים')">
+                        <img class="h-auto max-w-full rounded-lg shadow-lg hover:shadow-xl transition-shadow" src="public/images/img-47.jpeg" alt="שמחת לוחמים" loading="lazy">
+                    </div>
+                    <div class="cursor-pointer hover:opacity-75 transition-opacity" onclick="openLightbox('public/images/img-48.jpeg', 'מתנדבים בפעולה')">
+                        <img class="h-auto max-w-full rounded-lg shadow-lg hover:shadow-xl transition-shadow" src="public/images/img-48.jpeg" alt="מתנדבים בפעולה" loading="lazy">
+                    </div>
+                    <div class="cursor-pointer hover:opacity-75 transition-opacity" onclick="openLightbox('public/images/img-49.jpeg', 'תמיכה אמיתית')">
+                        <img class="h-auto max-w-full rounded-lg shadow-lg hover:shadow-xl transition-shadow" src="public/images/img-49.jpeg" alt="תמיכה אמיתית" loading="lazy">
+                    </div>
+                    <div class="cursor-pointer hover:opacity-75 transition-opacity" onclick="openLightbox('public/images/img-50.jpeg', 'פעילות קהילתית')">
+                        <img class="h-auto max-w-full rounded-lg shadow-lg hover:shadow-xl transition-shadow" src="public/images/img-50.jpeg" alt="פעילות קהילתית" loading="lazy">
+                    </div>
+                    <div class="cursor-pointer hover:opacity-75 transition-opacity" onclick="openLightbox('public/images/img-51.jpeg', 'הרמת מורל')">
+                        <img class="h-auto max-w-full rounded-lg shadow-lg hover:shadow-xl transition-shadow" src="public/images/img-51.jpeg" alt="הרמת מורל" loading="lazy">
+                    </div>
+                    <div class="cursor-pointer hover:opacity-75 transition-opacity" onclick="openLightbox('public/images/img-52.jpeg', 'ערב מיוחד')">
+                        <img class="h-auto max-w-full rounded-lg shadow-lg hover:shadow-xl transition-shadow" src="public/images/img-52.jpeg" alt="ערב מיוחד" loading="lazy">
+                    </div>
+                    <div class="cursor-pointer hover:opacity-75 transition-opacity" onclick="openLightbox('public/images/img-53.jpeg', 'פעילות נוספת')">
+                        <img class="h-auto max-w-full rounded-lg shadow-lg hover:shadow-xl transition-shadow" src="public/images/img-53.jpeg" alt="פעילות נוספת" loading="lazy">
+                    </div>
+                    <div class="cursor-pointer hover:opacity-75 transition-opacity" onclick="openLightbox('public/images/img-54.jpeg', 'תמיכה בלוחמים')">
+                        <img class="h-auto max-w-full rounded-lg shadow-lg hover:shadow-xl transition-shadow" src="public/images/img-54.jpeg" alt="תמיכה בלוחמים" loading="lazy">
+                    </div>
+                    <div class="cursor-pointer hover:opacity-75 transition-opacity" onclick="openLightbox('public/images/img-55.jpeg', 'ארוע על האש')">
+                        <img class="h-auto max-w-full rounded-lg shadow-lg hover:shadow-xl transition-shadow" src="public/images/img-55.jpeg" alt="ארוע על האש" loading="lazy">
+                    </div>
+                    <div class="cursor-pointer hover:opacity-75 transition-opacity" onclick="openLightbox('public/images/img-56.jpeg', 'אנרגיה וחיוכים')">
+                        <img class="h-auto max-w-full rounded-lg shadow-lg hover:shadow-xl transition-shadow" src="public/images/img-56.jpeg" alt="אנרגיה וחיוכים" loading="lazy">
+                    </div>
                 </div>
         </div>
     </section>
@@ -504,7 +634,8 @@
     <!-- Testimonials Section -->
     <section id="testimonials" class="py-16 bg-gray-50 dark:bg-gray-900">
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-            <h2 class="text-3xl font-bold mb-12 text-gray-900 dark:text-white" data-i18n="testimonials.title">פרגונים</h2>
+            <h2 class="text-3xl font-bold mb-3 text-gray-900 dark:text-white" data-i18n="testimonials.title">פרגונים</h2>
+            <div class="section-accent-bar mb-10"></div>
             <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
                 
                 <!-- Testimonial 1 -->
@@ -843,6 +974,132 @@
                     </div>
                 </div>
 
+                <!-- Testimonial 16 -->
+                <div class="bg-white dark:bg-white/5 rounded-xl shadow-lg p-6 border-r-2 border-blue-500">
+                    <div class="mb-4">
+                        <svg class="w-8 h-8 text-blue-500 mb-4" fill="currentColor" viewBox="0 0 20 20">
+                            <path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"/>
+                        </svg>
+                    </div>
+                    <blockquote class="text-gray-700 dark:text-gray-50 mb-4 text-lg leading-relaxed" data-i18n="testimonials.testimonial16.quote">
+                        תודה מכל הלב לחבר'ה המדהימים מ"חמ"ל מודיעין", שהגיעו אלינו אי שם לצפון והכינו ארוחת מלכים לסוללה שלנו במסגרת ערב סוף קו ופרידה מהמסו"ל המדהים שלנו (שלא הולך לשום מקום, הוא יהיה הסמג"ד).<br><br>תודה מקרב לב, בשם כל לוחמי סוללה ג', גדוד 531
+                    </blockquote>
+                    <div class="flex items-center">
+                        <div class="mr-3">
+                            <div class="font-semibold text-gray-900 dark:text-gray-200" data-i18n="testimonials.testimonial16.name">לוחמי סוללה ג'</div>
+                            <div class="text-gray-600 dark:text-gray-400 text-sm" data-i18n="testimonials.testimonial16.unit">גדוד 531</div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Testimonial 18 -->
+                <div class="bg-white dark:bg-white/5 rounded-xl shadow-lg p-6 border-r-2 border-orange-400">
+                    <div class="mb-4">
+                        <svg class="w-8 h-8 text-orange-400 mb-4" fill="currentColor" viewBox="0 0 20 20">
+                            <path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"/>
+                        </svg>
+                    </div>
+                    <blockquote class="text-gray-700 dark:text-gray-50 mb-4 text-lg leading-relaxed" data-i18n="testimonials.testimonial18.quote">
+                        חברים תודה רבה על החיבוק החם והתמיכה המדהימה שלכם!!!!! אתם פשוט מדהימים. תודה.
+                    </blockquote>
+                    <div class="flex items-center">
+                        <div class="mr-3">
+                            <div class="font-semibold text-gray-900 dark:text-gray-200" data-i18n="testimonials.testimonial18.name">מ.</div>
+                            <div class="text-gray-600 dark:text-gray-400 text-sm" data-i18n="testimonials.testimonial18.unit">גדוד 8237</div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Testimonial 19 -->
+                <div class="bg-white dark:bg-white/5 rounded-xl shadow-lg p-6 border-r-2 border-purple-500">
+                    <div class="mb-4">
+                        <svg class="w-8 h-8 text-purple-500 mb-4" fill="currentColor" viewBox="0 0 20 20">
+                            <path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"/>
+                        </svg>
+                    </div>
+                    <blockquote class="text-gray-700 dark:text-gray-50 mb-4 text-lg leading-relaxed" data-i18n="testimonials.testimonial19.quote">
+                        מודה לכם על ההשקעה מכול הלב<br>על העל האש המיוחד אבל גם על השראה של אנשים מיוחדים, הלוחמים ראו מתנדבים שלוקחים יום חופש להשקיע בהם ומגיעים מוקדם לצפון וחוצים גבול !!!. שומעים שיחת השראה מאב שבנו נפצע, מגיבור ישראל קטוע שתי רגליים ואמא שכולה. נבחרת כזו עוד לא היתה לנו.<br><br>ועוד להגיע מלאי גופרית בלי מקלחת.. רק על זה אני מצדיע לכם.
+                    </blockquote>
+                    <div class="flex items-center">
+                        <div class="mr-3">
+                            <div class="font-semibold text-gray-900 dark:text-gray-200" data-i18n="testimonials.testimonial19.name">פ.</div>
+                            <div class="text-gray-600 dark:text-gray-400 text-sm" data-i18n="testimonials.testimonial19.unit">פלוגת שקד גבעתי</div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Testimonial 20 -->
+                <div class="bg-white dark:bg-white/5 rounded-xl shadow-lg p-6 border-r-2 border-red-400">
+                    <div class="mb-4">
+                        <svg class="w-8 h-8 text-red-400 mb-4" fill="currentColor" viewBox="0 0 20 20">
+                            <path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"/>
+                        </svg>
+                    </div>
+                    <blockquote class="text-gray-700 dark:text-gray-50 mb-4 text-lg leading-relaxed" data-i18n="testimonials.testimonial20.quote">
+                        המון תודה לכם, ריגשתם אותנו מאוד!<br>תודה להשם על אנשים כמוכם שרק רוצים לתת ולעזור<br>מקווים שנהנתם בשמחתינו<br>אין אנשים כמוכם המון תודה זה מוערך מאוד ❤️❤️❤️
+                    </blockquote>
+                    <div class="flex items-center">
+                        <div class="mr-3">
+                            <div class="font-semibold text-gray-900 dark:text-gray-200" data-i18n="testimonials.testimonial20.name">רוני</div>
+                            <div class="text-gray-600 dark:text-gray-400 text-sm" data-i18n="testimonials.testimonial20.unit">פלוגת מג״ב</div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Testimonial 21 -->
+                <div class="bg-white dark:bg-white/5 rounded-xl shadow-lg p-6 border-r-2 border-yellow-500">
+                    <div class="mb-4">
+                        <svg class="w-8 h-8 text-yellow-500 mb-4" fill="currentColor" viewBox="0 0 20 20">
+                            <path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"/>
+                        </svg>
+                    </div>
+                    <blockquote class="text-gray-700 dark:text-gray-50 mb-4 text-lg leading-relaxed" data-i18n="testimonials.testimonial21.quote">
+                        חברים יקרים שוב תודה רבה לכולכם לא מובן מאליו בכלל הרמתם פה הפקה של החיים והחיילים מעריכים ומבסוטים עד השמיים<br>אמן שרק כל החיים נוכל לתת באהבה ובכיף כולנו ואמן שכל הטוב יחזור חזרה לכולכם<br>אוהבים מלא גדוד 882
+                    </blockquote>
+                    <div class="flex items-center">
+                        <div class="mr-3">
+                            <div class="font-semibold text-gray-900 dark:text-gray-200" data-i18n="testimonials.testimonial21.name">מ.</div>
+                            <div class="text-gray-600 dark:text-gray-400 text-sm" data-i18n="testimonials.testimonial21.unit">גדוד 882</div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Testimonial 22 -->
+                <div class="bg-white dark:bg-white/5 rounded-xl shadow-lg p-6 border-r-2 border-indigo-500">
+                    <div class="mb-4">
+                        <svg class="w-8 h-8 text-indigo-500 mb-4" fill="currentColor" viewBox="0 0 20 20">
+                            <path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"/>
+                        </svg>
+                    </div>
+                    <blockquote class="text-gray-700 dark:text-gray-50 mb-4 text-lg leading-relaxed" data-i18n="testimonials.testimonial22.quote">
+                        תודה על הזכות לראות את הלוחמים האדירים המשוקמים משיבא ולווינשטיין, ופדויות השבי שהגיעו לחגוג איתם – וואו, איזה חיבור מטורף. לראות מקרוב את האנשים שהקריבו הכול, גוף ונפש, כדי שהחטופות שלנו יחזרו הביתה. לראות אותן מחייכות, שמחות, מוקירות תודה, מלאות אנרגיה, זה פשוט מרגש… זה נכנס עמוק ללב ומזכיר לנו על מה הלוחמים הגיבורים שלנו נלחמו, ועד כמה חשוב שאנחנו נמשיך להילחם עבורם.
+                    </blockquote>
+                    <div class="flex items-center">
+                        <div class="mr-3">
+                            <div class="font-semibold text-gray-900 dark:text-gray-200" data-i18n="testimonials.testimonial22.name">א.</div>
+                            <div class="text-gray-600 dark:text-gray-400 text-sm" data-i18n="testimonials.testimonial22.unit">מתנדבת ממחלקת שיקום שיבא</div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Testimonial 17 -->
+                <div class="bg-white dark:bg-white/5 rounded-xl shadow-lg p-6 border-r-2 border-teal-500">
+                    <div class="mb-4">
+                        <svg class="w-8 h-8 text-teal-500 mb-4" fill="currentColor" viewBox="0 0 20 20">
+                            <path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"/>
+                        </svg>
+                    </div>
+                    <blockquote class="text-gray-700 dark:text-gray-50 mb-4 text-lg leading-relaxed" data-i18n="testimonials.testimonial17.quote">
+                        אנשים יקרים אלפי תודות שהשם ישמור אותכם וייתן לכם כוחות להמשיך לעשות טוב
+                    </blockquote>
+                    <div class="flex items-center">
+                        <div class="mr-3">
+                            <div class="font-semibold text-gray-900 dark:text-gray-200" data-i18n="testimonials.testimonial17.name">צ.</div>
+                            <div class="text-gray-600 dark:text-gray-400 text-sm" data-i18n="testimonials.testimonial17.unit">גדוד 9294</div>
+                        </div>
+                    </div>
+                </div>
+
             </div>
         </div>
     </section>
@@ -895,7 +1152,7 @@
                             </div>
                             <div class="mx-3">
                                 <p class="text-lg font-semibold dark:text-white text-blue-900" data-i18n="donation.achievement">
-                                    עד כה גוייסו יותר מ-1.5 מיליון ₪
+                                    עד כה גוייסו יותר מ-2 מיליון ₪
                                 </p>
                                 <p class="text-sm dark:text-white text-blue-700" data-i18n="donation.achievement_subtitle">
                                   תודות לכם, הצלחנו לרומם את רוח הלוחמים ולרכוש עבורם ציוד חיוני ומציל חיים!
@@ -935,7 +1192,7 @@
             <div class="sm:flex-row sm:items-center sm:justify-between sm:gap-8 px-4 md:px-6 lg:px-8 flex w-full flex-col justify-between items-center mt-8 pt-8 border-t dark:border-gray-800 border-gray-200">
                 <div class="text-center">
                     <p class="dark:text-gray-400 text-gray-700" data-i18n="footer.copyright">
-                        © 2025 חמ״ל מודיעין. כל הזכויות שמורות.
+                        © 2026 חמ״ל מודיעין. כל הזכויות שמורות.
                     </p>
                 </div>
 

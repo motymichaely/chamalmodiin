@@ -40,7 +40,7 @@
     "events": {
       "title": "Barbecue Events",
       "description": "We organize barbecue evenings and shawarma stands for regular and reserve units, emergency response teams, and rescue forces in all combat sectors.",
-      "details": "So far, the Chamal team has organized over 200 barbecue events, food stands, and donations for tens of thousands of our precious fighters!"
+      "details": "So far, the Chamal team has organized over 320 barbecue events, food stands, and donations for tens of thousands of our precious fighters!"
     },
     "collaboration": {
       "title": "Collaborative Network",
@@ -128,6 +128,41 @@
       "quote": "Want to thank on behalf of myself and the company for a crazy evening!<br>The guys enjoyed it at the highest level possible!<br><br>Dear Moti and each and every one of you -<br>There aren't enough words to describe how special and amazing you people are.<br><br>People here haven't stopped smiling until now...<br>You don't understand how much we needed this.<br>Thank you from the bottom of our hearts 💚<br><br>Yuval, and all of Nahal Reconnaissance Support 🫡",
       "name": "Y.",
       "unit": "Nahal Reconnaissance Support"
+    },
+    "testimonial16": {
+      "quote": "A heartfelt thank you to the amazing people of Chamal Modiin, who came to us somewhere in the north and prepared a royal feast for our battery as part of an end-of-rotation evening and farewell to our incredible commander (who isn't going anywhere — he will be the Deputy Battalion Commander).<br><br>Thank you from the bottom of our hearts, on behalf of all the fighters of Battery C, Battalion 531",
+      "name": "Fighters of Battery C",
+      "unit": "Battalion 531"
+    },
+    "testimonial17": {
+      "quote": "Dear people, thousands of thanks — may God protect you and give you the strength to continue doing good",
+      "name": "Ts.",
+      "unit": "Battalion 9294"
+    },
+    "testimonial18": {
+      "quote": "Friends, thank you so much for the warm embrace and your amazing support!!!!! You are simply incredible. Thank you.",
+      "name": "M.",
+      "unit": "Battalion 8237"
+    },
+    "testimonial19": {
+      "quote": "Thank you with all my heart for the investment — for the special barbecue, but also for the inspiration of remarkable people. The fighters saw volunteers who took a day off to invest in them, arriving early in the north and crossing the border!!!. They heard an inspiring talk from a father whose son was wounded, from an Israeli hero who lost both legs, and from a bereaved mother. We have never had a team like this.<br><br>And to top it off, arriving full of energy without a shower.. for that alone I salute you.",
+      "name": "P.",
+      "unit": "Shaked Givati Company"
+    },
+    "testimonial20": {
+      "quote": "Thank you so much, you truly moved us!<br>Thank God for people like you who only want to give and help<br>We hope you enjoyed sharing in our joy<br>There is no one like you, thank you so much — it is deeply appreciated ❤️❤️❤️",
+      "name": "Roni",
+      "unit": "Border Police Company"
+    },
+    "testimonial21": {
+      "quote": "Dear friends, thank you so much once again to all of you — it is not taken for granted at all. You put on the production of a lifetime here, and the soldiers appreciate it and are over the moon<br>Amen that we should always be able to give with love and joy, and amen that all the good comes back to all of you<br>Lots of love, Battalion 882",
+      "name": "M.",
+      "unit": "Battalion 882"
+    },
+    "testimonial22": {
+      "quote": "Thank you for the privilege of seeing the incredible rehabilitating fighters from Sheba and Loewenstein, and the freed hostages who came to celebrate with them — wow, what an incredible connection. To see up close the people who sacrificed everything, body and soul, so that our hostages could come home. To see them smiling, happy, grateful, full of energy — it is simply moving… it goes deep into the heart and reminds us what our heroic fighters fought for, and how important it is that we continue to fight for them.",
+      "name": "A.",
+      "unit": "Volunteer, Sheba Rehabilitation Department"
     }
   },
   "donation": {
@@ -139,7 +174,7 @@
     "focus_2": "Organizing barbecue evenings and food stands to refresh and boost morale for security forces in all combat sectors",
     "focus_3": "Purchasing hygiene equipment and other essential supplies for our soldiers, emergency response teams, and rescue forces",
     "focus_4": "Collaborating with numerous support organizations across the country and assisting with transportation and logistics for security forces",
-    "achievement": "Over 1.5 Million ₪ Raised So Far",
+    "achievement": "Over 2 Million ₪ Raised So Far",
     "achievement_subtitle": "Thanks to you, we've been able to lift the spirits of our fighters and purchase essential life-saving equipment for them!",
     "description": "Every donation, large or small, helps us continue to support our soldiers and show our appreciation.",
     "paybox_btn": "Donate via PayBox",
@@ -151,6 +186,6 @@
     "social": "Follow Us",
     "description": "Volunteers from Modiin and surrounding areas supporting security forces in all combat sectors",
     "theme": "Theme:",
-    "copyright": "© 2025 Chamal Modiin. All rights reserved."
+    "copyright": "© 2026 Chamal Modiin. All rights reserved."
   }
 }
